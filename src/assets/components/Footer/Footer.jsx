@@ -12,7 +12,7 @@ const Footer = () => {
           <h3 className='titlesFont'>Conheça nossas redes sociais:</h3>
 
           <div className='flex' >
-            <ul className='flex gap-6'>
+            <ul className='flex gap-7'>
               <li>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bocarracircus/">
                   <FaInstagram  className='text-3xl'/>
@@ -34,11 +34,11 @@ const Footer = () => {
        </div>
 
       <aside className='flex flex-col text-center textsFont pb-3'> 
-        <p>&copy; bocarra circus. </p>
-        <p>Todos os direitos reservados 2024.</p>
-        <a href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">designed by Victor Belotto</a>
+        <p className='titlesFont'>&copy; bocarra circus. </p>
+        <p className='titlesFont'>Todos os direitos reservados 2024.</p>
+        <a className='titlesFont' href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">designed by <i>Victor Belotto</i></a>
       </aside>
-
+    
     </footer>
   )
 }
