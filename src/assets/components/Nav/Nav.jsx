@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className='titlesFont text-xl font-medium'>
       <ul className='flex gap-7'>
         <li>
           <Link to={'/'}>Home</Link>
