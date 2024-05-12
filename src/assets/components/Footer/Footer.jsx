@@ -38,7 +38,7 @@ const Footer = () => {
       <aside className='flex flex-col text-center textsFont pb-3'> 
         <p className='titlesFont '>&copy; bocarra circus. </p>
         <p className='titlesFont'>Todos os direitos reservados 2024.</p>
-        <a className='titlesFont text-xs' href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">designed by <i>Victor Belotto</i></a>
+        <a className='titlesFont text-xs' href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">designed by <i className='underline'>Victor Belotto</i></a>
       </aside>
     
     </footer>

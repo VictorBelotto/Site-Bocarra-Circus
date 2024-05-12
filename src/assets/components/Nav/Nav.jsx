@@ -5,15 +5,15 @@ const Nav = () => {
   return (
     <nav className='titlesFont text-xl font-medium'>
       <ul className='flex gap-7 items-center bgBlur rounded-lg pl-4 text-slate-100'>
-        <li>
+        <li className=' hover:text-red-default'>
           <Link to={'/'}>Home</Link>
         </li>
         
-        <li>
+        <li className=' hover:text-red-default'>
           <Link to={'/portifolio'}>Portfólio</Link>
         </li>
 
-        <li>
+        <li className=' hover:text-red-default'>
           <Link to={'/sobreNos'} >Sobre Nós</Link>  
         </li>
 

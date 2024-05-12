@@ -18,3 +18,44 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   backdrop-filter: blur(10px);
 }
+
+.swiperHome{
+  --swiper-navigation-color: #fff;
+  --swiper-navigation-sides-offset: 0px;
+  --swiper-navigation-size: 60px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-pagination-color:#ffffff ;
+  --swiper-pagination-bullet-size: 20px;
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 20px;
+}
+
+.autoplayProgress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplayProgress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #fff;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}

@@ -1,8 +1,12 @@
 import React from 'react'
+import CarrosselPrincipal from '../../components/CarrosselPrincipal/CarrosselPrincipal.jsx'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <main>
+      <CarrosselPrincipal/>
+
+    </main>
   )
 }
 
