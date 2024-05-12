@@ -13,6 +13,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+.titulo{
+  font-size: 64px ;
+  font-weight: 600 ;
+  color: #D03438;
+  text-transform: lowercase;
+  line-height: 1;
+}
+
+.subtitulo{
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #696969;
+  font-size: 16px ;
+}
+
 .bgBlur{
   background: rgba(44, 26, 83, 0.20);
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
