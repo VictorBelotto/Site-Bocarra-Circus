@@ -1,5 +1,6 @@
 import withMT from "@material-tailwind/react/utils/withMT";
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = withMT({
   content: [
     "./index.html",
@@ -10,12 +11,15 @@ module.exports = withMT({
       colors: {
         red: {
           default: '#d03438',
-          hover: '#9d272a'
+          hover: '#ba2c30'
         },
         blue: {
           default: '#2c1a53',
           hover: '#100a20'
-        }
+        },
+        slate: colors.blueGray,
+        emerald: colors.emerald,
+        cerceta: colors.teal
       },
     },
   },
