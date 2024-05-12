@@ -17,7 +17,7 @@ module.exports = withMT({
           default: '#2c1a53',
           hover: '#100a20'
         },
-        slate: colors.blueGray,
+        slate: colors.slate,
         emerald: colors.emerald,
         cerceta: colors.teal
       },

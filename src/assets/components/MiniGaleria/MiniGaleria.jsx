@@ -9,7 +9,7 @@ import ButtonLink from '../ButtonLink/ButtonLink'
 
 const MiniGaleria = () => {
   return (
-    <section className='flex flex-col max-w-7xl mb-8 gap-6'>
+    <section className='flex flex-col max-w-7xl w-[95%] mb-8 gap-6'>
 
       <div>
         <h3 className='subtitulo'>galeria</h3>
@@ -31,7 +31,7 @@ const MiniGaleria = () => {
         </div>
       </main>
 
-      <div className='self-end'>
+      <div className='self-center mt-6'>
         <ButtonLink label={'Veja mais'} link={'/'} /> 
       </div>  
     </section>
