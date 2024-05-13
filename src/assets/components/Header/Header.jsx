@@ -19,7 +19,7 @@ const Header = () => {
       }
       else if(currentScrollPos > prevScrollPos) {
         setClasse('hidden')
-        console.log('baixo')
+        
       } else {
         setClasse('bgBlur')
       }

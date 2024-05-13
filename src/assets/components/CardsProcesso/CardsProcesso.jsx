@@ -7,7 +7,7 @@ import ButtonLink from '../ButtonLink/ButtonLink'
 
 const CardsProcesso = () => {
   return (
-    <section className='flex flex-col items-center max-w-7xl mb-8 gap-6'>
+    <section className='flex flex-col items-center w-[95%] max-w-7xl mb-8 gap-12'>
       <hr class=" border border-red-default w-1/4 self-start"/>
       <hr class=" border border-red-default w-1/4 self-end"/>
       <div className='self-start'>

@@ -2,6 +2,7 @@ import React from 'react'
 import CarrosselPrincipal from '../../components/CarrosselPrincipal/CarrosselPrincipal.jsx'
 import MiniGaleria from '../../components/MiniGaleria/MiniGaleria.jsx'
 import CardsProcesso from '../../components/CardsProcesso/CardsProcesso.jsx'
+import SliderClientes from '../../components/SliderClientes/SliderClientes.jsx'
 
 
 const Home = () => {
@@ -20,8 +21,8 @@ const Home = () => {
       <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
         <CardsProcesso/>
       </div>
-      
 
+      <SliderClientes/>
 
     </main>
   )
