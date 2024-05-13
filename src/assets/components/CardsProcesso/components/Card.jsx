@@ -14,7 +14,7 @@ import ButtonLink from "../../ButtonLink/ButtonLink";
 const Card = ({titulo, descricao, imagem}) => {
   return (
     <CardMaterial className="mt-6 max-w-96 w-[95%]" >
-      <CardHeader color="blue-gray" className="relative h-56">
+      <CardHeader  className="relative h-fit">
         <img
           src={imagem}
           alt="card-image"
