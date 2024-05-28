@@ -42,8 +42,8 @@ const Slider = () => {
       loop={true}
       >
       {logos.map((logo) =>(
-        <SwiperSlide key={logo} className='flex !w-[250px] !h-[150px] !items-center !justify-center mb-8 shadow-md rounded-lg'  >
-            <img src={logo} className=' flex cursor-pointer hover:scale-105' alt={`Logo ${logo}`} />
+        <SwiperSlide key={logo} className='flex w-[150px] h-[100px] md:w-[250px] md:h-[150px] items-center justify-center mb-10 shadow-md rounded-lg '  >
+            <img src={logo} className=' flex cursor-pointer hover:scale-105 w-[150px] h-[100px] md:w-[250px] md:h-[150px]' alt={`Logo ${logo}`} />
         </SwiperSlide>
       ))}
     </Swiper>      

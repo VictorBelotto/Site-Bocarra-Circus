@@ -9,15 +9,15 @@ import ButtonLink from '../ButtonLink/ButtonLink'
 
 const MiniGaleria = () => {
   return (
-    <section className='flex flex-col max-w-7xl w-[95%] mb-8 gap-6'>
+    <section className='flex flex-col w-[95%] max-w-7xl mb-8 gap-6 items-center'>
 
-      <div>
+      <div className='w-full'>
         <h3 className='subtitulo'>galeria</h3>
         <h2 className='titulo'>alguns projetos</h2>
       </div>
 
-      <main className='flex flex-col gap-6 text-xl'>
-        <div className='flex gap-6'>
+      <main className='flex flex-col gap-2 text-xl w-full overflow-hidden'>
+        <div className='flex gap-2 md:justify-between'>
           <img className='w-1/4' src={portoRico} alt="Imagem circo Porto Rico" />
           <img className='w-2/4' src={cricoDosSonhos} alt="Imagem circo dos sonhos" />
           <img className='w-1/4' src={circoFantastico} alt="Imagem circo fantastico" />
@@ -25,13 +25,13 @@ const MiniGaleria = () => {
         <div className='flex'>
           <img className='w-full' src={circoImperio} alt="Imagem circo Porto Rico" />
         </div>
-        <div className='flex gap-6'>
+        <div className='flex gap-2'>
           <img className='w-4/5' src={circoDosSonhos2} alt="Imagem circo Porto Rico" />
-          <img className='w-1/4' src={circoGlobo} alt="Imagem circo dos sonhos" />
+          <img className='w-1/4 ' src={circoGlobo} alt="Imagem circo dos sonhos" />
         </div>
       </main>
 
-      <div className='self-center mt-6'>
+      <div className='flex self-center mt-6'>
         <ButtonLink label={'Veja mais'} link={'/'} /> 
       </div>  
     </section>

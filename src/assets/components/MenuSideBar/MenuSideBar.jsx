@@ -2,17 +2,16 @@ import React from "react";
 import {
   IconButton,
   List,
-  ListItem,
-  ListItemPrefix,
   Drawer,
   Card,
 } from "@material-tailwind/react";
 import {
-  ChevronRightIcon,
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import Links from "./Links";
+import Logo from '../../images/bocarra_visual/rino.svg'
+
 
 const MenuSideBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
@@ -24,9 +23,9 @@ const MenuSideBar = () => {
     <>
       <IconButton variant="text" size="lg" onClick={openDrawer}>
         {isDrawerOpen ? (
-          <XMarkIcon className="h-8 w-8 stroke-2" />
+          <XMarkIcon className="h-10 w-10 stroke-2 text-slate-50" />
         ) : (
-          <Bars3Icon className="h-8 w-8 stroke-2" />
+          <Bars3Icon className="h-10 w-10 stroke-2 text-slate-50" />
         )}
       </IconButton>
 
@@ -41,8 +40,14 @@ const MenuSideBar = () => {
               <Links label={'Galeria'}/>
               <Links label={'Sobre Nós'}/>
               <Links label={'Contato'}/>
+              <div className="flex"> 
+                <img src={Logo} alt="Logo Bocarra Circus" className="z-30 w-full"/>
+              </div>
+            
             </List>
+           
         </Card>
+        
       </Drawer>
     </>
   );
