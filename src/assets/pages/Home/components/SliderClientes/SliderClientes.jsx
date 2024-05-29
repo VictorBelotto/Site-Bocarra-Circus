@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from './components/Slider'
-import ButtonLink from '../ButtonLink/ButtonLink'
-import Titulo from '../Titulo/Titulo'
+import ButtonLink from '../../../../components/ButtonLink/ButtonLink'
+import Titulo from '../../../../components/Titulo/Titulo'
 
 const SliderClientes = () => {
   return (

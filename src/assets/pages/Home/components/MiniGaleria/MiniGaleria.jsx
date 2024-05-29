@@ -1,12 +1,12 @@
 import React from 'react'
-import cricoDosSonhos from '../../../assets/images/imagens_galeria/cricoDosSonhos.png'
-import portoRico from '../../../assets/images/imagens_galeria/portoRico.png'
-import circoFantastico from '../../../assets/images/imagens_galeria/circoFantastico.png'
-import circoImperio from '../../../assets/images/imagens_galeria/circoImperio.png'
-import circoDosSonhos2 from '../../../assets/images/imagens_galeria/circoDosSonhos2.png'
-import circoGlobo from '../../../assets/images/imagens_galeria/circoGlobo.png'
-import ButtonLink from '../ButtonLink/ButtonLink'
-import Titulo from '../Titulo/Titulo.jsx'
+import cricoDosSonhos from '../../../../images/imagens_galeria/cricoDosSonhos.png'
+import portoRico from '../../../../images/imagens_galeria/portoRico.png'
+import circoFantastico from '../../../../images/imagens_galeria/circoFantastico.png'
+import circoImperio from '../../../../images/imagens_galeria/circoImperio.png'
+import circoDosSonhos2 from '../../../../images/imagens_galeria/circoDosSonhos2.png'
+import circoGlobo from '../../../../images/imagens_galeria/circoGlobo.png'
+import ButtonLink from '../../../../components/ButtonLink/ButtonLink.jsx'
+import Titulo from '../../../../components/Titulo/Titulo.jsx'
 
 const MiniGaleria = () => {
   return (

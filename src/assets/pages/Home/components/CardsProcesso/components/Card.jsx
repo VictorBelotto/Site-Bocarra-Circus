@@ -7,8 +7,6 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import ButtonLink from "../../ButtonLink/ButtonLink";
-
 
  
 const Card = ({titulo, descricao, imagem}) => {

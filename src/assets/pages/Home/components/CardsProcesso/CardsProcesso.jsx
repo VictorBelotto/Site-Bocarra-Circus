@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './components/Card'
-import ImgProjeto from '../../images/card_processo/projeto.png'
-import ImgInstalacao from '../../images/card_processo/montagem.png'
-import ImgMontada from '../../images/card_processo/montada.png'
-import ButtonLink from '../ButtonLink/ButtonLink'
-import Titulo from '../Titulo/Titulo'
+import ImgProjeto from '../../../../images/card_processo/projeto.png'
+import ImgInstalacao from '../../../../images/card_processo/montagem.png'
+import ImgMontada from '../../../../images/card_processo/montada.png'
+import ButtonLink from '../../../../components/ButtonLink/ButtonLink'
+import Titulo from '../../../../components/Titulo/Titulo'
 
 const CardsProcesso = () => {
   return (
