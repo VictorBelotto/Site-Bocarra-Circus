@@ -4,16 +4,14 @@ import ImgProjeto from '../../images/card_processo/projeto.png'
 import ImgInstalacao from '../../images/card_processo/montagem.png'
 import ImgMontada from '../../images/card_processo/montada.png'
 import ButtonLink from '../ButtonLink/ButtonLink'
+import Titulo from '../Titulo/Titulo'
 
 const CardsProcesso = () => {
   return (
     <section className='flex flex-col items-center w-[95%] max-w-7xl mb-8 gap-12'>
-      <hr class=" border border-red-default w-1/4 self-start"/>
-      <hr class=" border border-red-default w-1/4 self-end"/>
-      <div className='self-start'>
-        <h3 className='subtitulo'>único</h3>
-        <h2 className='titulo'>nosso processo</h2>
-      </div>
+      <hr className=" border border-red-default w-1/4 self-start"/>
+      <hr className=" border border-red-default w-1/4 self-end"/>
+      <Titulo subtitulo={'único'} titulo={'nosso processo'}/>
 
     <div className='flex items-center justify-center w-full flex-wrap gap-8'>
       <Card

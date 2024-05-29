@@ -13,33 +13,36 @@ import Links from "./Links";
 import Logo from '../../images/bocarra_visual/rino.svg'
 
 
-const MenuSideBar = () => {
+const MenuSideBar = ({path}) => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
   
   const openDrawer = () => setIsDrawerOpen(true);
   const closeDrawer = () => setIsDrawerOpen(false);
+
+  const handleClick = () =>{
+    closeDrawer()
+  }
  
   return (
     <>
       <IconButton variant="text" size="lg" onClick={openDrawer}>
         {isDrawerOpen ? (
-          <XMarkIcon className="h-10 w-10 stroke-2 text-slate-50" />
+          <XMarkIcon className={`h-10 w-10 stroke-2  ${path === '/'? "text-slate-50" : "text-black"}`} />
         ) : (
-          <Bars3Icon className="h-10 w-10 stroke-2 text-slate-50" />
+          <Bars3Icon className={`h-10 w-10 stroke-2 ${path === '/'? "text-slate-50" : "text-black"}`} />
         )}
       </IconButton>
 
-      <Drawer className="bg-red-default"  open={isDrawerOpen} onClose={closeDrawer}>
+      <Drawer   open={isDrawerOpen} onClose={closeDrawer} className="bg-red-default">
         <Card
-          color="transparent"
           shadow={false}
-          className="h-[calc(100vh-2rem)] w-full p-4"
+          className="h-[calc(100vh)] bg-red-default w-full p-4 z-30"
         >
-            <List className="p-0">
-              <Links label={'Home'}/>
-              <Links label={'Galeria'}/>
-              <Links label={'Sobre Nós'}/>
-              <Links label={'Contato'}/>
+            <List className="p-0 ">
+              <Links onClick={handleClick} to={''} label={'Home'}/>
+              <Links onClick={handleClick} to={'portifolio'} label={'Portifólio'}/>
+              <Links onClick={handleClick} to={'sobre'} label={'Sobre Nós'}/>
+              <Links onClick={handleClick} to={'contato'} label={'Contato'}/>
               <div className="flex"> 
                 <img src={Logo} alt="Logo Bocarra Circus" className="z-30 w-full"/>
               </div>

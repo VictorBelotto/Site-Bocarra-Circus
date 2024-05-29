@@ -1,12 +1,17 @@
 import React from 'react'
-import Logo from '../../images/bocarra_visual/logoBranca.svg'
+import LogoBranco from '../../images/bocarra_visual/logoBranca.svg'
+import LogoPreto from '../../images/bocarra_visual/L1Preto.svg'
 import Nav from '../Nav/Nav'
 import MenuSideBar from '../MenuSideBar/MenuSideBar'
+import { useLocation } from 'react-router-dom'
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const [scrollPos, setScrollPos] = React.useState(0);
   const [classe, setClasse] = React.useState('')
+  const [position, setPosition] = React.useState('fixed')
+  const [logo, setLogo] = React.useState(LogoBranco)
+  let local = useLocation()
 
   React.useEffect(() => {
     let prevScrollPos = window.pageYOffset;
@@ -14,7 +19,7 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       setScrollPos(currentScrollPos);
-      if(currentScrollPos < 100){
+      if(currentScrollPos < 70){
         setClasse('')
       }
       else if(currentScrollPos > prevScrollPos) {
@@ -35,6 +40,16 @@ const Header = () => {
   }, [scrollPos]);
 
 
+  React.useEffect(()=>{
+    if(location.pathname !== '/'){
+      setPosition('')
+      setLogo(LogoPreto)
+    }else if(location.pathname === '/'){
+      setPosition('fixed')
+      setLogo(LogoBranco)
+    }
+  },[location.pathname])
+
   React.useEffect(() => {
      const handleResize = () => {
       const newWindowWidth = window.innerWidth;
@@ -47,13 +62,14 @@ const Header = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+ 
 
   return (
-    <header className={`flex w-full justify-center fixed z-30 ${classe}`}>
+    <header className={`flex w-full justify-center ${position} z-30 ${classe}`}>
       <div className='flex w-full max-w-[1920] py-2 px-4 justify-between items-center'>
-        <img className='w-72' src={Logo} alt="Logo Bocarra Circus" />
+        <img className='w-72' src={logo} alt="Logo Bocarra Circus" />
 
-    {windowWidth < 500? <MenuSideBar/> : <Nav/>}
+    {windowWidth < 500? <MenuSideBar path={location.pathname}/> : <Nav/>}
 
       </div>
     </header>

@@ -11,9 +11,9 @@ const Home = () => {
       <CarrosselPrincipal/>
 
       <section className='flex flex-col justify-center items-center w-[95%] max-w-7xl '>
-        <hr class="my-8 border border-red-default w-1/4 self-start"/>
+        <hr className="my-8 border border-red-default w-1/4 self-start"/>
         <span className='titlesFont text-lg text-center font-medium'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</span>
-        <hr class="my-8 border border-red-default w-1/4 self-end"/>
+        <hr className="my-8 border border-red-default w-1/4 self-end"/>
       </section>
 
       <MiniGaleria/>

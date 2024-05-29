@@ -14,9 +14,9 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
-const Links = ({label}) => {
+const Links = ({label, to, onClick}) => {
   return (
-    <Link to={'/'}>
+    <Link to={`/${to}`} onClick={onClick}>
       <ListItem  className="text-white">
         <ListItemPrefix>
           <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />

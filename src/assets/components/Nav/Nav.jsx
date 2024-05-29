@@ -14,7 +14,7 @@ const Nav = () => {
         </li>
 
         <li className=' hover:text-red-default'>
-          <Link to={'/sobreNos'} >Sobre Nós</Link>  
+          <Link to={'/sobre'} >Sobre Nós</Link>  
         </li>
 
         <li className='px-4 py-2 bg-red-default rounded-lg text-slate-100 hover:bg-red-hover'>
