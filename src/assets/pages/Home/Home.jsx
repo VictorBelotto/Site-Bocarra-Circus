@@ -1,8 +1,8 @@
 import React from 'react'
 import CarrosselPrincipal from './components/CarrosselPrincipal/CarrosselPrincipal.jsx'
-import MiniGaleria from './components/MiniGaleria/MiniGaleria.jsx'
-import CardsProcesso from './components/CardsProcesso/CardsProcesso.jsx'
 import SliderClientes from './components/SliderClientes/SliderClientes.jsx'
+import Origem from './components/Origem/Origem.jsx'
+import Processo from './components/Processo/Processo.jsx'
 
 
 const Home = () => {
@@ -16,11 +16,12 @@ const Home = () => {
         <hr className="my-8 border border-red-default w-1/4 self-end"/>
       </section>
 
-      <MiniGaleria/>
+      <Origem/>
 
       <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
-        <CardsProcesso/>
+        <Processo/>
       </div>
+
 
       <SliderClientes/>
 

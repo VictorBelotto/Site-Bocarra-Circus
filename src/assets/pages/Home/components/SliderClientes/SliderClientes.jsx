@@ -7,7 +7,7 @@ const SliderClientes = () => {
   return (
     <section className='flex flex-col items-center w-[95%] max-w-7xl gap-12 mb-8'>
       <hr className=" border border-red-default w-1/4 self-start"/>
-      <hr className=" border border-red-default w-1/4 self-end"/>
+      
       
       <Titulo subtitulo={'fámilia circense'} titulo={'nossos parceiros'} />
 
@@ -19,6 +19,7 @@ const SliderClientes = () => {
           link={'/'}
         />
       </div>
+      <hr className=" border border-red-default w-1/4 self-end"/>
     </section>
   )
 }
