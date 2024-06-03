@@ -3,6 +3,7 @@ import CarrosselPrincipal from './components/CarrosselPrincipal/CarrosselPrincip
 import SliderClientes from './components/SliderClientes/SliderClientes.jsx'
 import Origem from './components/Origem/Origem.jsx'
 import Processo from './components/Processo/Processo.jsx'
+import Servicos from './components/Servicos/Servicos.jsx'
 
 
 const Home = () => {
@@ -21,6 +22,8 @@ const Home = () => {
       <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
         <Processo/>
       </div>
+
+      <Servicos/>
 
 
       <SliderClientes/>
