@@ -6,7 +6,7 @@ import imgReal from '../../../../../../images/bocarra_visual/lonaReal.png'
 
 const CompareImage = () => {
   return (
-    <section className='flex  flex-col items-center'>
+    <section className='flex w-full flex-col items-center'>
       <div className="w-full lg:w-[700px]">
         <ReactCompareImage 
           leftImage={img3D}

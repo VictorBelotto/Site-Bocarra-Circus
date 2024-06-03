@@ -5,8 +5,8 @@ import Titulo from '../../../../components/Titulo/Titulo'
 
 const SliderClientes = () => {
   return (
-    <section className='flex flex-col items-center w-[95%] max-w-7xl gap-12 mb-8'>
-      <hr className=" border border-red-default w-1/4 self-start"/>
+    <section className='flex flex-col items-center w-[95%] max-w-7xl  mb-16 mt-8'>
+      <hr className=" border border-red-default w-1/4 self-start mb-16"/>
       
       
       <Titulo subtitulo={'fámilia circense'} titulo={'nossos parceiros'} />
@@ -19,7 +19,7 @@ const SliderClientes = () => {
           link={'/'}
         />
       </div>
-      <hr className=" border border-red-default w-1/4 self-end"/>
+      <hr className=" border border-red-default w-1/4 self-end mt-16"/>
     </section>
   )
 }
