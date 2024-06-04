@@ -17,7 +17,7 @@ const CarrosselPrincipal = () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
   return (
-    <section className='flex w-full h-screen'>
+    <section className='flex w-full h-svh'>
      
 
         <Swiper 

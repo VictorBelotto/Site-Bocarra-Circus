@@ -7,7 +7,7 @@ const Card = ({icon: Icon, title, text}) => {
       <Icon className='w-12 h-12' />
       
       <h3 className='text-xl font-semibold text-red-default lg:text-2xl'>{title}</h3>
-      <p className='text-center text-sm lg:text-base'>
+      <p className='text-center text-sm lg:text-base text-slate-800'>
         {text}
       </p>
     </div>
