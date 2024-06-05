@@ -3,9 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-const gallery = Object.values(import.meta.glob('/src/assets/images/logos_circos_parceiros/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }));
-const logos = gallery.map((img) => img);
+import logos from '../scripts/logos.js'
 
 const Slider = () => {
   const [larguraTela, setLarguraTela] = React.useState(5);

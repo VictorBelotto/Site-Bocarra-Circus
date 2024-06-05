@@ -8,7 +8,7 @@ const Origem = () => {
      <hr className=" border border-red-default w-1/4 self-start mb-16 mt-8"/>
       <Titulo subtitulo={'desde 1960'} titulo={'origem circense'}/>
 
-      <div className=' flex flex-col lg:flex-row w-[95%] max-w-7xl shadow-lg bg-white px-6 py-6 rounded-lg justify-between gap-8'>
+      <div className=' flex flex-col lg:flex-row w-full max-w-7xl shadow-lg bg-white p-3 lg:p-6 rounded-lg justify-between gap-8'>
         <div className='flex flex-col gap-4'>
           <img src={CircoChrys} alt='Imagem Circo Chrysostenes' className='max-w-[750px] rounded-lg'/>
           <h3 className='font-semibold text-slate-900 text-xl'>Circo Chrysostenes 1984</h3>
