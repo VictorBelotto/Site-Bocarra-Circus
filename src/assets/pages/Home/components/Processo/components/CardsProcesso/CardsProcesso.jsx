@@ -8,7 +8,7 @@ import Card from '../Card/Card'
 const CardsProcesso = () => {
   return (
     
-      <div className='flex w-full h-fit flex-col gap-8 md:flex-row lg:w-fit lg:flex-col bg-white px-6 py-4 rounded-lg shadow-lg'>
+      <div className='flex w-full h-fit flex-col gap-8 md:flex-row lg:w-fit lg:flex-col bg-white px-6 py-4 rounded-lg shadow-xl'>
 
         <div className='flex w-full justify-between gap-16'>
           <Card

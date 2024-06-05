@@ -13,7 +13,7 @@ const SliderClientes = () => {
 
       <Slider/>
 
-      <div className='flex flex-col gap-3 self-center'>
+      <div className='flex flex-col gap-3 self-center mt-8'>
         <ButtonLink
           label={'Entre em contato'}
           link={'/'}

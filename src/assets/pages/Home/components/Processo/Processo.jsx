@@ -2,6 +2,7 @@ import React from 'react'
 import CompareImage from './components/CompareImage/CompareImage';
 import Titulo from '../../../../components/Titulo/Titulo';
 import CardsProcesso from './components/CardsProcesso/CardsProcesso';
+import ButtonLink from '../../../../components/ButtonLink/ButtonLink';
 
 
 
@@ -15,7 +16,14 @@ const Processo = () => {
         <CardsProcesso/>
         <CompareImage/>
       </div>
-      <hr className="border border-red-default w-1/4 self-end mt-16"/>
+
+      <div className='mt-16 flex'>
+        <ButtonLink
+          label={'fale conosco'}
+          link={'/'}
+        />
+      </div>
+      <hr className="border border-red-default w-1/4 self-end mt-16 mb-8"/>
     </section>
   )
 }
