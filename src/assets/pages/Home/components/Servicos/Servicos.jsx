@@ -1,43 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import circo from '../../../../images/imagens_servicos/circo.jpg';
 import aranha from '../../../../images/imagens_servicos/aranha.jpg';
 import exclusiva from '../../../../images/imagens_servicos/exclusiva.jpg';
 import galpao from '../../../../images/imagens_servicos/galpao.jpg';
 import piramide from '../../../../images/imagens_servicos/piramide.jpg';
-import ContainerMenor from './components/ContainerMenor/ContainerMenor';
+import CardImageDesktop from './components/CardImageDesktop/CardImageDesktop';
 import Titulo from '../../../../components/Titulo/Titulo';
 
 const Servicos = () => {
-
   return (
-
-    <div className='flex flex-col justify-center items-center '>
-      
+    <div className='flex flex-col justify-center items-center'>
       <div className='w-[95%] max-w-7xl '>
-        <Titulo subtitulo={'nossos trem'} titulo={'serviços'}/>
+        <hr className=" border border-red-default w-1/4 self-start mb-16"/>
+        <Titulo subtitulo={'nossos trem'} titulo={'serviços'} />
       </div>
-      <div className='w-full max-w-[1920px] h-full max-h-[310px]  flex bg-black overflow-hidden'>
-          
-          <ContainerMenor img={galpao} label={'Galpão'}/>
-          <ContainerMenor img={piramide} label={'Pirâmide'}/>
-        
 
-        <div className='flex w-full max-w-[36%] overflow-hidden relative justify-center items-center '>
-          <img
-            className='w-full cursor-pointer imgBlur h-[270px]'
-            src={circo}
-            alt='imagem {piramide}'
-          />
-          <p className={`absolute z-30 font-semibold text-3xl text-black paragrafo `}>Circo</p>
-        </div>
+      <div className='w-full max-w-[1920px] h-[270px] flex overflow-hidden'>
+        <CardImageDesktop img={galpao} label={'Galpão'} tamanho={'w-[16%]'} />
+        <CardImageDesktop img={piramide} label={'Pirâmide'} tamanho={'w-[16%]'} />
+        <CardImageDesktop img={circo} label={'Circo'} tamanho={'w-[36%]'} />
+        <CardImageDesktop img={exclusiva} label={'Exclusiva'} tamanho={'w-[16%]'} />
+        <CardImageDesktop img={aranha} label={'Aranha'} tamanho={'w-[16%]'} />
+      </div>
 
-        
-          <ContainerMenor img={exclusiva} label={'Exclusiva'} />
-          <ContainerMenor img={aranha} label={'Aranha'} />
-        
+      <div className='w-[95%] max-w-7xl flex justify-end'>
+        <hr className="mt-16 border border-red-default w-1/4 self-end"/>
       </div>
     </div>
-    
   );
 };
 

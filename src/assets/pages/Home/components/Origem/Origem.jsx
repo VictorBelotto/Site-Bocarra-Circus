@@ -3,13 +3,13 @@ import CircoChrys from '../../../../images/bocarra_visual/CircoChrysostenes.jpg'
 import Titulo from '../../../../components/Titulo/Titulo'
 const Origem = () => {
   return (
-    <section className=' flex flex-col w-[95%] max-w-7xl items-center'>
+    <section className=' flex flex-col w-[95%] max-w-7xl items-center mb-8'>
      <hr className=" border border-red-default w-1/4 self-start mb-16"/>
       <Titulo subtitulo={'desde 1960'} titulo={'origem circense'}/>
 
-      <div className=' flex flex-col lg:flex-row w-[95%] max-w-7xl shadow-lg  px-6 py-6 rounded-lg justify-between'>
+      <div className=' flex flex-col lg:flex-row w-[95%] max-w-7xl shadow-lg  px-6 py-6 rounded-lg justify-between gap-8'>
         <div className='flex flex-col gap-4'>
-          <img src={CircoChrys} alt='Imagem Circo Chrysostenes' className='w-[750px] rounded-lg'/>
+          <img src={CircoChrys} alt='Imagem Circo Chrysostenes' className='max-w-[750px] rounded-lg'/>
           <h3 className='font-semibold text-slate-900 text-xl'>Circo Chrysostenes 1984</h3>
         </div>
         <div className='flex flex-col mt-8 gap-4 lg:mt-0'>

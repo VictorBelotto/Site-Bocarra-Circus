@@ -18,15 +18,13 @@ const Home = () => {
       </section>
 
       <Origem/>
-      <Servicos/>
 
       <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
-        <Processo/>
+        <Servicos/>
       </div>
-
-     
-
-
+      
+      <Processo/>
+  
       <SliderClientes/>
 
     </main>
