@@ -24,13 +24,17 @@ const Home = () => {
         <Servicos/>
       </div>
 
-      <Processo/>     
+        
 
-      <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
+      <div className='flex flex-col w-full items-center justify-center'>
+        <Processo/>   
         <Processo2 />
       </div> 
       
-      <SliderClientes/>
+      <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
+        <SliderClientes/>
+      </div>
+      
 
     </main>
   )

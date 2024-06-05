@@ -6,8 +6,6 @@ import Titulo from '../../../../components/Titulo/Titulo'
 const Processo2 = () => {
   return (
     <section className=' flex flex-col w-[95%] max-w-7xl items-center mb-8'>
-    <hr className=" border border-red-default w-1/4 self-start mb-16 mt-8"/>
-     <Titulo subtitulo={'processo assim'} titulo={'titulo novo aqui'}/>
 
      <div className=' flex flex-col lg:flex-row w-full max-w-7xl shadow-lg bg-white p-3 lg:p-6 rounded-lg justify-between gap-8'>
        <div className='flex flex-col w-full max-w-[750px] gap-4'>

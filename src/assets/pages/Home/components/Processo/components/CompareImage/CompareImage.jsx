@@ -8,7 +8,7 @@ const CompareImage = () => {
   return (
     <section className='flex w-full flex-col items-center'>
       <h2 className='text-2xl font-semibold text-red-default mb-3'>Projeto 3D vs. Realidade</h2>
-      <div className="w-full max-w-[700px]">
+      <div className="w-full max-w-[560px] ">
         <ReactCompareImage 
           leftImage={img3D}
           rightImage={imgReal}
