@@ -4,6 +4,7 @@ import PageBase from './pages/PageBase/PageBase.jsx'
 import Home from './pages/Home/Home.jsx'
 import Portifolio from './pages/Portifolio/Portifolio.jsx'
 import Sobre from './pages/Sobre/Sobre.jsx'
+import Servicos from './pages/Home/components/Servicos/Servicos.jsx'
 
 
 
@@ -15,6 +16,7 @@ const AppRoutes = ()=> {
           <Route index element={<Home/>} />
           <Route path='/portifolio' element={<Portifolio/>} />
           <Route path='/sobre' element={<Sobre/>} />
+          <Route path='/servicos' element={<Servicos/>} />
         </Route>
       </Routes>
     </BrowserRouter>

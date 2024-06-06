@@ -12,7 +12,7 @@ const Processo = () => {
     <hr className="border border-red-default w-1/4 self-start mb-16 mt-8"/>
       <Titulo titulo={'nosso processo'} subtitulo={'ÚNICO'}/>
       
-      <div className='flex flex-col w-full gap-16 lg:flex-row lg:justify-between lg:max-h-[500px] overflow-hidden'>
+      <div className='flex flex-col w-full gap-16 lg:flex-row lg:justify-between lg:\max-h-[500px] overflow-hidden'>
         <CardsProcesso/>
         <CompareImage/>
       </div>
