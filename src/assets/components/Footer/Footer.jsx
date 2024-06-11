@@ -1,43 +1,66 @@
 import React from 'react'
-import {FaWhatsapp  } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import Logo from '../../images/bocarra_visual/rinoRetangulo.svg'
+import Logo from '../../images/bocarra_visual/Est1B.svg'
+import RedesSociais from './components/RedesSociais/RedesSociais'
+import Cards from './components/Cards/Cards'
 
 const Footer = () => {
   return (
     <footer className='flex flex-col w-full justify-center items-center bg-red-default text-slate-100'>
-       <section className='flex w-full justify-center bg-blue-default py-3'>
-        <div className='flex justify-between w-[95%] max-w-7xl items-center  bg-blue-default'>
-          <h3 className='titlesFont'>Conheça nossas redes sociais:</h3>
 
-          <div className='flex text-slate-100' >
-            <ul className='flex gap-7'>
-              <li className='p-1 hover:bg-pink-500'>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bocarracircus/">
-                  <FaInstagram  className='text-3xl'/>
-                </a>
-              </li>
-              <li className='p-1 hover:bg-cerceta-600'>
-                <a href="https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer"><FaWhatsapp className='text-3xl'/>
-                </a>
-              </li>
-              <li className='p-1 hover:bg-red-700'>
-                <a href="#">
-                  <SiGmail className='text-3xl'/>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+      <section className='flex justify-between p-8 w-[95%] max-w-7xl bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
+        <div className='flex flex-col' >
+            <div className='flex flex-col gap-4'>
+              <h2>Vamos Conversar!</h2>
+              <p>
+                Tem um projeto em mente? Ou está curioso sobre nossos serviços? 
+                <br/>
+                Entre em contato conosco e vamos explorar suas ideias juntos!
+              </p>
+              <hr className='w-12'/>
+              <p>
+                contato@bocarracircus.com
+                <br/>
+                (19) 99889-4430
+              </p>
+            </div>
+
+            <div className='flex gap-8 mt-16'>
+              <Cards 
+                titulo={'Serviços'} 
+                label={'Explore nossos serviços'} 
+                to={'/servicos'}
+              />
+              <Cards 
+                titulo={'Galeria'} 
+                label={'Veja nossos projetos'} 
+                to={'/projetos'}
+              />
+              <Cards 
+                titulo={'Sobre Nós'} 
+                label={'Conheça nossa história'} 
+                to={'/servicos'}
+              />
+              <Cards 
+                titulo={'Contato'} 
+                label={'Entre em contato conosco'} 
+                to={'/servicos'}
+              />
+
+            </div>
         </div>
-       </section>
-       <div className='flex'>
-          <img className='w-52 py-6' src={Logo} alt="Logo Bocarra Circus" />
-       </div>
 
-      <aside className='flex flex-col text-center textsFont pb-3'> 
-        <p className='titlesFont '>&copy; bocarra circus. </p>
-        <p className='titlesFont'>Todos os direitos reservados 2024.</p>
+        <div className='flex flex-col justify-between items-end'>
+          <RedesSociais/>
+          <img className='w-36' src={Logo} alt="Logo Bocarra Circus" />
+        </div>
+      </section>
+       
+      
+       
+
+      <aside className='flex text-center items-center justify-between textsFont pb-4 w-[95%] max-w-7xl mt-1'> 
+        <p className='titlesFont '>Bocarra Circus &copy; 2024</p>
         <a className='titlesFont text-xs' href="https://github.com/VictorBelotto" target="_blank" rel="noopener noreferrer">designed by <i className='underline'>Victor Belotto</i></a>
       </aside>
     
