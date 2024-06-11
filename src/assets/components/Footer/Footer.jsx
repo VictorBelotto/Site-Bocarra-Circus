@@ -9,23 +9,28 @@ const Footer = () => {
 
 
       <section className='flex justify-between p-8 w-[95%] max-w-7xl bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
-        <div className='flex flex-col' >
-            <div className='flex flex-col gap-4'>
-              <h2>Vamos Conversar!</h2>
-              <p>
-                Tem um projeto em mente? Ou está curioso sobre nossos serviços? 
-                <br/>
-                Entre em contato conosco e vamos explorar suas ideias juntos!
-              </p>
-              <hr className='w-12'/>
-              <p>
-                contato@bocarracircus.com
-                <br/>
-                (19) 99889-4430
-              </p>
+        <div className='flex flex-col w-full' >
+            <div className='flex flex-wrap w-full justify-between'>
+              <div className='flex flex-col gap-4'>
+                <h2>Vamos Conversar!</h2>
+                <p>
+                  Tem um projeto em mente? Ou está curioso sobre nossos serviços? 
+                  <br/>
+                  Entre em contato conosco e vamos explorar suas ideias juntos!
+                </p>
+                <hr className='w-12'/>
+                <p className='text-white-contraste'>
+                  contato@bocarracircus.com
+                  <br/>
+                  (19) 99889-4430
+                </p>
+              </div>
+
+              <RedesSociais/>
+
             </div>
 
-            <div className='flex gap-8 mt-16'>
+            <div className='flex flex-col gap-8 mt-8 lg:mt-16  md:flex-row md:flex-wrap flex-wrap w-full'>
               <Cards 
                 titulo={'Serviços'} 
                 label={'Explore nossos serviços'} 
@@ -46,14 +51,15 @@ const Footer = () => {
                 label={'Entre em contato conosco'} 
                 to={'/servicos'}
               />
-
+              <img 
+                className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:top-0 sm:mb-0 sm:static'
+                src={Logo} 
+                alt="Logo Bocarra Circus" 
+              />
             </div>
         </div>
 
-        <div className='flex flex-col justify-between items-end'>
-          <RedesSociais/>
-          <img className='w-36' src={Logo} alt="Logo Bocarra Circus" />
-        </div>
+       
       </section>
        
       
