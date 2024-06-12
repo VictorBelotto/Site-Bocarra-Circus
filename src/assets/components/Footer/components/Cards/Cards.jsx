@@ -13,7 +13,7 @@ const Cards = ({titulo, label, to}) => {
         <h3 className='mt-2' >{titulo}</h3>
           <p className='text-[#A6A6A6]'>{label}</p>
           
-          <img src={arrow} alt='Flecha' className='w-10 mt-auto transition-transform duration-300 ease-in-out transform group-hover:translate-x-2'/>
+          <img src={arrow} alt='Flecha' className='w-10 mt-auto transition-transform duration-300 ease-in-out transform group-hover:translate-x-4'/>
         </div>
       </Link>
     </div>

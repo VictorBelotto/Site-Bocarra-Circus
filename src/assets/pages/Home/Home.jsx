@@ -20,7 +20,7 @@ const Home = () => {
       
       <Origem/>  
 
-      <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
+      <div className='flex flex-col bg-white-fundo w-full items-center justify-center'>
         <Servicos/>
       </div>
 
@@ -31,7 +31,7 @@ const Home = () => {
         <Processo2 />
       </div> 
       
-      <div className='flex flex-col bg-slate-100 w-full items-center justify-center'>
+      <div className='flex flex-col bg-white-fundo w-full items-center justify-center'>
         <SliderClientes/>
       </div>
       

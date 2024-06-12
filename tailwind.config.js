@@ -15,10 +15,15 @@ module.exports = withMT({
         },
         blue: {
           default: '#00162B',
-          hover: '#100a20'
+          hover: '#100a20',
+          text: '#001A30'
         },
         white: {
-          contraste: '#ACACAC'
+          contraste: '#ACACAC',
+          fundo: '#f7f7f7',
+        },
+        gray: {
+          text: '#4C4C4C'
         },
         slate: colors.slate,
         emerald: colors.emerald,
