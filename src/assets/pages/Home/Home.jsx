@@ -14,7 +14,7 @@ const Home = () => {
 
       <section className='flex flex-col justify-center items-center w-[95%] max-w-7xl '>
         <hr className="mt-8 mb-16 border border-red-default w-1/4 self-start"/>
-        <span className='titlesFont text-lg text-center font-medium'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</span>
+        <h3 className='text-center'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</h3>
         <hr className="mb-8 mt-16 border border-red-default w-1/4 self-end"/>
       </section>
       

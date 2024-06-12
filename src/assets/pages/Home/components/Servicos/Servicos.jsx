@@ -13,7 +13,7 @@ const Servicos = () => {
   return (
     <div className='flex flex-col w-[95%] max-w-7xl justify-center items-center'>
       <div className='w-full'>
-        <hr className=" border border-red-default w-1/4 self-start mb-16 mt-8"/>
+        <hr className=" border border-red-default w-1/4 self-start mb-32 mt-12"/>
         <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'}/>
 
       </div>
@@ -55,7 +55,7 @@ const Servicos = () => {
           />
         </div>
 
-      <div className='w-[95%] max-w-7xl flex justify-end mt-16 mb-8'>
+      <div className='w-[95%] max-w-7xl flex justify-end mt-32 mb-12'>
         <hr className=" border border-red-default w-1/4 self-end"/>
       </div>
     </div>

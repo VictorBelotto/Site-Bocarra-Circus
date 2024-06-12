@@ -6,17 +6,17 @@ import imgReal from '../../../../../../images/bocarra_visual/lonaReal.png'
 
 const CompareImage = () => {
   return (
-    <section className='flex w-full flex-col items-center'>
-      <h2 className='text-2xl font-semibold text-red-default mb-3'>Projeto 3D vs. Realidade</h2>
-      <div className="w-full max-w-[560px] ">
+    <section className='flex flex-col items-center'>
+      <h3 className=' text-red-default mb-3 '>Projeto 3D vs. Realidade</h3>
+      <div className="w-full md:w-[590px] flex items-end ">
         <ReactCompareImage 
           leftImage={img3D}
           rightImage={imgReal}
         />
       </div>
-      <div className="swipe-instruction flex flex-col items-center mt-1">
+      <div className="swipe-instruction flex flex-col items-center mt-">
         <TbHandFinger className="hand-icon text-slate-500"/>
-        <p className='font-medium text-red-default text-lg'>Deslize para ver</p>
+        <p className=' text-red-default'>Deslize</p>
       </div>
     </section>
   )
