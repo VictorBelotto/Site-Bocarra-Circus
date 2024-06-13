@@ -12,26 +12,25 @@ const Home = () => {
     <main className='flex flex-col w-full items-center'>
       <CarrosselPrincipal/>
 
-      <section className='flex flex-col justify-center items-center w-[95%] max-w-7xl '>
-        <hr className="mt-8 mb-16 border border-red-default w-1/4 self-start"/>
+      <section className='flex flex-col justify-center items-center w-[95%] max-w-7xl grande:max-w-[1380px]'>
+        <hr className=" border border-red-default w-1/4 self-start  mt-12 mb-12"/>
         <h3 className='text-center'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</h3>
-        <hr className="mb-8 mt-16 border border-red-default w-1/4 self-end"/>
+        <hr className=" border border-red-default w-1/4 self-end  mt-12 mb-14"/>
       </section>
       
       <Origem/>  
 
-      <div className='flex flex-col bg-white-fundo w-full items-center justify-center'>
+      <div className='flex flex-col w-full items-center justify-center bg-white-fundo'>
         <Servicos/>
       </div>
 
-        
-
-      <div className='flex flex-col w-full items-center justify-center'>
-        <Processo/>   
-        <Processo2 />
+      <Processo/> 
+      
+      <div className='flex flex-col w-full items-center justify-center bg-white-fundo'>
+        <Processo2/>
       </div> 
       
-      <div className='flex flex-col bg-white-fundo w-full items-center justify-center'>
+      <div className='flex flex-col  w-full items-center justify-center '>
         <SliderClientes/>
       </div>
       

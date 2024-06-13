@@ -1,10 +1,25 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const Titulo = ({titulo, subtitulo}) => {
+const Titulo = ({titulo, subtitulo, variant}) => {
+  const variants ={
+    'red':{
+      title: 'text-[#d03438]',
+      sub: 'text-[#696969]'
+    },
+    'blue':{
+      title: 'text-[#ffffff]',
+      sub: 'text-[#d03438]'
+    }
+  }
+
+  const titleClass = variants[variant].title
+  const subClass = variants[variant].sub
+
   return (
     <div className='w-full mb-8'>
-      <h1 className='text-red-default mb-12'>{titulo}</h1>
-      <h2 className='text-blue-text ml-4'>{subtitulo}</h2>
+      <h2 className={classNames('text-base font-bold uppercase', subClass)}>{subtitulo}</h2>
+      <h1 className={classNames(titleClass)}>{titulo}</h1>
     </div>
   )
 }

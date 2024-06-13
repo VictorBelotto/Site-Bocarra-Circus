@@ -23,7 +23,7 @@ module.exports = withMT({
         },
         white: {
           contraste: '#ACACAC',
-          fundo: '#f7f7f7',
+          fundo: '#00162B',
         },
         gray: {
           text: '#4C4C4C'
