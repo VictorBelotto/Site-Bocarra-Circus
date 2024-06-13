@@ -7,7 +7,7 @@ import Card from '../Card/Card';
 
 const CardsProcesso = () => {
   return (
-    <div className='flex flex-wrap w-fit h-fit '>
+    <div className='flex flex-wrap w-fit h-fit'>
       <div className="w-1/2  p-2 flex md:justify-center lg:justify-start">
         <Card
           title={'Requisitos'}

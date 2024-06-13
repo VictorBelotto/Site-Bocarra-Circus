@@ -5,10 +5,10 @@ import arrowRed from '../../../../../../images/icones/arrowRed.svg'
 
 const CardImageDesktop = ({ img, title, description, ordem }) => {
   return (
-    <div className={`flex flex-col h-[500px] sm:h-[500px] justify-center w-[50%] lg:w-[20%]  cursor-pointer  group mb-4 ${ordem} `} >
-      <div className='w-full aspect-[4/4] overflow-hidden'>
+    <div className={`flex flex-col h-[500px] sm:h-[570px] justify-center w-[50%] lg:w-[20%]  cursor-pointer  group ${ordem} `} >
+      <div className='w-full aspect-[5/4] overflow-hidden'>
         <img
-          className='w-full h-full object-cover transform transition duration-300 group-hover:scale-110'
+          className='w-full h-full  transform transition duration-300 group-hover:scale-110'
           src={img}
           alt={`Imagem ${title}`}
         />

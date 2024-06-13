@@ -5,11 +5,11 @@ import Titulo from '../../../../components/Titulo/Titulo'
 
 const Processo2 = () => {
   return (
-    <section className=' flex flex-col w-[95%] max-w-7xl items-center mt-16 '>
+    <section className=' flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] items-center mt-16 '>
 
-     <div className=' flex flex-col lg:flex-row w-full max-w-7xl  rounded-lg justify-between gap-8'>
+     <div className=' flex flex-col lg:flex-row w-full rounded-lg justify-between gap-8'>
        <div className='flex flex-col w-full max-w-[750px] gap-4'>
-         <img src={circo} alt='Imagem Circo Chrysostenes' className='w-full md:max-h-[400px] object-cover aspect-[16/9]'/>
+         <img src={circo} alt='Imagem Circo Chrysostenes' className='w-full md:max-h-[400px] object-cover'/>
          <p className='text-red-default text-sm italic justify-self-end ml-auto'>mudar aqui para video</p>
        </div>
        <div className='flex flex-col px-4 mt-8 gap-4 lg:mt-0'>

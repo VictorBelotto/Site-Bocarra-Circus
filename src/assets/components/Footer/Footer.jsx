@@ -11,7 +11,7 @@ const Footer = () => {
       <section className='flex justify-between p-8 w-[95%] max-w-7xl bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
         <div className='flex flex-col w-full' >
           <div className='flex flex-wrap w-full justify-between'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-8'>
               <h2>Vamos Conversar!</h2>
               <p>
                 Tem um projeto em mente? Ou está curioso sobre nossos serviços?
@@ -30,7 +30,7 @@ const Footer = () => {
 
           </div>
 
-          <div className='flex flex-col gap-8 mt-8 lg:mt-16  md:flex-row md:flex-wrap flex-wrap w-full'>
+          <div className='flex flex-col gap-8 mt-16 lg:mt-0 md:flex-row md:flex-wrap flex-wrap w-full md:items-end'>
             <Cards
               titulo={'Serviços'}
               label={'Explore nossos serviços'}
@@ -52,7 +52,7 @@ const Footer = () => {
               to={'/servicos'}
             />
             <img
-              className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:top-0 sm:mb-0 sm:static'
+              className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0 sm:static'
               src={Logo}
               alt="Logo Bocarra Circus"
             />

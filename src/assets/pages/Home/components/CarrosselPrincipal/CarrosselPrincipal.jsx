@@ -21,7 +21,7 @@ const CarrosselPrincipal = () => {
      
 
         <Swiper 
-          className='swiperHome'
+          className='swiperHome hover:cursor-grab grap'
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
@@ -31,8 +31,7 @@ const CarrosselPrincipal = () => {
           pagination={{
             clickable: true,
           }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination]}
           onAutoplayTimeLeft={onAutoplayTimeLeft}
           loop={true}
         >

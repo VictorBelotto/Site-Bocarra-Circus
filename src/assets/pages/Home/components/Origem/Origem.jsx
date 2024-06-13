@@ -4,11 +4,11 @@ import Titulo from '../../../../components/Titulo/Titulo'
 import ButtonLink from '../../../../components/ButtonLink/ButtonLink'
 const Origem = () => {
   return (
-    <section className=' flex flex-col w-[95%] max-w-7xl items-center mb-12'>
+    <section className=' flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] items-center mb-12'>
      <hr className=" border border-red-default w-1/4 self-start mb-32 mt-12"/>
       <Titulo titulo={'Origem Circense'}  subtitulo={'Desde 1960'} />
 
-      <div className=' flex flex-col lg:flex-row w-full max-w-7xl   rounded-lg justify-between gap-12'>
+      <div className=' flex flex-col lg:flex-row w-full  justify-between gap-12'>
         <div className='flex flex-col gap-4'>
           <img src={CircoChrys} alt='Imagem Circo Chrysostenes' className='w-full  lg:max-w-[750px] max-h-[400px]'/>
           <p className='italic text-sm text-red-default justify-self-end ml-auto'>Circo Chrysostenes 1984</p>

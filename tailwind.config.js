@@ -8,6 +8,9 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      screens: {
+        'grande': '1420px'
+      },
       colors: {
         red: {
           default: '#d03438',
