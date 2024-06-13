@@ -6,13 +6,16 @@ import galpao from '../../../../images/imagens_servicos/galpao.jpg';
 import piramide from '../../../../images/imagens_servicos/piramide.jpg';
 import CardImageDesktop from './components/CardImageDesktop/CardImageDesktop';
 import Titulo from '../../../../components/Titulo/Titulo';
+import { motion } from 'framer-motion';
+import Separador from '../../../../components/Separador/Separador';
 
 
 const Servicos = () => {
+  const [inView, setInView] = React.useState(false)
 
   return (
-    <div className='flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] justify-center items-center py-16'>
-      <hr className=" border border-red-default w-1/4 self-start mb-16"/>
+    <motion.div className='flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] justify-center items-center py-16' >
+      <Separador/>
       <div className='w-full'>
         <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'} variant={'blue'}/>
       </div>
@@ -54,7 +57,7 @@ const Servicos = () => {
           />
         </div>
 
-    </div>
+    </motion.div>
   );
 };
 

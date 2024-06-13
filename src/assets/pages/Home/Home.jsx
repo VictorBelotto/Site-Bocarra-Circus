@@ -20,13 +20,13 @@ const Home = () => {
       
       <Origem/>  
 
-      <div className='flex flex-col w-full items-center justify-center bg-white-fundo'>
+      <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
         <Servicos/>
       </div>
 
       <Processo/> 
       
-      <div className='flex flex-col w-full items-center justify-center bg-white-fundo'>
+      <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
         <Processo2/>
       </div> 
       
