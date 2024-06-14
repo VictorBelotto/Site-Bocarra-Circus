@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import CarrosselPrincipal from './components/CarrosselPrincipal/CarrosselPrincipal';
 import Loader from '../../components/Loader/Loader';
 
-// Lazy loading dos componentes
 const SliderClientes = React.lazy(() => import('./components/SliderClientes/SliderClientes'));
 const Origem = React.lazy(() => import('./components/Origem/Origem'));
 const Processo = React.lazy(() => import('./components/Processo/Processo'));
@@ -20,7 +19,6 @@ const Home = () => {
         <hr className="border border-red-default w-1/4 self-end mt-12 mb-14" />
       </section>
 
-      {/* Componentes carregados de forma assíncrona */}
       <Suspense fallback={<Loader />}>
         <Origem />
       </Suspense>

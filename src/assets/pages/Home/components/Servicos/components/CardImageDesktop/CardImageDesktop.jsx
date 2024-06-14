@@ -1,11 +1,11 @@
 import React from 'react';
-import arrow from '../../../../../../images/icones/arrow.svg'
 import arrowRed from '../../../../../../images/icones/arrowRed.svg'
+import { motion } from 'framer-motion';
 
 
-const CardImageDesktop = ({ img, title, description, ordem }) => {
+const CardImageDesktop = ({ img, title, description, ordem, variant }) => {
   return (
-    <div className={`flex flex-col sm:max-h-[650px] lg:h-fit justify-center w-[50%] lg:w-[20%]  cursor-pointer  group ${ordem} `} >
+    <div className={`flex flex-col w-full h-full justify-center cursor-pointer  group ${ordem} `} >
       <div className='w-full aspect-[4/3] overflow-hidden'>
         <img
           className='w-full h-full transform transition duration-300 group-hover:scale-110'

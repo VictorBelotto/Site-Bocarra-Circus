@@ -21,7 +21,7 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
   
 
   return (
-    <motion.div className='flex flex-col w-full'
+    <motion.div className='flex flex-col w-full mb-12'
       whileInView={()=> setInView(true)} 
     >
    
@@ -29,7 +29,7 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
         className={classNames('text-base font-bold uppercase', subClass)}
         initial={{ x: '-100vw' }}   
         animate={{ x: inView ? 0 : false }}    
-        transition={{ duration: 1.3 }} 
+        transition={{ duration: 0.9 }} 
         viewport={{ once: true }} 
       >
         {subtitulo}
