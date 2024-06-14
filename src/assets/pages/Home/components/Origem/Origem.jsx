@@ -9,7 +9,7 @@ const Origem = () => {
 
       <div className=' flex flex-col lg:flex-row w-full  justify-between gap-12'>
         <div className='flex flex-col gap-4'>
-          <img src={CircoChrys} alt='Imagem Circo Chrysostenes' className='w-full  lg:max-w-[750px] max-h-[400px]'/>
+          <img src={CircoChrys} loading="lazy" alt='Imagem Circo Chrysostenes' className='w-full  lg:max-w-[750px] max-h-[400px]'/>
           <p className='italic text-base text-red-default justify-self-end ml-auto'>Circo Chrysostenes 1984</p>
         </div>
         <div className='flex flex-col mt-0 gap-4 lg:mt-0 px-4'>

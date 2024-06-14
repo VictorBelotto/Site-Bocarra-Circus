@@ -2,15 +2,16 @@ import React from 'react'
 import ButtonLink from '../../../../components/ButtonLink/ButtonLink'
 import circo from '../../../../images/imagens_carrossel/2.jpg'
 import Titulo from '../../../../components/Titulo/Titulo'
+import Separador from '../../../../components/Separador/Separador'
 
 const Processo2 = () => {
   return (
     <section className=' flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] items-center  py-16 '>
-    <hr className=" border border-red-default w-1/4 self-start mb-16"/>
-    <Titulo titulo={'Queizy Process'} subtitulo={'Sliced'} variant={'blue'}/>
+      <Separador/>
+      <Titulo titulo={'Queizy Process'} subtitulo={'Sliced'} variant={'blue'}/>
      <div className=' flex flex-col lg:flex-row w-full rounded-lg justify-between gap-8'>
        <div className='flex flex-col w-full max-w-[750px] gap-4'>
-         <img src={circo} alt='Imagem Circo Chrysostenes' className='w-full md:max-h-[400px] object-cover'/>
+         <img src={circo} loading="lazy" alt='Imagem Circo Chrysostenes' className='w-full md:max-h-[400px] object-cover'/>
          <p className='text-red-default text-base italic justify-self-end ml-auto'>mudar aqui para video</p>
        </div>
        <div className='flex flex-col px-4 mt-8 gap-4 lg:mt-0'>

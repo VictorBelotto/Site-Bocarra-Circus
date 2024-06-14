@@ -16,9 +16,8 @@ const Servicos = () => {
   return (
     <motion.div className='flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] justify-center items-center py-16' >
       <Separador/>
-      <div className='w-full'>
-        <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'} variant={'blue'}/>
-      </div>
+      <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'} variant={'blue'}/>
+     
      
         <div className=' flex w-full flex-wrap overflow-hidden  justify-center'>
           <CardImageDesktop 

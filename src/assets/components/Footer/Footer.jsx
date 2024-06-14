@@ -53,6 +53,7 @@ const Footer = () => {
             />
             <img
               className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0 sm:static'
+              loading="lazy"
               src={Logo}
               alt="Logo Bocarra Circus"
             />

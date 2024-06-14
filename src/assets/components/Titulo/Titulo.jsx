@@ -21,19 +21,30 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
   
 
   return (
-    <motion.div className='flex w-full'
+    <motion.div className='flex flex-col w-full'
       whileInView={()=> setInView(true)} 
     >
-    <motion.div
-      className="w-full mb-8"
-      initial={{ x: '-100vw' }}   // Inicia fora da tela à esquerda
-      animate={{ x: inView ? 0 : false }}    // Move para a posição original
-      transition={{ duration: 1.1 }} // Duração da animação
-      viewport={{ once: true }}    // Animação ocorre apenas uma vez
-    >
-      <h2 className={classNames('text-base font-bold uppercase', subClass)}>{subtitulo}</h2>
-      <h1 className={classNames(titleClass)}>{titulo}</h1>
-    </motion.div>
+   
+      <motion.h2 
+        className={classNames('text-base font-bold uppercase', subClass)}
+        initial={{ x: '-100vw' }}   // Inicia fora da tela à esquerda
+        animate={{ x: inView ? 0 : false }}    // Move para a posição original
+        transition={{ duration: 1.3 }} // Duração da animação
+        viewport={{ once: true }} 
+      >
+        {subtitulo}
+      </motion.h2>
+
+      <motion.h1 
+        className={classNames(titleClass)}
+        initial={{ x: '-100vw' }}   // Inicia fora da tela à esquerda
+        animate={{ x: inView ? 0 : false }}    // Move para a posição original
+        transition={{ duration: 1.1 }} // Duração da animação
+        viewport={{ once: true }} 
+      >
+        {titulo}
+      </motion.h1>
+    
     </motion.div>
   );
 };

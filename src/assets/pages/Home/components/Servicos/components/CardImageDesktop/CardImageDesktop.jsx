@@ -9,6 +9,7 @@ const CardImageDesktop = ({ img, title, description, ordem }) => {
       <div className='w-full aspect-[4/3] overflow-hidden'>
         <img
           className='w-full h-full transform transition duration-300 group-hover:scale-110'
+          loading="lazy"
           src={img}
           alt={`Imagem ${title}`}
         />
