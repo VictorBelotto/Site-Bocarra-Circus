@@ -1,6 +1,5 @@
 import React from 'react'
-import ButtonLink from '../../../../components/ButtonLink/ButtonLink'
-import circo from '../../../../images/imagens_carrossel/2.jpg'
+import circo from '../../../../images/imagens_carrossel/2.webp'
 import Titulo from '../../../../components/Titulo/Titulo'
 import Separador from '../../../../components/Separador/Separador'
 

@@ -27,9 +27,9 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
    
       <motion.h2 
         className={classNames('text-base font-bold uppercase', subClass)}
-        initial={{ x: '-100vw' }}   // Inicia fora da tela à esquerda
-        animate={{ x: inView ? 0 : false }}    // Move para a posição original
-        transition={{ duration: 1.3 }} // Duração da animação
+        initial={{ x: '-100vw' }}   
+        animate={{ x: inView ? 0 : false }}    
+        transition={{ duration: 1.3 }} 
         viewport={{ once: true }} 
       >
         {subtitulo}

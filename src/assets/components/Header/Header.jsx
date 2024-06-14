@@ -4,6 +4,7 @@ import LogoPreto from '../../images/bocarra_visual/L1Preto.svg'
 import Nav from '../Nav/Nav'
 import MenuSideBar from '../MenuSideBar/MenuSideBar'
 import { useLocation } from 'react-router-dom'
+import Logo from '../Logo/Logo'
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
@@ -67,7 +68,8 @@ const Header = () => {
   return (
     <header className={`flex w-full justify-center ${position} z-30 ${classe}`}>
       <div className='flex w-full max-w-[1920] py-2 px-4 justify-between items-center'>
-        <img className='w-72' src={logo} alt="Logo Bocarra Circus" />
+        
+        <Logo/>
 
     {windowWidth < 500? <MenuSideBar path={location.pathname}/> : <Nav/>}
 
