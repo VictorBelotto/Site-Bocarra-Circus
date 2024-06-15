@@ -6,9 +6,7 @@ import Cards from './components/Cards/Cards'
 const Footer = () => {
   return (
     <footer className='flex flex-col w-full justify-center items-center bg-red-default text-slate-100'>
-
-
-      <section className='flex justify-between p-8 w-[95%] max-w-7xl bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
+      <section className='flex justify-between p-8 w-[95%] max-w-7xl grande:max-w-[1380px] bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
         <div className='flex flex-col w-full' >
           <div className='flex flex-wrap w-full justify-between'>
             <div className='flex flex-col gap-8'>

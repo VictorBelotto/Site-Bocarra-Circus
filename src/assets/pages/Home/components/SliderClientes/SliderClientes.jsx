@@ -26,8 +26,7 @@ const SliderClientes = () => {
     }
   }
   return (
-    <section className='flex flex-col items-center w-[95%] max-w-7xl  mb-32 mt-16 '>
-      
+    <section className='flex flex-col items-center w-[95%] max-w-7xl grande:max-w-[1380px] mb-32 mt-16 '>
       <Titulo  titulo={'Nossos Parceiros'} subtitulo={'Faça parte desta fámilia circense'} variant={'red'} />
 
       <motion.main 

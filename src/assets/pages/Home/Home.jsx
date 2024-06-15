@@ -13,7 +13,7 @@ const Home = () => {
     <main className='flex flex-col w-full items-center'>
       <CarrosselPrincipal />
 
-      <section className='flex flex-col justify-center items-center w-[95%] max-w-7xl grande:max-w-[1380px]'>
+      <section className='flex flex-col justify-center items-center w-[95%]  grande:max-w-[1380px]'>
         <hr className="border border-red-default w-1/4 self-start mt-12 mb-12" />
         <h3 className='text-center'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</h3>
         <hr className="border border-red-default w-1/4 self-end mt-12 mb-14" />
