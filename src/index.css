@@ -12,6 +12,9 @@
 *{
   font-family: "Lato", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 p{
   font-size: 18px;
 }

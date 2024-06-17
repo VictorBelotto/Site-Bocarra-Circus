@@ -5,12 +5,14 @@ import Home from './pages/Home/Home.jsx'
 import Portifolio from './pages/Portifolio/Portifolio.jsx'
 import Sobre from './pages/Sobre/Sobre.jsx'
 import Servicos from './pages/Servicos/Servicos.jsx'
+import ScrollToTop from './components/ScrollTop/ScrollTop.jsx'
 
 
 
 const AppRoutes = ()=> {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
         <Route path='/' element={<PageBase/>}>
           <Route index element={<Home/>} />

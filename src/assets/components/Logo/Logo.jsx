@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 const Logo = ({escrita}) => {
   return (
     <motion.div className='flex'>
-      <img className='w-auto h-16 md:h-20' src={LogoBocarra} alt="Logo Bocarra Circus" />
+      <img className='w-auto h-14 md:h-16' src={LogoBocarra} alt="Logo Bocarra Circus" />
       <div className='flex overflow-hidden'>
         <motion.img
-          className='w-52 md:w-56 ml-2'
+          className='w-44 md:w-48 ml-2'
           src={escrita}
           alt="Bocarra Circus"
           initial={{ x: '-100vw' }}

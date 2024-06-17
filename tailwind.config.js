@@ -19,6 +19,7 @@ module.exports = withMT({
         blue: {
           default: '#00162B',
           hover: '#100a20',
+          contraste: '#001A30',
           text: '#001A30'
         },
         white: {

@@ -10,7 +10,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import Links from "./Links";
-import Logo from '../../images/bocarra_visual/rino.svg'
+import Logo from '../../images/bocarra_visual/Est1B.svg'
 
 
 const MenuSideBar = ({path}) => {
@@ -33,18 +33,18 @@ const MenuSideBar = ({path}) => {
         )}
       </IconButton>
 
-      <Drawer   open={isDrawerOpen} onClose={closeDrawer} className="bg-red-default">
+      <Drawer   open={isDrawerOpen} onClose={closeDrawer}>
         <Card
           shadow={false}
-          className="h-[calc(100vh)] bg-red-default w-full p-4 z-30"
+          className=" bg-blue-default w-full p-4 z-30 rounded-none h-svh"
         >
-            <List className="p-0 ">
+            <List className="p-0 flex flex-col h-full">
               <Links onClick={handleClick} to={''} label={'Home'}/>
-              <Links onClick={handleClick} to={'portifolio'} label={'Portifólio'}/>
+              <Links onClick={handleClick} to={'servicos'} label={'Serviços'}/>
               <Links onClick={handleClick} to={'sobre'} label={'Sobre Nós'}/>
               <Links onClick={handleClick} to={'contato'} label={'Contato'}/>
-              <div className="flex"> 
-                <img src={Logo} alt="Logo Bocarra Circus" className="z-30 w-full"/>
+              <div className="flex mt-auto"> 
+                <img src={Logo} alt="Logo Bocarra Circus" className="z-30 w-32"/>
               </div>
             
             </List>

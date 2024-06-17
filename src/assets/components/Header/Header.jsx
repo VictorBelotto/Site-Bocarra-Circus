@@ -1,18 +1,18 @@
-import React from 'react'
-import escritaBranca from '../../images/bocarra_visual/escritaBranca.svg'
-import escritaPreta from '../../images/bocarra_visual/escritaPreta.svg'
-import Nav from '../Nav/Nav'
-import MenuSideBar from '../MenuSideBar/MenuSideBar'
-import { useLocation } from 'react-router-dom'
-import Logo from '../Logo/Logo'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import escritaBranca from '../../images/bocarra_visual/escritaBranca.svg';
+import Nav from '../Nav/Nav';
+import MenuSideBar from '../MenuSideBar/MenuSideBar';
+import Logo from '../Logo/Logo';
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const [scrollPos, setScrollPos] = React.useState(0);
+  const [hidden, setHidden] = React.useState(false);
+  const [position, setPosition] = React.useState('fixed');
   const [classe, setClasse] = React.useState('')
-  const [position, setPosition] = React.useState('fixed')
-  const [logo, setLogo] = React.useState(escritaBranca)
-  let local = useLocation()
+  const location = useLocation();
 
   React.useEffect(() => {
     let prevScrollPos = window.pageYOffset;
@@ -20,16 +20,19 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       setScrollPos(currentScrollPos);
-      if(currentScrollPos < 70){
-        setClasse('')
-      }
-      else if(currentScrollPos > prevScrollPos) {
-        setClasse('hidden')
-        
+      if (currentScrollPos < 200) {
+        setHidden(false);
+        if(location.pathname === '/'){
+          setClasse('')
+        }
+      } else if (currentScrollPos > prevScrollPos) {
+        setHidden(true);
       } else {
-        setClasse('bgBlur')
+        setHidden(false);
+        if(location.pathname === '/'){
+          setClasse('bg-blue-default')
+        }
       }
-
       prevScrollPos = currentScrollPos;
     };
 
@@ -40,22 +43,18 @@ const Header = () => {
     };
   }, [scrollPos]);
 
-
-  React.useEffect(()=>{
-    if(location.pathname !== '/'){
-      setPosition('')
-      setLogo(escritaBranca)
-    }else if(location.pathname === '/'){
-      setPosition('fixed')
-      setLogo(escritaBranca)
+  React.useEffect(() => {
+    if (location.pathname !== '/') {
+      setPosition('bg-blue-default');
+    } else if (location.pathname === '/') {
+      setPosition('fixed ');
     }
-  },[location.pathname])
+  }, [location.pathname]);
 
   React.useEffect(() => {
-     const handleResize = () => {
+    const handleResize = () => {
       const newWindowWidth = window.innerWidth;
       setWindowWidth(newWindowWidth);
-
     };
     window.addEventListener('resize', handleResize);
 
@@ -63,19 +62,28 @@ const Header = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
- 
+
+  // Definindo variantes de animação
+  const variants = {
+    hidden: { opacity: 0, y: '-100%', transition: { duration: 0.5 } },
+    visible: { opacity: 1, y: '0%', transition: { duration: 0.5 } }
+  };
 
   return (
-    <header className={`flex w-full justify-center ${position} z-30 ${classe} bg-[#001A30]`}>
-      <div className='flex w-full max-w-[1920] py-2 px-4 justify-between items-center'>
-        
-        <Logo escrita={logo}/>
+    <div className='fixed w-full z-30'>
+      <motion.header
+        className={`flex w-full justify-center ${position} ${classe}`}
+        initial="visible"
+        animate={hidden ? 'hidden' : 'visible'}
+        variants={variants}
+      >
+        <div className='flex  w-[95%] max-w-7xl grande:max-w-[1380px] py-2 justify-between items-center'>
+          <Logo escrita={escritaBranca} />
+          {windowWidth < 500 ? <MenuSideBar path={location.pathname} /> : <Nav />}
+        </div>
+      </motion.header>
+    </div>
+  );
+};
 
-    {windowWidth < 500? <MenuSideBar path={location.pathname}/> : <Nav/>}
-
-      </div>
-    </header>
-  )
-}
-
-export default Header
+export default Header;

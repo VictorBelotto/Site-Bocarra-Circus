@@ -10,7 +10,7 @@ const Nav = () => {
         </li>
         
         <li className=' hover:text-red-default'>
-          <Link to={'/portifolio'}>Portfólio</Link>
+          <Link to={'/servicos'}>Serviços</Link>
         </li>
 
         <li className=' hover:text-red-default'>
