@@ -38,7 +38,7 @@ const Card = ({ img, titulo, descricao, to, variant }) => {
               {descricao}
             </p>
             <Link
-              className='uppercase px-4 py-2 rounded-lg bg-red-default hover:bg-red-hover text-[white] font-medium w-fit mt-4 lg:mt-auto'
+              className='uppercase px-5 py-2 rounded-lg bg-red-default hover:bg-red-hover text-[white] font-medium w-fit mt-4 lg:mt-auto'
               to={to}>
               veja mais
             </Link>

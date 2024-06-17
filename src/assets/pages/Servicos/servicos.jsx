@@ -1,6 +1,11 @@
 import React from 'react'
 import Card from './components/Card/Card'
 import circo from '../../images/imagens_servicos/circoSonhos.webp'
+import piramide from '../../images/imagens_servicos/piramide.webp'
+import exclusiva from '../../images/imagens_servicos/exclusiva.webp'
+import aranha from '../../images/imagens_servicos/aranha2.webp'
+
+
 import Separador from '../../components/Separador/Separador'
 import mouseIcon from '../../images/bocarra_visual/mouseIcon.svg'
 
@@ -17,12 +22,12 @@ const Servicos = () => {
             <img className='w-4 ml-4' src={mouseIcon} alt='Icone Mouse' />
             <p className='text-white-contraste'>Continue navegando</p>
           </div>
-          
+
         </div>
       </div>
 
       <Card
-        titulo={'Design Personalizado'}
+        titulo={'Lonas para circo'}
         descricao={
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '
         }
@@ -30,17 +35,29 @@ const Servicos = () => {
         variant={false}
       />
       <Card
-        titulo={'Design Personalizado'}
+        titulo={'Tendas para eventos'}
         descricao={
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '
         }
-        img={circo}
+        img={piramide}
         variant={true}
       />
-
-
-
-
+      <Card
+        titulo={'Coberturas exclusivas'}
+        descricao={
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '
+        }
+        img={exclusiva}
+        variant={false}
+      />
+      <Card
+        titulo={'Tenda Aranha'}
+        descricao={
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '
+        }
+        img={aranha}
+        variant={true}
+      />
     </main>
   )
 }
