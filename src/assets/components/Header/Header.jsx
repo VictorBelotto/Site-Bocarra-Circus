@@ -44,7 +44,7 @@ const Header = () => {
   React.useEffect(()=>{
     if(location.pathname !== '/'){
       setPosition('')
-      setLogo(escritaPreta)
+      setLogo(escritaBranca)
     }else if(location.pathname === '/'){
       setPosition('fixed')
       setLogo(escritaBranca)
@@ -66,7 +66,7 @@ const Header = () => {
  
 
   return (
-    <header className={`flex w-full justify-center ${position} z-30 ${classe}`}>
+    <header className={`flex w-full justify-center ${position} z-30 ${classe} bg-[#001A30]`}>
       <div className='flex w-full max-w-[1920] py-2 px-4 justify-between items-center'>
         
         <Logo escrita={logo}/>

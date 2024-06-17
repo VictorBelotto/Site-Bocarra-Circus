@@ -28,6 +28,9 @@ module.exports = withMT({
         gray: {
           text: '#4C4C4C'
         },
+        black: {
+          text: '#050411'
+        },
         slate: colors.slate,
         emerald: colors.emerald,
         cerceta: colors.teal

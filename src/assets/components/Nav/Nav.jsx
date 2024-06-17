@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <nav className='titlesFont text-xl font-medium'>
-      <ul className='flex gap-7 items-center bgBlur rounded-lg pl-4 text-slate-100'>
+      <ul className='flex gap-7 items-center font-semibold rounded-lg pl-4 text-[white]'>
         <li className=' hover:text-red-default'>
           <Link to={'/'}>Home</Link>
         </li>

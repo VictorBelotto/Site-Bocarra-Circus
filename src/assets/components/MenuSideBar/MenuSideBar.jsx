@@ -27,9 +27,9 @@ const MenuSideBar = ({path}) => {
     <>
       <IconButton variant="text" size="lg" onClick={openDrawer}>
         {isDrawerOpen ? (
-          <XMarkIcon className={`h-10 w-10 stroke-2  ${path === '/'? "text-slate-50" : "text-black"}`} />
+          <XMarkIcon className={`h-10 w-10 stroke-2  ${path === '/'? "text-[white]" : "text-[white]"}`} />
         ) : (
-          <Bars3Icon className={`h-10 w-10 stroke-2 ${path === '/'? "text-slate-50" : "text-black"}`} />
+          <Bars3Icon className={`h-10 w-10 stroke-2 ${path === '/'? "text-[white]" : "text-[white]"}`} />
         )}
       </IconButton>
 
