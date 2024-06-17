@@ -1,9 +1,9 @@
 import React from 'react';
-import circoSonhos from '../../../../images/imagens_servicos/circoSonhos.jpg';
-import aranha from '../../../../images/imagens_servicos/aranha.jpg';
-import exclusiva from '../../../../images/imagens_servicos/exclusiva.jpg';
-import galpao from '../../../../images/imagens_servicos/galpao.jpg';
-import piramide from '../../../../images/imagens_servicos/piramide.jpg';
+import circoSonhos from '../../../../images/imagens_servicos/circoSonhos.webp';
+import aranha from '../../../../images/imagens_servicos/aranha.webp';
+import exclusiva from '../../../../images/imagens_servicos/exclusiva.webp';
+import galpao from '../../../../images/imagens_servicos/galpao.webp';
+import piramide from '../../../../images/imagens_servicos/piramide.webp';
 import CardImageDesktop from './components/CardImageDesktop/CardImageDesktop';
 import Titulo from '../../../../components/Titulo/Titulo';
 import { motion } from 'framer-motion';

@@ -1,6 +1,6 @@
 import React from 'react'
-import LogoBranco from '../../images/bocarra_visual/logoBranca.svg'
-import LogoPreto from '../../images/bocarra_visual/L1Preto.svg'
+import escritaBranca from '../../images/bocarra_visual/escritaBranca.svg'
+import escritaPreta from '../../images/bocarra_visual/escritaPreta.svg'
 import Nav from '../Nav/Nav'
 import MenuSideBar from '../MenuSideBar/MenuSideBar'
 import { useLocation } from 'react-router-dom'
@@ -11,7 +11,7 @@ const Header = () => {
   const [scrollPos, setScrollPos] = React.useState(0);
   const [classe, setClasse] = React.useState('')
   const [position, setPosition] = React.useState('fixed')
-  const [logo, setLogo] = React.useState(LogoBranco)
+  const [logo, setLogo] = React.useState(escritaBranca)
   let local = useLocation()
 
   React.useEffect(() => {
@@ -44,10 +44,10 @@ const Header = () => {
   React.useEffect(()=>{
     if(location.pathname !== '/'){
       setPosition('')
-      setLogo(LogoPreto)
+      setLogo(escritaPreta)
     }else if(location.pathname === '/'){
       setPosition('fixed')
-      setLogo(LogoBranco)
+      setLogo(escritaBranca)
     }
   },[location.pathname])
 
@@ -69,7 +69,7 @@ const Header = () => {
     <header className={`flex w-full justify-center ${position} z-30 ${classe}`}>
       <div className='flex w-full max-w-[1920] py-2 px-4 justify-between items-center'>
         
-        <Logo/>
+        <Logo escrita={logo}/>
 
     {windowWidth < 500? <MenuSideBar path={location.pathname}/> : <Nav/>}
 
