@@ -1,28 +1,29 @@
-import react from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import PageBase from './pages/PageBase/PageBase.jsx'
-import Home from './pages/Home/Home.jsx'
-import Portifolio from './pages/Portifolio/Portifolio.jsx'
-import Sobre from './pages/Sobre/Sobre.jsx'
-import ScrollToTop from './components/ScrollTop/ScrollTop.jsx'
-import Services from './pages/Servicos/Services.jsx'
+// src/AppRoutes.js
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PageBase from './pages/PageBase/PageBase.jsx';
+import Home from './pages/Home/Home.jsx';
+import Portifolio from './pages/Portifolio/Portifolio.jsx';
+import Sobre from './pages/Sobre/Sobre.jsx';
+import ScrollToTop from './components/ScrollTop/ScrollTop.jsx';
+import Services from './pages/Servicos/Services.jsx';
+import SectionDetail from './components/SectionDetail/SectionDetail.jsx';
 
-
-const AppRoutes = ()=> {
+const AppRoutes = () => {
   return (
     <BrowserRouter>
-    <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
-        <Route path='/' element={<PageBase/>}>
-          <Route index element={<Home/>} />
-          <Route path='/portifolio' element={<Portifolio/>} />
-          <Route path='/sobre' element={<Sobre/>} />
-          <Route path='/servicos' element={<Services/>} />
-
+        <Route path='/' element={<PageBase />}>
+          <Route index element={<Home />} />
+          <Route path='/portifolio' element={<Portifolio />} />
+          <Route path='/sobre' element={<Sobre />} />
+          <Route path='/servicos' element={<Services />} />
+          <Route path='/servicos/:id' element={<SectionDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default AppRoutes
+export default AppRoutes;
