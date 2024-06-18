@@ -10,7 +10,7 @@ import Separador from '../../components/Separador/Separador'
 import mouseIcon from '../../images/bocarra_visual/mouseIcon.svg'
 
 
-const Servicos = () => {
+const Services = () => {
   return (
     <main className='flex flex-col w-full items-center mb-32'>
       <div className='flex w-full bg-blue-default justify-center'>
@@ -62,4 +62,4 @@ const Servicos = () => {
   )
 }
 
-export default Servicos
+export default Services
