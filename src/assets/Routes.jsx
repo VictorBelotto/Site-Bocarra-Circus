@@ -18,7 +18,6 @@ const AppRoutes = ()=> {
           <Route index element={<Home/>} />
           <Route path='/portifolio' element={<Portifolio/>} />
           <Route path='/sobre' element={<Sobre/>} />
-          <Route path='/servicos' element={<Servicos/>} />
         </Route>
       </Routes>
     </BrowserRouter>
