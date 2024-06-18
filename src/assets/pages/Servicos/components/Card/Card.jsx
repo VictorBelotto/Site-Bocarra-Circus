@@ -20,9 +20,9 @@ const Card = ({ img, titulo, descricao, to, variant }) => {
   const style = variant ? styles.blue : styles.default
 
   return (
-    <main className={`flex w-full justify-center ${style.container} `}>
+    <main className={`flex w-full  justify-center ${style.container}`}>
       <section
-        className={`flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] justify-between py-16`}>
+        className={`flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] justify-between py-20`}>
 
         {variant && (<Separador />)}
 
