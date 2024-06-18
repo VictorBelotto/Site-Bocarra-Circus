@@ -5,6 +5,7 @@ import Home from './pages/Home/Home.jsx'
 import Portifolio from './pages/Portifolio/Portifolio.jsx'
 import Sobre from './pages/Sobre/Sobre.jsx'
 import ScrollToTop from './components/ScrollTop/ScrollTop.jsx'
+import Servicos from './pages/Servicos/Servicos.jsx' 
 
 
 
@@ -17,6 +18,8 @@ const AppRoutes = ()=> {
           <Route index element={<Home/>} />
           <Route path='/portifolio' element={<Portifolio/>} />
           <Route path='/sobre' element={<Sobre/>} />
+          <Route path='/servicos' element={<Servicos/>} />
+
         </Route>
       </Routes>
     </BrowserRouter>
