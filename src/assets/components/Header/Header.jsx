@@ -45,7 +45,7 @@ const Header = () => {
 
   React.useEffect(() => {
     if (location.pathname !== '/') {
-      setPosition('bg-blue-default');
+      setPosition('bg-blue-default fixed');
     } else if (location.pathname === '/') {
       setPosition('fixed ');
     }
@@ -70,7 +70,7 @@ const Header = () => {
   };
 
   return (
-    <div className='fixed w-full z-30'>
+    <div className={`w-full z-20 ${position}`}>
       <motion.header
         className={`flex w-full justify-center ${position} ${classe}`}
         initial="visible"
