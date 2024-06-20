@@ -63,7 +63,6 @@ const Header = () => {
     };
   }, []);
 
-  // Definindo variantes de animação
   const variants = {
     hidden: { opacity: 0, y: '-100%', transition: { duration: 0.5 } },
     visible: { opacity: 1, y: '0%', transition: { duration: 0.5 } }
@@ -77,7 +76,7 @@ const Header = () => {
         animate={hidden ? 'hidden' : 'visible'}
         variants={variants}
       >
-        <div className='flex  w-[95%] max-w-7xl grande:max-w-[1380px] py-2 justify-between items-center'>
+        <div className='flex  w-maxW max-w-hd grande:max-w-grande py-2 justify-between items-center'>
           <Logo escrita={escritaBranca} />
           {windowWidth < 500 ? <MenuSideBar path={location.pathname} /> : <Nav />}
         </div>

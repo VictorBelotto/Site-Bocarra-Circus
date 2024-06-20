@@ -1,15 +1,14 @@
-import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import arrowRed from '../../../../../../images/icones/arrowRed.svg'
-import { Link } from 'react-router-dom'; 
-
+import { Link } from 'react-router-dom';
 
 const CardImageDesktop = ({ img, title, description, ordem, to }) => {
   return (
     <Link to={to} className={`flex flex-col w-full h-full justify-center cursor-pointer  group ${ordem} `} >
       <div className='w-full aspect-[4/3] overflow-hidden'>
-        <img
+        <LazyLoadImage
+          wrapperClassName='w-full h-full transform transition duration-300 group-hover:scale-110'
           className='w-full h-full transform transition duration-300 group-hover:scale-110'
-          loading="lazy"
           src={img}
           alt={`Imagem ${title}`}
         />

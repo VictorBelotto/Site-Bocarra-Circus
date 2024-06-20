@@ -8,13 +8,11 @@ import CardImageDesktop from './components/CardImageDesktop/CardImageDesktop';
 import Titulo from '../../../../components/Titulo/Titulo';
 import { motion } from 'framer-motion';
 import Separador from '../../../../components/Separador/Separador';
-import { Scale } from 'lucide-react';
 
 const Servicos = () => {
   const [inView, setInView] = React.useState(false);
-
   const container = {
-    hidden: { opacity: 1},
+    hidden: { opacity: 1 },
     visible: {
       transition: {
         delayChildren: 1.1,
@@ -29,7 +27,7 @@ const Servicos = () => {
   };
 
   return (
-    <motion.div className="flex flex-col w-[95%] max-w-7xl grande:max-w-[1380px] justify-center items-center py-16">
+    <motion.div className="flex flex-col w-maxW max-w-hd grande:max-w-grande justify-center items-center py-16">
       <Separador />
       <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'} variant={'blue'} />
       <motion.div

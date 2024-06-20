@@ -26,7 +26,7 @@ const SliderClientes = () => {
     }
   }
   return (
-    <section className='flex flex-col items-center w-[95%] max-w-7xl grande:max-w-[1380px] mb-32 mt-16 '>
+    <section className='flex flex-col items-center w-maxW max-w-hd grande:max-w-grande mb-32 mt-16 '>
       <Titulo  titulo={'Nossos Parceiros'} subtitulo={'Faça parte desta fámilia circense'} variant={'red'} />
 
       <motion.main 
@@ -40,7 +40,7 @@ const SliderClientes = () => {
           className='flex gap-6 justify-between flex-wrap md:flex-nowrap'
         >
           
-          {logos.slice(0, 4).map((logo, index) =>(
+          {logos.slice(0, 4).map((logo) =>(
             
             <motion.img src={logo} loading="lazy" alt={logo} className='w-32 lg:w-44' key={logo} variants={item}/>
           ))}
@@ -48,7 +48,7 @@ const SliderClientes = () => {
         <motion.div 
           className='flex gap-6 justify-between flex-wrap md:flex-nowrap'
         >
-          {logos.slice(4, 8).map((logo, index) =>(
+          {logos.slice(4, 8).map((logo) =>(
             <motion.img src={logo} loading="lazy" alt={logo} className='w-32 lg:w-44' key={logo} variants={item}/>
           ))}
         </motion.div>
