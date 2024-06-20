@@ -63,7 +63,7 @@ const SectionDetail = () => {
 
 
 
-        <div className='flex w-full flex-row gap-4 mt-8'>
+        <div className='flex w-full flex-row gap-4 mt-8 flex-wrap'>
           {sectionsData.map((data, index) => {
             if (data.id !== section.id) {
               return (
