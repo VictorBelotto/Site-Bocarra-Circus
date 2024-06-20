@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import img1 from '../../../../images/imagens_carrossel/1.webp';
 import img2 from '../../../../images/imagens_carrossel/2.webp';
 import img3 from '../../../../images/imagens_carrossel/3.webp';
@@ -15,13 +15,13 @@ const CarrosselPrincipal = () => {
     // Configuração do carousel com autoplay
     const carousel = new Carousel(carouselRef.current, {
       Autoplay: {
-        timeout: 4000,
+        timeout: 5000,
         pauseOnHover: false
       },
       Dots: {
         classes: {
-           list: "flex gap-2 absolute w-full justify-center bottom-0 text-[white]",
-           isCurrent: "text-red-default",
+          list: "flex gap-2 absolute w-full justify-center bottom-0 text-[white]",
+          isCurrent: "text-red-default",
         }
       },
     }, {

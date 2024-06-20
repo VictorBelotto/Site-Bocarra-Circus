@@ -1,5 +1,4 @@
 // src/AppRoutes.js
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageBase from './pages/PageBase/PageBase.jsx';
 import Home from './pages/Home/Home.jsx';
@@ -20,6 +19,7 @@ const AppRoutes = () => {
           <Route path='/sobre' element={<Sobre />} />
           <Route path='/servicos' element={<Services />} />
           <Route path='/servicos/:id' element={<SectionDetail />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

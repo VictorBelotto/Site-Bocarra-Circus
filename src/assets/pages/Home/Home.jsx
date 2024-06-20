@@ -21,7 +21,6 @@ const Home = () => {
       <Suspense fallback={<Loader />}>
         <Origem />
       </Suspense>
-
       <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
         <Suspense fallback={<Loader />}>
           <Servicos />

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams  } from 'react-router-dom';
 import { sectionsData } from './sectionsData/sectionsData.js';
 import Separador from '../Separador/Separador.jsx';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
@@ -11,9 +11,12 @@ import Galerry from './components/gallery/Galerry.jsx';
 
 const SectionDetail = () => {
   const { id } = useParams();
+  
+  console.log(id)
   const section = sectionsData.find(section => section.id === id);
 
   useEffect(() => {
+    
     Fancybox.bind('[data-fancybox="gallery"]', {
       Thumbs: {
         type: "modern",
@@ -23,7 +26,7 @@ const SectionDetail = () => {
     return () => {
       Fancybox.destroy();
     };
-  }, []);
+  }, [id]);
 
   if (!section) {
     return <div>Section not found</div>;
