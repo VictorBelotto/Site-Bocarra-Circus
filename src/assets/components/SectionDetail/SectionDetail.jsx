@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { sectionsData } from './sectionsData/sectionsData.js';
 import Separador from '../Separador/Separador.jsx';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
@@ -7,6 +7,7 @@ import { Fancybox } from '@fancyapps/ui';
 import SliderOtherServices from './components/sliderOtherServices/sliderOtherServices.jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import Galerry from './components/gallery/Galerry.jsx';
 
 const SectionDetail = () => {
   const { id } = useParams();
@@ -31,11 +32,10 @@ const SectionDetail = () => {
   return (
     <div className='flex flex-col w-full justify-center items-center pb-32'>
       <div className='bg-blue-default flex flex-col w-full pt-32 pb-16 min-h-[calc(100svh)] justify-center items-center'>
-        <div className='w-[95%] max-w-7xl grande:max-w-[1380px]'>
+        <div className='w-maxW max-w-hd grande:max-w-grande'>
           <Separador />
           <h2 className='text-[white] mb-8 md:mb-16 lg:mb-8'>{section.titulo} </h2>
           <p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl ml-4 mb-8'>{section.descricao}</p>
-
           <a href={section.imagens[0]} data-fancybox="gallery" data-caption={section.titulo}>
             <LazyLoadImage
               src={section.imagens[0]}
@@ -47,23 +47,10 @@ const SectionDetail = () => {
           </a>
         </div>
       </div>
-      <div className='w-[95%] max-w-7xl grande:max-w-[1380px]'>
+      <div className='w-maxW max-w-hd grande:max-w-grande'>
         <h3 className='mt-16 mb-4'>Galeria</h3>
         <Separador />
-
-        <div className='grid grid-cols-2 gap-2 md:gap-4 md:grid-cols-4'>
-          {section.imagens.map((src, index) => (
-            <a href={src} data-fancybox="gallery" data-caption={`Imagem ${index + 1}`} key={index}>
-              <LazyLoadImage
-                wrapperClassName='h-[130px] md:h-[200px] w-full cursor-pointer object-cover'
-                className='h-[130px] md:h-[200px] w-full cursor-pointer object-cover'
-                src={src}
-                alt={`Imagem ${index + 1}`}
-                effect="opacity"
-              />
-            </a>
-          ))}
-        </div>
+        <Galerry section={section} />
         <div className='flex flex-col gap-4 mt-32'>
           <h3 className='text-red-default'>Veja outros serviços</h3>
           <Separador />

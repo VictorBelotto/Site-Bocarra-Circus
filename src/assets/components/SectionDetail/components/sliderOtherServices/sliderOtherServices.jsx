@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react'
 import { Carousel } from "@fancyapps/ui/dist/carousel/carousel.esm.js";
 import "@fancyapps/ui/dist/carousel/carousel.css";
 import { Autoplay } from '@fancyapps/ui/dist/carousel/carousel.autoplay.esm';
@@ -18,7 +17,6 @@ const SliderOtherServices = ({ sectionsData, section }) => {
       Navigation: true,
 
     }
-
     const carousel = new Carousel(carouselRef.current, options, {
       Autoplay
     })
@@ -35,11 +33,10 @@ const SliderOtherServices = ({ sectionsData, section }) => {
           return (
             <div key={index} className='= f-carousel__slide f-carousel2 overflow-hidden group'>
               <a href={`/servicos/${data.id}`} className='flex flex-col w-fit justify-center'>
-
                 <LazyLoadImage
                   src={data.imagens[0]}
                   alt={data.id}
-                  className='w-auto  aspect-[4/3] object-cover hover:scale-105 hover:brightness-50  transition duration-300' 
+                  className='w-auto  aspect-[4/3] object-cover hover:scale-105 hover:brightness-50  transition duration-300'
                   wrapperClassName='w-auto  aspect-[4/3] object-cover'
                 />
 

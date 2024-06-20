@@ -8,8 +8,14 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      spacing: {
+        'hd' : '1280px',
+        'grande' : '1380px',
+        'maxW' : '92%'
+      },
       screens: {
-        'grande': '1420px'
+        'hd' : '1280px',
+        'grande': '1600px'
       },
       colors: {
         red: {
