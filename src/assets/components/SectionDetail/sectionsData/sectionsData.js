@@ -12,7 +12,7 @@ export const sectionsData = [
     id: 'piramide',
     titulo: 'Tendas piramidais',
     descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    imagens: imagesGalpao
+    imagens: imagesPiramides
   },
   {
     id: 'exclusivas',
@@ -25,5 +25,11 @@ export const sectionsData = [
     titulo: 'Tenda Aranha',
     descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     imagens: imagesAranha
+  },
+  {
+    id: 'galpao',
+    titulo: 'Galpão',
+    descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    imagens: imagesGalpao
   },
 ];

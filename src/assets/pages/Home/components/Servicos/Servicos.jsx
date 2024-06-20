@@ -44,6 +44,7 @@ const Servicos = () => {
             img={circoSonhos}
             title={'Circo'}
             description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
+            to='/servicos/circo'
           />
         </motion.div>
         <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%]">
@@ -51,6 +52,7 @@ const Servicos = () => {
             img={piramide}
             title={'Pirâmide'}
             description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
+            to='/servicos/piramide'
           />
         </motion.div>
         <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%] ">
@@ -58,6 +60,7 @@ const Servicos = () => {
             img={exclusiva}
             title={'Exclusiva'}
             description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
+            to='/servicos/exclusivas'
           />
         </motion.div>
         <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%] ">
@@ -69,6 +72,7 @@ const Servicos = () => {
         </motion.div>
         <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%] ">
           <CardImageDesktop
+            to='/servicos/aranha'
             img={aranha}
             title={'Aranha'}
             description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}

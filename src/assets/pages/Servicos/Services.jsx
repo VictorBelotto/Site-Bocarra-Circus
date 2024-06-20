@@ -4,6 +4,7 @@ import circo from '../../images/imagens_servicos/circoSonhos.webp';
 import piramide from '../../images/imagens_servicos/piramide.webp';
 import exclusiva from '../../images/imagens_servicos/exclusiva.webp';
 import aranha from '../../images/imagens_servicos/aranha2.webp';
+import galpao from '../../images/imagens_servicos/galpao.webp';
 import Separador from '../../components/Separador/Separador';
 import mouseIcon from '../../images/bocarra_visual/mouseIcon.svg';
 
@@ -51,6 +52,13 @@ const Services = () => {
         descricao='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         img={aranha}
         variant={true}
+      />
+      <Card
+        to='/servicos/galpao'
+        titulo='Galpão'
+        descricao='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        img={galpao}
+        variant={false}
       />
     </main>
   );
