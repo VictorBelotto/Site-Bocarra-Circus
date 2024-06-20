@@ -22,6 +22,10 @@ p{
 h1,h2,h3,h4,h5, button, a{
   font-family: "Montserrat", sans-serif;
 }
+.f-carousel2 {
+  --f-carousel-spacing: 8px;
+  --f-carousel-slide-width: calc((100% - 16px) / 3);
+}
 
 
 h1{
@@ -69,6 +73,10 @@ h5{
 @media(max-width: 540px){
   p{
     font-size: 14px
+  }
+  .f-carousel2 {
+    --f-carousel-spacing: 8px;
+    --f-carousel-slide-width: calc((100% - 16px) / 2);
   }
 }
 
