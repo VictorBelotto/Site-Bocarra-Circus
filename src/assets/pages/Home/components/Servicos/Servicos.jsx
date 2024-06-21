@@ -15,19 +15,19 @@ const Servicos = () => {
     hidden: { opacity: 1 },
     visible: {
       transition: {
-        delayChildren: 1.1,
-        staggerChildren: 0.4,
+        delayChildren: 1.4,
+        staggerChildren: 0.5,
       },
     },
   };
 
   const item = {
-    hidden: { x: -15, opacity: 0 },
-    visible: { x: 0, opacity: 1 },
+    hidden: { y: 40, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
   };
 
   return (
-    <motion.div className="flex flex-col w-maxW max-w-hd grande:max-w-grande justify-center items-center py-16">
+    <motion.div className="flex flex-col w-maxW max-w-hd grande:max-w-grande justify-center items-center py-16 min-h-svh">
       <Separador />
       <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'} variant={'blue'} />
       <motion.div
@@ -66,14 +66,15 @@ const Servicos = () => {
             img={galpao}
             title={'Galpão'}
             description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
+            to='/servicos/galpao'
           />
         </motion.div>
         <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%] ">
           <CardImageDesktop
-            to='/servicos/aranha'
             img={aranha}
             title={'Aranha'}
             description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
+            to='/servicos/aranha'
           />
         </motion.div>
       </motion.div>

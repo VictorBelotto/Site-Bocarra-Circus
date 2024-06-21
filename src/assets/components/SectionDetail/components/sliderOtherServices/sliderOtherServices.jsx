@@ -32,7 +32,6 @@ const SliderOtherServices = ({sectionsData }) => {
   return (
     <div className='f-carousel overflow-hidden' ref={carouselRef}>
       {filteredSectionsData.map((data, index) => {
-      
           return (
             <div key={index} className='f-carousel__slide f-carousel2 overflow-hidden group'>
               <Link to={`/servicos/${data.id}`}  className='flex flex-col w-fit justify-center'>
