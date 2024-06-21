@@ -22,11 +22,16 @@ p{
 h1,h2,h3,h4,h5, button, a{
   font-family: "Montserrat", sans-serif;
 }
-.f-carousel2 {
+
+
+.f-carousel-slide-other {
   --f-carousel-spacing: 8px;
   --f-carousel-slide-width: calc((100% - 16px) / 3);
 }
-
+.f-carousel-btn-white {
+  --f-button-bg: #f0f0f0 !important;
+  --f-button-border-radius: 360px !important;
+}
 
 h1{
   font-size: 52px ;

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 
 const Galerry = ({ section }) => {
-  console.log('rend no')
   const container = {
     hidden: { opacity: 1 },
     visible: {
@@ -26,16 +25,20 @@ const Galerry = ({ section }) => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once : true, amount: 0.35 }}
+      viewport={{ once: true, amount: 0.35 }}
     >
       {section.imagens.map((src, index) => (
-        <motion.a href={src} data-fancybox="gallery" data-caption={`Imagem ${index + 1}`} key={index}
-         variants={item}
-          className="flex w-[calc((100%/2)-8px)] md:w-[calc((100%/3)-12px)] lg:w-[calc((100%/4)-12px)]"        
+        <motion.a
+          href={src}
+          data-fancybox="gallery"
+          data-caption={`Imagem ${index + 1}`}
+          key={index}
+          variants={item}
+          className="flex w-[calc((100%/2)-8px)] md:w-[calc((100%/3)-12px)] lg:w-[calc((100%/4)-12px)] overflow-hidden"
         >
 
           <img
-            className='h-[130px] md:h-[200px] w-full cursor-pointer object-cover'
+            className='h-[130px] md:h-[200px] w-full cursor-pointer object-cover hover:scale-105 hover:brightness-50  transition duration-300'
             src={src}
             alt={`Imagem ${index + 1}`}
           />
