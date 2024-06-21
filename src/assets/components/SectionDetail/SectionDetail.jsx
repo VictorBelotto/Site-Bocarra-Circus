@@ -11,11 +11,10 @@ import Gallery from './components/gallery/Gallery.jsx';
 
 const SectionDetail = () => {
   const { id } = useParams();
-  console.log(id)
+  
   const section = sectionsData.find(section => section.id === id);
 
   useEffect(() => {
-    
     Fancybox.bind('[data-fancybox="gallery"]', {
       Thumbs: {
         type: "modern",
@@ -28,11 +27,11 @@ const SectionDetail = () => {
   }, [id]);
 
   if (!section) {
-    return <div>Section not found</div>;
+    return <h1 className='py-32 text-center'>Section not found</h1>;
   }
 
   return (
-    <div className='flex flex-col w-full justify-center items-center pb-32'>
+    <div className='flex flex-col w-full justify-center items-center pb-32' key={section.id}>
       <div className='bg-blue-default flex flex-col w-full pt-32 pb-16 min-h-[calc(100svh)] justify-center items-center'>
         <div className='w-maxW max-w-hd grande:max-w-grande'>
           <Separador />

@@ -3,7 +3,6 @@ import logos from './scripts/logos.js'
 import { motion } from 'framer-motion'
 
 const SliderClientes = () => {
-  console.log('slider')
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -32,8 +31,7 @@ const SliderClientes = () => {
         variants={container}
         initial="hidden"
         whileInView='visible'
-        onViewportEnter={()=> console.log('entrei')}
-        onViewportLeave={()=> console.log('entrei')}
+        viewport={{ once: true, amount: 0.35 }}
       >
         <motion.div 
           className='flex gap-6 justify-between flex-wrap md:flex-nowrap'
