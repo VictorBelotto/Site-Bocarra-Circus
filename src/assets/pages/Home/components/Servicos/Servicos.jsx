@@ -1,85 +1,54 @@
-import React from 'react';
-import circoSonhos from '../../../../images/imagens_servicos/circoSonhos.webp';
-import aranha from '../../../../images/imagens_servicos/aranha.webp';
-import exclusiva from '../../../../images/imagens_servicos/exclusiva.webp';
-import galpao from '../../../../images/imagens_servicos/galpao.webp';
-import piramide from '../../../../images/imagens_servicos/piramide.webp';
+import { motion } from 'framer-motion';
 import CardImageDesktop from './components/CardImageDesktop/CardImageDesktop';
 import Titulo from '../../../../components/Titulo/Titulo';
-import { motion } from 'framer-motion';
 import Separador from '../../../../components/Separador/Separador';
+import { cardData } from './cardData';
 
 const Servicos = () => {
-  const [inView, setInView] = React.useState(false);
   const container = {
     hidden: { opacity: 1 },
     visible: {
       transition: {
-        delayChildren: 1.4,
-        staggerChildren: 0.5,
+        delayChildren: 1,
+        staggerChildren: 0.7,
       },
     },
   };
 
   const item = {
     hidden: { y: 40, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
-  };
+    visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
 
+  };
+  console.log('services')
   return (
-    <motion.div className="flex flex-col w-maxW max-w-hd grande:max-w-grande justify-center items-center py-16 min-h-svh">
+    <motion.div
+      className="flex flex-col w-maxW max-w-hd grande:max-w-grande justify-center items-center py-16 min-h-100px"
+      variants={container}
+      initial="hidden"
+      whileInView='visible'
+      viewport={{ once: true, amount: 0.2 }}
+      onViewportEnter={()=> console.log('entrei')}
+      onViewportLeave={()=> console.log('entrei')}
+    >
       <Separador />
       <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'} variant={'blue'} />
-      <motion.div
-        className="flex w-full flex-wrap overflow-hidden justify-center"
-        variants={container}
-        initial="hidden"
-        animate={inView ? 'visible' : false}
-        whileInView={() => setInView(true)}
+      <div
+        className="flex w-full flex-wrap overflow-hidden justify-center min-h-[100px]"
       >
-        <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-full lg:w-[20%] ">
-          <CardImageDesktop
-            img={circoSonhos}
-            title={'Circo'}
-            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
-            to='/servicos/circo'
-          />
-        </motion.div>
-        <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%]">
-          <CardImageDesktop
-            img={piramide}
-            title={'Pirâmide'}
-            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
-            to='/servicos/piramide'
-          />
-        </motion.div>
-        <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%] ">
-          <CardImageDesktop
-            img={exclusiva}
-            title={'Exclusiva'}
-            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
-            to='/servicos/exclusivas'
-          />
-        </motion.div>
-        <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%] ">
-          <CardImageDesktop
-            img={galpao}
-            title={'Galpão'}
-            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
-            to='/servicos/galpao'
-          />
-        </motion.div>
-        <motion.div variants={item} className="overflow-hidden sm:max-h-[650px] lg:h-fit w-[50%] lg:w-[20%] ">
-          <CardImageDesktop
-            img={aranha}
-            title={'Aranha'}
-            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut '}
-            to='/servicos/aranha'
-          />
-        </motion.div>
-      </motion.div>
+        {cardData.map((card, index) => (
+          <motion.div key={index} variants={item} className={`overflow-hidden sm:max-h-[650px] lg:h-fit ${card.width} lg:w-[20%] `}>
+            <CardImageDesktop
+              img={card.img}
+              title={card.title}
+              description={card.description}
+              to={card.to}
+            />
+          </motion.div>
+        ))}
+      </div>
     </motion.div>
   );
 };
 
-export default Servicos;
+export default Servicos

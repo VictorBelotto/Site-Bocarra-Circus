@@ -13,47 +13,45 @@ import Links from "./Links";
 import Logo from '../../images/bocarra_visual/Est1B.svg'
 
 
-const MenuSideBar = ({path}) => {
+const MenuSideBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
-  
   const openDrawer = () => setIsDrawerOpen(true);
   const closeDrawer = () => setIsDrawerOpen(false);
 
-  const handleClick = () =>{
+  const handleClick = () => {
     closeDrawer()
   }
- 
+
   return (
     <>
       <IconButton variant="text" size="lg" onClick={openDrawer}>
         {isDrawerOpen ? (
-          <XMarkIcon className={`h-10 w-10 stroke-2  ${path === '/'? "text-[white]" : "text-[white]"}`} />
+          <XMarkIcon className='h-10 w-10 stroke-2 text-[white]' />
         ) : (
-          <Bars3Icon className={`h-10 w-10 stroke-2 ${path === '/'? "text-[white]" : "text-[white]"}`} />
+          <Bars3Icon className='h-10 w-10 stroke-2 text-[white]' />
         )}
       </IconButton>
 
-      <Drawer   open={isDrawerOpen} onClose={closeDrawer}>
+      <Drawer open={isDrawerOpen} onClose={closeDrawer}>
         <Card
           shadow={false}
           className=" bg-blue-default w-full p-4 z-30 rounded-none h-svh"
         >
-            <List className="p-0 flex flex-col h-full">
-              <Links onClick={handleClick} to={''} label={'Home'}/>
-              <Links onClick={handleClick} to={'servicos'} label={'Serviços'}/>
-              <Links onClick={handleClick} to={'sobre'} label={'Sobre Nós'}/>
-              <Links onClick={handleClick} to={'contato'} label={'Contato'}/>
-              <div className="flex mt-auto"> 
-                <img src={Logo} alt="Logo Bocarra Circus" className="z-30 w-32"/>
-              </div>
-            
-            </List>
-           
+          <List className="p-0 flex flex-col h-full">
+            <h2>{(Math.random() * 10).toFixed()}</h2>
+
+            <Links onClick={handleClick} to={''} label={'Home'} />
+            <Links onClick={handleClick} to={'servicos'} label={'Serviços'} />
+            <Links onClick={handleClick} to={'sobre'} label={'Sobre Nós'} />
+            <Links onClick={handleClick} to={'contato'} label={'Contato'} />
+            <div className="flex mt-auto">
+              <img src={Logo} alt="Logo Bocarra Circus" className="z-30 w-32" />
+            </div>
+          </List>
         </Card>
-        
       </Drawer>
     </>
   );
 }
 
-export default MenuSideBar
+export default MenuSideBar 

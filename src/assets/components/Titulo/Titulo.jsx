@@ -1,10 +1,7 @@
-import React from 'react';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 
 const Titulo = ({ titulo, subtitulo, variant }) => {
-  const [inView, setInView] = React.useState(false)
-
   const variants = {
     red: {
       title: 'text-[#d03438]',
@@ -15,36 +12,43 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
       sub: 'text-[#d03438]',
     },
   };
-
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+  const item = {
+    hidden: { x: '-100vw', opacity: 0 },
+    visible: { x: 0, opacity: 1, transition : { duration : 0.9 }},
+  };
   const titleClass = variants[variant].title;
   const subClass = variants[variant].sub;
-  
 
   return (
-    <motion.div className='flex flex-col w-full mb-12'
-      whileInView={()=> setInView(true)} 
+    <motion.div
+      className='flex flex-col w-full mb-12'
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.35 }}
     >
-   
-      <motion.h2 
+      <motion.h2
         className={classNames('text-base font-bold uppercase', subClass)}
-        initial={{ x: '-100vw' }}   
-        animate={{ x: inView ? 0 : false }}    
-        transition={{ duration: 0.9 }} 
-        viewport={{ once: true }} 
+        variants={item}
       >
         {subtitulo}
       </motion.h2>
 
-      <motion.h1 
+      <motion.h1
         className={classNames(titleClass)}
-        initial={{ x: '-100vw' }}   // Inicia fora da tela à esquerda
-        animate={{ x: inView ? 0 : false }}    // Move para a posição original
-        transition={{ duration: 1.1 }} // Duração da animação
-        viewport={{ once: true }} 
+        variants={item}
       >
         {titulo}
       </motion.h1>
-    
     </motion.div>
   );
 };

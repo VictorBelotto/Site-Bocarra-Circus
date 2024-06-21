@@ -7,11 +7,10 @@ import { Fancybox } from '@fancyapps/ui';
 import SliderOtherServices from './components/sliderOtherServices/sliderOtherServices.jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import Galerry from './components/gallery/Galerry.jsx';
+import Gallery from './components/gallery/Gallery.jsx';
 
 const SectionDetail = () => {
   const { id } = useParams();
-  
   console.log(id)
   const section = sectionsData.find(section => section.id === id);
 
@@ -53,7 +52,7 @@ const SectionDetail = () => {
       <div className='w-maxW max-w-hd grande:max-w-grande'>
         <h3 className='mt-16 mb-4'>Galeria</h3>
         <Separador />
-        <Galerry section={section} />
+        <Gallery section={section} />
         <div className='flex flex-col gap-4 mt-32'>
           <h3 className='text-red-default'>Veja outros serviços</h3>
           <Separador />

@@ -78,7 +78,7 @@ const Header = () => {
       >
         <div className='flex  w-maxW max-w-hd grande:max-w-grande py-2 justify-between items-center'>
           <Logo escrita={escritaBranca} />
-          {windowWidth < 500 ? <MenuSideBar path={location.pathname} /> : <Nav />}
+          {windowWidth < 500 ? <MenuSideBar /> : <Nav />}
         </div>
       </motion.header>
     </div>

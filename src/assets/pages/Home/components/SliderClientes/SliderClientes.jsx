@@ -1,11 +1,9 @@
-import React from 'react'
 import Titulo from '../../../../components/Titulo/Titulo'
 import logos from './scripts/logos.js'
 import { motion } from 'framer-motion'
 
 const SliderClientes = () => {
-  const [inView, setInView] = React.useState(false)
-
+  console.log('slider')
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -30,18 +28,17 @@ const SliderClientes = () => {
       <Titulo  titulo={'Nossos Parceiros'} subtitulo={'Faça parte desta fámilia circense'} variant={'red'} />
 
       <motion.main 
-        className='flex w-full flex-col gap-6 md:gap-16 p-4 md:p-12  bg-[#f0f0f0] rounded-lg'
+        className='flex w-full flex-col gap-6 md:gap-16 p-4 md:p-12  rounded-lg'
         variants={container}
         initial="hidden"
-        whileInView={()=> setInView(true)}
-        animate={inView? 'visible' : false}
+        whileInView='visible'
+        onViewportEnter={()=> console.log('entrei')}
+        onViewportLeave={()=> console.log('entrei')}
       >
         <motion.div 
           className='flex gap-6 justify-between flex-wrap md:flex-nowrap'
         >
-          
           {logos.slice(0, 4).map((logo) =>(
-            
             <motion.img src={logo} loading="lazy" alt={logo} className='w-32 lg:w-44' key={logo} variants={item}/>
           ))}
         </motion.div>

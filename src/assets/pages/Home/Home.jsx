@@ -1,12 +1,10 @@
-import React, { Suspense } from 'react';
 import CarrosselPrincipal from './components/CarrosselPrincipal/CarrosselPrincipal';
-import Loader from '../../components/Loader/Loader';
+import Servicos from './components/Servicos/Servicos';
+import SliderClientes from './components/SliderClientes/SliderClientes';
+import Origem from './components/Origem/Origem';
+import Processo from './components/Processo/Processo';
+import Processo2 from './components/Processo2/Processo2';
 
-const SliderClientes = React.lazy(() => import('./components/SliderClientes/SliderClientes'));
-const Origem = React.lazy(() => import('./components/Origem/Origem'));
-const Processo = React.lazy(() => import('./components/Processo/Processo'));
-const Servicos = React.lazy(() => import('./components/Servicos/Servicos'));
-const Processo2 = React.lazy(() => import('./components/Processo2/Processo2'));
 
 const Home = () => {
   return (
@@ -17,30 +15,16 @@ const Home = () => {
         <h3 className='text-center'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</h3>
         <hr className="border border-red-default w-1/4 self-end mt-12 mb-14" />
       </section>
-
-      <Suspense fallback={<Loader />}>
-        <Origem />
-      </Suspense>
+      <Origem />
       <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
-        <Suspense fallback={<Loader />}>
-          <Servicos />
-        </Suspense>
+        <Servicos />
       </div>
-
-      <Suspense fallback={<Loader />}>
-        <Processo />
-      </Suspense>
-
+      <Processo />
       <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
-        <Suspense fallback={<Loader />}>
-          <Processo2 />
-        </Suspense>
+        <Processo2 />
       </div>
-
       <div className='flex flex-col w-full items-center justify-center bg-[#f0f0f0]'>
-        <Suspense fallback={<Loader />}>
-          <SliderClientes />
-        </Suspense>
+        <SliderClientes />
       </div>
     </main>
   );
