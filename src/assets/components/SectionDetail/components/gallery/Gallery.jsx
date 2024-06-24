@@ -25,7 +25,7 @@ const Galerry = ({ section }) => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.35 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       {section.imagens.map((src, index) => (
         <motion.a

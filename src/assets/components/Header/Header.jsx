@@ -22,16 +22,12 @@ const Header = () => {
       setScrollPos(currentScrollPos);
       if (currentScrollPos < 200) {
         setHidden(false);
-        if(location.pathname === '/'){
-          setClasse('')
-        }
+        setClasse('')
       } else if (currentScrollPos > prevScrollPos) {
         setHidden(true);
       } else {
         setHidden(false);
-        if(location.pathname === '/'){
-          setClasse('bg-blue-default')
-        }
+        setClasse('bg-blue-default')
       }
       prevScrollPos = currentScrollPos;
     };
@@ -45,7 +41,7 @@ const Header = () => {
 
   React.useEffect(() => {
     if (location.pathname !== '/') {
-      setPosition('bg-blue-default fixed');
+      setPosition('fixed');
     } else if (location.pathname === '/') {
       setPosition('fixed ');
     }

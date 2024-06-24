@@ -23,7 +23,7 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
   };
   const item = {
     hidden: { x: '-100vw', opacity: 0 },
-    visible: { x: 0, opacity: 1, transition : { duration : 0.9 }},
+    visible: { x: 0, opacity: 1, transition : { duration : 0.6 }},
   };
   const titleClass = variants[variant].title;
   const subClass = variants[variant].sub;

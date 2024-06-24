@@ -31,6 +31,12 @@ h1,h2,h3,h4,h5, button, a{
 .f-carousel-btn-white {
   --f-button-bg: #f0f0f0 !important;
   --f-button-border-radius: 360px !important;
+  --f-button-prev-pos: 0px !important;
+  --f-button-next-pos: 0px !important;
+  --f-button-color: #d03438 !important;
+  --f-button-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0
+  0 / 30%) !important;
+  --f-carousel-theme-color: #00162B  !important;
 }
 
 h1{
@@ -79,7 +85,7 @@ h5{
   p{
     font-size: 14px
   }
-  .f-carousel2 {
+  .f-carousel-slide-other {
     --f-carousel-spacing: 8px;
     --f-carousel-slide-width: calc((100% - 16px) / 2);
   }
@@ -88,7 +94,7 @@ h5{
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem; /* gap-2 */
+  gap: 0.5rem;
 }
 
 @media (min-width: 768px) {
