@@ -1,4 +1,4 @@
-import CircoChrys from '../../../../images/bocarra_visual/CircoChrysostenes.jpg'
+import CircoChrys from '../../../../images/bocarra_visual/CircoChrysostenes.webp'
 import Titulo from '../../../../components/Titulo/Titulo'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
