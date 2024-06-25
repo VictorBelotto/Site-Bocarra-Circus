@@ -10,14 +10,14 @@ const Servicos = () => {
     visible: {
       transition: {
         delayChildren: 1,
-        staggerChildren: 0.7,
+        staggerChildren: 0.5,
       },
     },
   };
 
   const item = {
     hidden: { y: 40, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.4 } },
 
   };
   console.log('services')
@@ -28,8 +28,6 @@ const Servicos = () => {
       initial="hidden"
       whileInView='visible'
       viewport={{ once: true, amount: 0.2 }}
-      onViewportEnter={()=> console.log('entrei')}
-      onViewportLeave={()=> console.log('entrei')}
     >
       <Separador />
       <Titulo titulo={'Nossos Serviços'} subtitulo={'Mais de 30 anos de experiência'} variant={'blue'} />
