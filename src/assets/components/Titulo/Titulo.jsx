@@ -34,7 +34,7 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.35 }}
+      viewport={{ once: true, amount: 0.25 }}
     >
       <motion.h2
         className={classNames('text-base font-bold uppercase', subClass)}
