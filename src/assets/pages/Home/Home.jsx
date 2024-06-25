@@ -11,9 +11,9 @@ const Home = () => {
     <main className='flex flex-col w-full items-center'>
       <CarrosselPrincipal />
       <section className='flex flex-col justify-center items-center w-maxW max-w-hd grande:max-w-grande'>
-        <hr className="border border-red-default w-1/4 self-start mt-12 mb-12" />
+        <hr className="border border-red-default w-full self-start my-8" />
         <h3 className='text-center'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</h3>
-        <hr className="border border-red-default w-1/4 self-end mt-12 mb-14" />
+        <hr className="border border-red-default w-full self-end my-8" />
       </section>
       <Origem />
       <div className='flex flex-col w-full items-center justify-center bg-blue-default'>

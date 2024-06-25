@@ -38,8 +38,6 @@ const MenuSideBar = () => {
           className=" bg-blue-default w-full p-4 z-30 rounded-none h-svh"
         >
           <List className="p-0 flex flex-col h-full">
-            <h2>{(Math.random() * 10).toFixed()}</h2>
-
             <Links onClick={handleClick} to={''} label={'Home'} />
             <Links onClick={handleClick} to={'servicos'} label={'Serviços'} />
             <Links onClick={handleClick} to={'sobre'} label={'Sobre Nós'} />

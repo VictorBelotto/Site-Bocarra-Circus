@@ -1,4 +1,3 @@
-// cardData.js
 import circoSonhos from '../../../../images/imagens_servicos/circoSonhos.webp';
 import aranha from '../../../../images/imagens_servicos/aranha.webp';
 import exclusiva from '../../../../images/imagens_servicos/exclusiva.webp';
@@ -9,35 +8,35 @@ export const cardData = [
   {
     img: circoSonhos,
     title: 'Circo',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut',
+    description: 'Lonas para circo projetadas com alta precisão, resistentes e de fácil montagem, combinando design atrativo e durabilidade.',
     to: '/servicos/circo',
     width: 'w-[100%]' 
   },
   {
     img: piramide,
     title: 'Pirâmide',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut',
+    description: 'Tendas elegantes e versáteis, ideais para eventos, feiras e festas, garantindo durabilidade e fácil montagem.',
     to: '/servicos/piramide',
     width: 'w-[50%]' 
   },
   {
     img: exclusiva,
     title: 'Exclusiva',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut',
+    description: 'Coberturas inovadoras e personalizadas, combinando beleza e funcionalidade para uma proteção eficaz contra os elementos.',
     to: '/servicos/exclusivas',
     width: 'w-[50%]'
   },
   {
     img: galpao,
     title: 'Galpão',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut',
+    description: 'Galpões robustos e versáteis, projetados para oferecer espaço e funcionalidade máximos para armazenamento e atividades industriais.',
     to: '/servicos/galpao',
     width: 'w-[50%]'
   },
   {
     img: aranha,
     title: 'Aranha',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut',
+    description: 'Tenda com design marcante e inovador, resistente e fácil de montar, ideal para eventos que exigem uma estrutura distinta.',
     to: '/servicos/aranha',
     width: 'w-[50%]'
   }

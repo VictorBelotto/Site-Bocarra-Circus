@@ -11,10 +11,10 @@ const CardImageDesktop = ({ img, title, description, ordem, to }) => {
           alt={`Imagem ${title}`}
         />
       </div>
-      <div className='flex flex-col h-auto'>
+      <div className='flex flex-col h-[200px] lg:h-[300px] mb-8'>
         <h4 className='text-[white] mt-6 mb-2'>{title}</h4>
-        <p className='pr-11 text-white-contraste'>{description}</p>
-        <img className='w-11 justify-self-end min-h-[100px] transition-transform duration-300 ease-in-out transform group-hover:translate-x-5' src={arrowRed} alt='Arrow' />
+        <p className='pr-11 text-white-contraste text'>{description}</p>
+        <img className='w-11 justify-self-end mt-auto transition-transform duration-300 ease-in-out transform group-hover:translate-x-5' src={arrowRed} alt='Arrow' />
       </div>
 
     </Link>

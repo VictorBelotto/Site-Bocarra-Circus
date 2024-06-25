@@ -36,7 +36,7 @@ const CarrosselPrincipal = () => {
   }, []);
 
   return (
-    <section className=' w-full h-screen '>
+    <section className=' w-full h-[100svh] '>
       <div ref={carouselRef} className='f-carousel '>
         {images.map((imagem, index) => (
           <div key={index} className='relative f-carousel__slide'>
