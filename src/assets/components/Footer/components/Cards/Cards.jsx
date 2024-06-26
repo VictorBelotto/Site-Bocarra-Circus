@@ -1,6 +1,5 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
-import arrow from '../../../../images/icones/arrow.svg'
+import arrowRed from '../../../../images/icones/arrowRed.svg'
 
 const Cards = ({titulo, label, to}) => {
   return (
@@ -8,12 +7,12 @@ const Cards = ({titulo, label, to}) => {
       <Link 
         to={to}
       >
-      <div className='flex flex-col h-32 w-32 '>
-        <hr/>
-        <h4 className='mt-2' >{titulo}</h4>
-          <p className='text-[#A6A6A6] text-base'>{label}</p>
+      <div className='flex flex-col h-36 w-32 '>
+        <hr className='border-white-contraste'/>
+        <h4 className='mt-3' >{titulo}</h4>
+          <p className='text-white-contraste text-base'>{label}</p>
           
-          <img src={arrow} alt='Flecha' className='w-10 mt-auto transition-transform duration-300 ease-in-out transform group-hover:translate-x-4'/>
+          <img src={arrowRed} alt='Flecha' className='w-10 mt-auto transition-transform duration-300 ease-in-out transform group-hover:translate-x-4'/>
         </div>
       </Link>
     </div>
