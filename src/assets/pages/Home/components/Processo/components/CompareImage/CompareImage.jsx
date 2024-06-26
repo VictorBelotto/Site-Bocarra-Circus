@@ -1,7 +1,7 @@
 import ReactCompareImage from 'react-compare-image'
 import { TbHandFinger } from 'react-icons/tb'
-import img3D from '../../../../../../images/bocarra_visual/lona3D.png'
-import imgReal from '../../../../../../images/bocarra_visual/lonaReal.png'
+import img3D from '../../../../../../images/bocarra_visual/lona3D.webp'
+import imgReal from '../../../../../../images/bocarra_visual/lonaReal.webp'
 
 const CompareImage = () => {
   return (
