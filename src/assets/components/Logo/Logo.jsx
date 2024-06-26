@@ -12,9 +12,9 @@ const Logo = ({ escrita }) => {
             className='w-44 md:w-48 ml-2'
             src={escrita}
             alt="Bocarra Circus"
-            initial={{ x: '-100vw' }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1.1 }}
+            initial={{ x: '-200%' }}
+            animate={{ x: ['-200%', 0] }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
           />
         </div>

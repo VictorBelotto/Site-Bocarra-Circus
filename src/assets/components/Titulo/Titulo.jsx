@@ -16,14 +16,14 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
     hidden: { opacity: 1 },
     visible: {
       transition: {
-        delayChildren: 0.2,
-        staggerChildren: 0.3,
+        delayChildren: 0.3,
+        staggerChildren: 0.6,
       },
     },
   };
   const item = {
-    hidden: { x: '-100vw', opacity: 0 },
-    visible: { x: 0, opacity: 1, transition : { duration : 0.6 }},
+    hidden: { x: '-200%', opacity: 1 },
+    visible: { x: ['-200%', 0], opacity: 1, transition : { duration : 0.6 }}
   };
   const titleClass = variants[variant].title;
   const subClass = variants[variant].sub;
@@ -34,7 +34,7 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.8 }}
     >
       <motion.h2
         className={classNames('text-base font-bold uppercase', subClass)}

@@ -4,17 +4,14 @@ import SliderClientes from './components/SliderClientes/SliderClientes';
 import Origem from './components/Origem/Origem';
 import Processo from './components/Processo/Processo';
 import Processo2 from './components/Processo2/Processo2';
+import Slogan from './components/slogan/Slogan';
 
 
 const Home = () => {
   return (
     <main className='flex flex-col w-full items-center'>
       <CarrosselPrincipal />
-      <section className='flex flex-col justify-center items-center w-maxW max-w-hd grande:max-w-grande'>
-        <hr className="border border-red-default w-full self-start my-8" />
-        <h3 className='text-center'>Cobrindo Sonhos, Criando Espetáculos - Nossas Lonas, Seu Circo!</h3>
-        <hr className="border border-red-default w-full self-end my-8" />
-      </section>
+      <Slogan/>
       <Origem />
       <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
         <Servicos />
