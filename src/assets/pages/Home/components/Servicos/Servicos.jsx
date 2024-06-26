@@ -20,7 +20,6 @@ const Servicos = () => {
     visible: { y: 0, opacity: 1, transition: { duration: 0.4 } },
 
   };
-  console.log('services')
   return (
     <motion.div
       className="flex flex-col w-maxW max-w-hd grande:max-w-grande justify-center items-center py-16 min-h-100px"
