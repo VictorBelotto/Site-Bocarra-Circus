@@ -8,7 +8,7 @@ const Origem = () => {
     visible: {
       transition: {
         delayChildren: 0.4,
-        staggerChildren: 0.5,
+        staggerChildren: 0.4,
       },
     },
   };
@@ -41,7 +41,11 @@ const Origem = () => {
             className='w-full max-w-[700px] max-h-[400px]'
             variants={item}
           />
-          <motion.p variants={item} className='italic text-base text-red-default text-end justify-self-end'>Circo Chrysostenes 1984</motion.p>
+          <motion.p
+            className='italic text-base text-red-default text-end justify-self-end'
+            variants={item} >
+            Circo Chrysostenes 1984
+          </motion.p>
         </div>
 
         <motion.div className='flex' variants={item2}>

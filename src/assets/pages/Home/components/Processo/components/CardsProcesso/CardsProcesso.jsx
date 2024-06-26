@@ -1,4 +1,3 @@
-import React from 'react';
 import { LiaUsersCogSolid } from "react-icons/lia";
 import { TbBuildingCircus } from "react-icons/tb";
 import { HiOutlinePresentationChartLine } from "react-icons/hi2";
@@ -6,6 +5,7 @@ import { BsDiagram2 } from "react-icons/bs";
 import Card from '../Card/Card';
 
 const CardsProcesso = () => {
+
   return (
     <div className='flex flex-wrap w-fit h-fit'>
       <div className="w-1/2  p-2 flex md:justify-center lg:justify-start">

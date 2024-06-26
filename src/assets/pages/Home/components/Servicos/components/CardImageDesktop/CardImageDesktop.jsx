@@ -7,7 +7,7 @@ const CardImageDesktop = ({ img, title, description, ordem, to }) => {
     hidden: {opacity: 1},
     visible: {
       transition: {
-        delayChildren: 0,
+        delayChildren: 0.4,
         staggerChildren: 0.6,
       },
     },
