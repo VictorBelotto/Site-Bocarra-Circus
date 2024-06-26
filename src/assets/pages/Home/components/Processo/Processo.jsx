@@ -9,7 +9,7 @@ const Processo = () => {
     visible: {
       transition: {
         delayChildren: 0.4,
-        staggerChildren: 0.3,
+        staggerChildren: 0.4,
       },
     },
   };
@@ -19,7 +19,7 @@ const Processo = () => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.4 }}
     >
       <Titulo titulo={'Nossas Etapas'} subtitulo={'Processo único e personalizado'} variant={'red'} />
 

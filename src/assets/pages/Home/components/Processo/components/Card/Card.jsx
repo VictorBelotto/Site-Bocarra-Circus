@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const Card = ({ icon: Icon, title, text }) => {
   const item = {
-    hidden: { y: 30, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.2 } },
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.3 } },
   };
   return (
     <motion.div
