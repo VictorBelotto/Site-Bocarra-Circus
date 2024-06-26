@@ -16,7 +16,7 @@ const Header = () => {
 
   React.useEffect(() => {
     let prevScrollPos = window.pageYOffset;
-
+    
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       setScrollPos(currentScrollPos);

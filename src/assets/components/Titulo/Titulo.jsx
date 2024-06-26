@@ -12,29 +12,16 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
       sub: 'text-[#d03438]',
     },
   };
-  const container = {
-    hidden: { opacity: 1 },
-    visible: {
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.6,
-      },
-    },
-  };
   const item = {
     hidden: { x: '-200%', opacity: 1 },
-    visible: { x: ['-200%', 0], opacity: 1, transition : { duration : 0.6 }}
+    visible: { x: ['-100%', 0], opacity: 1, transition : { duration : 0.8 }}
   };
   const titleClass = variants[variant].title;
   const subClass = variants[variant].sub;
 
   return (
-    <motion.div
+    <div
       className='flex flex-col w-full mb-12'
-      variants={container}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
     >
       <motion.h2
         className={classNames('text-base font-bold uppercase', subClass)}
@@ -49,7 +36,7 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
       >
         {titulo}
       </motion.h1>
-    </motion.div>
+    </div>
   );
 };
 
