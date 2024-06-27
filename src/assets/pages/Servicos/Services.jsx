@@ -10,7 +10,7 @@ const Services = () => {
         <div className='flex flex-col w-maxW max-w-hd grande:max-w-grande h-[calc(100vh)] pt-36'>
           <Separador />
           <h2 className='text-[white] mb-8 md:mb-16 lg:mb-8'>Soluções Personalizadas para Cada Projeto</h2>
-          <p className='max-w-[800px] text-white-contraste text-xl sm:text-2xl ml-4'>
+          <p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl ml-4'>
             Na Bocarra Circus, oferecemos soluções personalizadas em coberturas têxteis, combinando tradição e inovação para atender às necessidades únicas de cada cliente.
           </p>
           <div className='flex gap-2 mt-auto mb-[calc(100vh-100svh+8px)]'>
