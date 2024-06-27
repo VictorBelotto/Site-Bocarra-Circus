@@ -8,7 +8,7 @@ import SliderOtherServices from './components/sliderOtherServices/sliderOtherSer
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Gallery from './components/gallery/Gallery.jsx';
 import ContinueNavegando from  '../../components/continueNavegando/ContinueNavegando.jsx'
-import { motion  } from "framer-motion";
+
 
 const SectionDetail = () => {
   const { id } = useParams();
@@ -32,19 +32,15 @@ const SectionDetail = () => {
   }
 
   return (
-    <motion.main 
+    <main 
       className='flex flex-col w-full justify-center items-center pb-32' 
       key={section.id}
-      initial="hidden"
-      animate="visible"
-      exit={{ opacity: 0, transition: { duration: 0.5 } }}
+    
     >
       <div className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'>
         <div className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-128px)] md:top-[calc(65svh-128px)]'>
-            <motion.h2  variants={{
-          hidden: { opacity: 0, y: -20 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-        }} className='text-[white] w-fit bgBlur px-4'>{section.titulo}</motion.h2>
+            <h2 
+       className='text-[white] w-fit bgBlur px-4'>{section.titulo}</h2>
         </div>
 
         <img
@@ -69,7 +65,7 @@ const SectionDetail = () => {
 
         <SliderOtherServices section={section} sectionsData={sectionsData} />
       </div>
-    </motion.main>
+    </main>
   );
 };
 

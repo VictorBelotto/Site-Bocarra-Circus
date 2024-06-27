@@ -7,7 +7,6 @@ import MenuSideBar from '../MenuSideBar/MenuSideBar';
 import Logo from '../Logo/Logo';
 
 const Header = () => {
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const [scrollPos, setScrollPos] = React.useState(0);
   const [hidden, setHidden] = React.useState(false);
   const [position, setPosition] = React.useState('fixed');
@@ -47,18 +46,6 @@ const Header = () => {
     }
   }, [location.pathname]);
 
-  React.useEffect(() => {
-    const handleResize = () => {
-      const newWindowWidth = window.innerWidth;
-      setWindowWidth(newWindowWidth);
-    };
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   const variants = {
     hidden: { opacity: 0, y: '-100%', transition: { duration: 0.5 } },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -74,7 +61,7 @@ const Header = () => {
       >
         <div className='flex  w-maxW max-w-hd grande:max-w-grande py-2 justify-between items-center'>
           <Logo escrita={escritaBranca} />
-          {windowWidth < 500 ? <MenuSideBar /> : <Nav />}
+          { window.innerWidth < 968 ? <MenuSideBar /> : <Nav />}
         </div>
       </motion.header>
     </div>

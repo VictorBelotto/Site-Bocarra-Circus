@@ -7,21 +7,25 @@ import Sobre from './pages/Sobre/Sobre.jsx';
 import ScrollToTop from './components/ScrollTop/ScrollTop.jsx';
 import Services from './pages/Servicos/Services.jsx';
 import SectionDetail from './components/SectionDetail/SectionDetail.jsx';
+import Contato from './pages/contato/Contato.jsx';
+import Transition from './components/Transition/Transition.jsx'; // Import the new Transition component
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Routes>
-        <Route path='/' element={<PageBase />}>
-          <Route index element={<Home />} />
-          <Route path='/portifolio' element={<Portifolio />} />
-          <Route path='/sobre' element={<Sobre />} />
-          <Route path='/servicos' element={<Services />} />
-          <Route path='/servicos/:id' element={<SectionDetail />} />
-          
-        </Route>
-      </Routes>
+      <Transition>
+        <Routes>
+          <Route path='/' element={<PageBase />}>
+            <Route index element={<Home />} />
+            <Route path='/portifolio' element={<Portifolio />} />
+            <Route path='/sobre' element={<Sobre />} />
+            <Route path='/servicos' element={<Services />} />
+            <Route path='/servicos/:id' element={<SectionDetail />} />
+            <Route path='/contato' element={<Contato />} />
+          </Route>
+        </Routes>
+      </Transition>
     </BrowserRouter>
   );
 };

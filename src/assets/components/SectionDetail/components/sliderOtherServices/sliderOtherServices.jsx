@@ -16,7 +16,7 @@ const SliderOtherServices = ({ sectionsData }) => {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.4
+        staggerChildren: 0.6
       }
     }
   }
@@ -54,7 +54,7 @@ const SliderOtherServices = ({ sectionsData }) => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.35 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
 
       {filteredSectionsData.map((data, index) => {
