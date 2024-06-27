@@ -8,14 +8,14 @@ const CardImageDesktop = ({ img, title, description, ordem, to }) => {
     visible: {
       transition: {
         delayChildren: 0.4,
-        staggerChildren: 0.6,
+        staggerChildren: 0.5,
       },
     },
   };
 
   const item = {
-    hidden: { y: 200, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 3 } },
+    hidden: { y: 100, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 2 } },
   };
   return (
     <Link to={to} className={`flex flex-col w-full h-full justify-center cursor-pointer  group ${ordem} `} >

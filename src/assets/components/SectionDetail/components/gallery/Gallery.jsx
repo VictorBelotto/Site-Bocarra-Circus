@@ -7,7 +7,7 @@ const Galerry = ({ section }) => {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.4
+        staggerChildren: 0.3
       }
     }
   }
@@ -16,7 +16,8 @@ const Galerry = ({ section }) => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.5 }
+      transition: { duration: 0.3 },
+     
     }
   }
   return (

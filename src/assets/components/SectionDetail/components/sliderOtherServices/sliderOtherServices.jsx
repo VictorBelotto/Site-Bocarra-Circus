@@ -11,9 +11,10 @@ const SliderOtherServices = ({ sectionsData }) => {
   const { id } = useParams();
 
   const container = {
-    hidden: { opacity: 1 },
+    hidden: { opacity: 0, scale: 0, },
     visible: {
       opacity: 1,
+      scale: 1,
       transition: {
         delayChildren: 0.3,
         staggerChildren: 0.6
@@ -21,11 +22,12 @@ const SliderOtherServices = ({ sectionsData }) => {
     }
   }
   const item = {
-    hidden: { y: 30, opacity: 0 },
+    hidden: { y: 40, scale: 0, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.5 }
+      transition: { duration: 0.6 },
+      scale: 1,
     }
   }
 

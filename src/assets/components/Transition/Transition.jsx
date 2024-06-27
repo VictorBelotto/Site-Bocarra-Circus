@@ -11,9 +11,8 @@ const Transition = ({ children }) => {
   }, [location]);
 
   const variants = {
-    initial: { opacity: 0, y: '-100vh' },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-    exit: { opacity: 0, x: '-100vw', transition: { duration: 0.2} }
+    initial: { opacity: 1, y: '-100vh' },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   return (

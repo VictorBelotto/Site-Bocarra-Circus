@@ -14,7 +14,7 @@ const Logo = ({ escrita }) => {
             alt="Bocarra Circus"
             initial={{ x: '-200%' }}
             animate={{ x: ['-200%', 0] }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.1 }}
             viewport={{ once: true }}
           />
         </div>

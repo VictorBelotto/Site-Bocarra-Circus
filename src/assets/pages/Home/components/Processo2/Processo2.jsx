@@ -15,11 +15,11 @@ const Processo2 = () => {
   };
   const item = {
     hidden: { x: '-200%', opacity: 1 },
-    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.6 } },
+    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.5 } },
   };
   const item2 = {
     hidden: { x: '200%', opacity: 1 },
-    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.6 } },
+    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.5 } },
   };
 
   return (

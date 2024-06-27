@@ -12,15 +12,15 @@ const Slogan = () => {
   };
   const item = {
     hidden: { x: '-200%', opacity: 1 },
-    visible: { x: ['-100%', 0], opacity:  1, transition: { duration: 0.6 } },
+    visible: { x: ['-100%', 0], opacity:  1, transition: { duration: 0.4 } },
   };
   const item2 = {
     hidden: { x: '200%', opacity: 1 },
-    visible: { x:  ['200%', 0], opacity: 1, transition: { duration: 0.6 } },
+    visible: { x:  ['200%', 0], opacity: 1, transition: { duration: 0.4 } },
   };
   const item3 = {
     hidden: { x: '-200%', opacity: 1 },
-    visible: { x: ['-100vw', 0], opacity:  1, transition: { duration: 0.6 } },
+    visible: { x: ['-100vw', 0], opacity:  1, transition: { duration: 0.4 } },
   };
 
 

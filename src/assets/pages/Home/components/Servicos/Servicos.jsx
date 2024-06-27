@@ -10,14 +10,14 @@ const Servicos = () => {
     visible: {
       transition: {
         delayChildren: 0.4,
-        staggerChildren: 0.5,
+        staggerChildren: 0.4,
       },
     },
   };
 
   const item = {
-    hidden: { y: 100, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.4 } },
+    hidden: { y: 80, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.35 } },
 
   };
   return (

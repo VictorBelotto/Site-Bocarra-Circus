@@ -38,9 +38,8 @@ const SectionDetail = () => {
     
     >
       <div className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'>
-        <div className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-128px)] md:top-[calc(65svh-128px)]'>
-            <h2 
-       className='text-[white] w-fit bgBlur px-4'>{section.titulo}</h2>
+        <div className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-78px)] md:top-[calc(65svh-118px)]'>
+            <h2 className='text-[white] w-fit bgBlur px-4'>{section.titulo}</h2>
         </div>
 
         <img
