@@ -4,7 +4,7 @@ import Cards from './components/Cards/Cards'
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col w-full justify-center items-center bg-red-default text-slate-100'>
+    <footer className='flex flex-col w-full justify-center items-center bg-red-default text-[white]'>
       <section className='flex justify-between p-8 w-maxW max-w-hd grande:max-w-grande bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
         <div className='flex flex-col w-full' >
           <div className='flex flex-wrap w-full justify-between'>
@@ -25,7 +25,7 @@ const Footer = () => {
             <RedesSociais />
           </div>
 
-          <div className='flex flex-col gap-8 mt-16 lg:mt-0 md:flex-row md:flex-wrap flex-wrap w-full md:items-end'>
+          <div className='flex gap-8 mt-16 lg:mt-0 md:flex-row md:flex-wrap flex-wrap w-full md:items-end '>
             <Cards
               titulo={'Serviços'}
               label={'Explore nossos serviços'}
@@ -37,6 +37,7 @@ const Footer = () => {
               to={'/projetos'}
             />
             <Cards
+              classe={'mr-8'}
               titulo={'Sobre Nós'}
               label={'Conheça nossa história'}
               to={'/servicos'}

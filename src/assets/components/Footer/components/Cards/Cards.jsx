@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import arrowRed from '../../../../images/icones/arrowRed.svg'
+import classNames from 'classnames';
 
-const Cards = ({titulo, label, to}) => {
+const Cards = ({titulo, label, to, classe}) => {
   return (
-    <div className='flex group'>
+    <div  className={classNames('flex group', classe)}>
       <Link 
         to={to}
       >
