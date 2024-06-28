@@ -12,13 +12,14 @@ const Endereco = () => {
     <section className="w-maxW max-w-hd grande:max-w-grande py-16 text-[white]">
     <h2 className="text-black-text mb-12">Nossa localização</h2>
 
-      <aside className='flex'>
-        <iframe className='w-[65%] aspect-video max-h-[450px]' src={mapa} loading="lazy"></iframe>
+      <aside className='flex flex-col lg:flex-row'>
+        <iframe className='lg:w-[65%] aspect-video max-h-[450px]' src={mapa} loading="lazy"></iframe>
 
-        <div className='flex flex-col  w-[35%] bg-red-default p-5'>
+        <div className='flex flex-col h-[400px] lg:h-auto lg:w-[35%] bg-red-default p-5'>
           <FaLocationDot className="fill-blue-default w-6 h-6 self-center mb-4" />
           <a href={linkMaps} rel="noopener" target="_blank" className="flex gap-2 ">
-            Av. José Carlos do Amaral Galvão, 582 - Jardim São José, Campinas - SP, 13051-160
+            Av. José Carlos do Amaral Galvão, 582 - Jardim São José, Campinas - SP, 
+            &nbsp; 13051-160
           </a>
 
           <hr className="w-16 my-6" />

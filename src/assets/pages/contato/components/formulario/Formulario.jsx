@@ -65,7 +65,7 @@ const Formulario = () => {
               Envie uma mensagem pelo formulário ou entre em contato por um de nossos canais de atendimento.
             </h5>
 
-            <div className='flex flex-col gap-4 w-80'>
+            <div className='hidden flex-col gap-4 w-80 md:flex'>
               <p className="flex items-center gap-2 mb-1 text-white-contraste">
                 <SiGmail className='text-[white]'/> contato@bocarracircus.com
               </p>
@@ -76,10 +76,10 @@ const Formulario = () => {
           </div>
 
 
-          <section className='flex justify-between w-full max-w-[900px]'>
+          <section className='flex flex-col md:flex-row gap-16 justify-between w-full max-w-[900px]'>
             <div className='flex flex-col gap-16'>
               <input
-                className='w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
+                className='w-[95%] md:w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
                 placeholder="Nome"
                 type="text"
                 value={nome}
@@ -88,12 +88,12 @@ const Formulario = () => {
               />
 
               <InputTelefone
-                classe={'w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'}
+                classe={'w-[95%] md:w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'}
                 onChange={handleTelefoneChange}
               />
 
               <input
-                className='w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
+                className='w-[95%] md:w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
                 placeholder="Email"
                 type="email"
                 id="email"
@@ -106,7 +106,7 @@ const Formulario = () => {
 
             <div >
               <textarea
-                className='w-80 pb-2 h-full bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none resize-none'
+                className='w-[95%] md:w-80 pb-2 h-full bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none resize-none'
                 placeholder="Mensagem"
                 id="message"
                 name="message"
@@ -118,7 +118,7 @@ const Formulario = () => {
             </div>
           </section>
 
-          <div className='flex w-full max-w-[900px]'>
+          <div className='flex w-[95%] md:w-full max-w-[900px]'>
             <button
               type="submit"
               className='w-fit text-[white] bg-red-default hover:bg-red-hover px-5 py-2 uppercase ml-auto rounded-lg font-medium'
