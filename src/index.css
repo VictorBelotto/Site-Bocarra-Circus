@@ -16,7 +16,7 @@
 html {
   scroll-behavior: smooth;
 }
-p{
+p, a{
   font-size: 18px;
 }
 

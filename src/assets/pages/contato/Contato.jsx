@@ -1,5 +1,6 @@
 import Separador from '../../../assets/components/Separador/Separador.jsx'
 import Endereco from './components/endereco/Endereco'
+import Formulario from './components/formulario/Formulario.jsx'
 
 const Contato = () => {
   return (
@@ -14,8 +15,12 @@ const Contato = () => {
         </div>
       </div>
       
-      <Endereco/>
+      <div className='py-16 w-full flex justify-center'>
+        <div className='w-maxW max-w-hd grande:max-w-grande h-[450px] bg-white-contraste'></div>
+      </div>
 
+      <Formulario/>
+      <Endereco/>
 
     </section>
   )
