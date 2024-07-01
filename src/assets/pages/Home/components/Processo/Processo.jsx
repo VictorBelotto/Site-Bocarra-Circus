@@ -9,7 +9,7 @@ const Processo = () => {
     visible: {
       transition: {
         delayChildren: 0.4,
-        staggerChildren: 0.4,
+        staggerChildren: 0.35,
       },
     },
   };

@@ -14,11 +14,11 @@ const Origem = () => {
   };
   const item = {
     hidden: { x: '-200%', opacity: 1 },
-    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.5 } },
+    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.35 } },
   };
   const item2 = {
     hidden: { x: '200%', opacity: 1 },
-    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.5 } },
+    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.35 } },
   };
 
   return (

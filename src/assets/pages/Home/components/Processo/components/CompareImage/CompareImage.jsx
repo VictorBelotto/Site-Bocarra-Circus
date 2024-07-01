@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const CompareImage = () => {
   const item = {
     hidden: { x: '200%', opacity: 1 },
-    visible: { x: ['150%', 0], opacity: 1, transition: { duration: 0.5 } },
+    visible: { x: ['150%', 0], opacity: 1, transition: { duration: 0.35 } },
   };
   return (
     <motion.section

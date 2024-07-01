@@ -1,11 +1,12 @@
 import Logo from '../../images/bocarra_visual/Est1B.svg'
 import RedesSociais from './components/RedesSociais/RedesSociais'
 import Cards from './components/Cards/Cards'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className='flex flex-col w-full justify-center items-center bg-red-default text-[white]'>
-      <section className='flex justify-between p-8 w-maxW max-w-hd grande:max-w-grande bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
+      <section className='flex justify-between p-5 md:p-8 w-maxW max-w-hd grande:max-w-grande bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
         <div className='flex flex-col w-full' >
           <div className='flex flex-wrap w-full justify-between'>
             <div className='flex flex-col gap-8'>
@@ -45,14 +46,16 @@ const Footer = () => {
             <Cards
               titulo={'Contato'}
               label={'Entre em contato conosco'}
-              to={'/servicos'}
+              to={'/contato'}
             />
-            <img
-              className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0 sm:static'
-              loading="lazy"
-              src={Logo}
-              alt="Logo Bocarra Circus"
-            />
+            <Link className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0     sm:static' to={'/'}>
+              <img
+                className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0 sm:static'
+                loading="lazy"
+                src={Logo}
+                alt="Logo Bocarra Circus"
+              />
+            </Link>
           </div>
         </div>
       </section>
