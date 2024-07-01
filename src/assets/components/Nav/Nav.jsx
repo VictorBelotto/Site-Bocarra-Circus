@@ -8,23 +8,21 @@ const Nav = () => {
     visible: {
       transition: {
         delayChildren: 0.2,
-        staggerChildren: 0.2
+        staggerChildren: 0.11
       }
     }
   }
 
   const item = {
-    hidden: { x: -60, opacity: 0, scale: 0 },
+    hidden: { y: 30, opacity: 0 },
     visible: {
-      x: 0,
+      y: 0,
       opacity: 1,
       scale: 1,
       transition: {
         ease: 'linear',
-        duration: 0.27,
-        x: { duration: 0.27 },
-        opacity: { duration: 0.27 },
-        scale: { duration: 0.27 }
+        duration: 0.2,
+        opacity: { duration: 0.15 },
       }
     }
   }

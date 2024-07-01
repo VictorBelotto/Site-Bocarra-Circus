@@ -37,7 +37,7 @@ const Footer = () => {
               to={'/projetos'}
             />
             <Cards
-              classe={'mr-8'}
+              classe={'mr-16 md:mr-0'}
               titulo={'Sobre Nós'}
               label={'Conheça nossa história'}
               to={'/servicos'}
