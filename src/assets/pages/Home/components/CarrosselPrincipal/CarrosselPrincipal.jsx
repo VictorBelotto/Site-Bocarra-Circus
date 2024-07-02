@@ -13,7 +13,6 @@ const CarrosselPrincipal = () => {
   const images = [img1, img2, img3, img4];
 
   useEffect(() => {
-    // Configuração do carousel com autoplay
     const carousel = new Carousel(carouselRef.current, {
       Autoplay: {
         timeout: 5000,

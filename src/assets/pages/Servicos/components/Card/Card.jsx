@@ -20,7 +20,7 @@ const Card = ({ img, titulo, descricao, to, variant }) => {
 
   return (
     <main className={`flex w-full justify-center ${style.container}`}>
-      <section className={`flex flex-col w-maxW max-w-hd grande:max-w-grande justify-between py-20`}>
+      <section className={`flex flex-col w-maxW max-w-hd grande:max-w-grande justify-between py-16`}>
         {variant && (<Separador />)}
         <main className={`flex flex-col w-full lg:justify-between ${style.direction} gap-4 items-center`}>
           <img src={img} alt={titulo} className='w-full max-w-[700px] max-h-[400px] bg-gray-700 object-cover' />
