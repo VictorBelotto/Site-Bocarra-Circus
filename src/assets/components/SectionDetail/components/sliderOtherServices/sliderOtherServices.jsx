@@ -5,9 +5,11 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const SliderOtherServices = ({ sectionsData }) => {
+const SliderOtherServices = ({ sectionsData, section }) => {
   const carouselRef = useRef(null)
   const { id } = useParams();
+
+  const link = section === 'servicos' ? `/servicos/` : `/circo/`
 
   const container = {
     hidden: { opacity: 0, scale: 0, },
@@ -65,7 +67,7 @@ const SliderOtherServices = ({ sectionsData }) => {
             className='f-carousel__slide f-carousel-slide-other overflow-hidden group'
             variants={item}
           >
-            <Link to={`/servicos/${data.id}`} className='flex flex-col w-fit justify-center'>
+            <Link to={`${link}${data.id}`} className='flex flex-col w-fit justify-center'>
               <img
                 src={data.imagens[0]}
                 alt={data.id}

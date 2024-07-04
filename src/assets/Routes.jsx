@@ -9,6 +9,7 @@ import Services from './pages/Servicos/Services.jsx';
 import SectionDetail from './components/SectionDetail/SectionDetail.jsx';
 import Contato from './pages/contato/Contato.jsx';
 import Transition from './components/Transition/Transition.jsx'; // Import the new Transition component
+import SectionLonas from './components/SectionLonas/SectionLonas.jsx';
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
             <Route path='/sobre' element={<Sobre />} />
             <Route path='/servicos' element={<Services />} />
             <Route path='/servicos/:id' element={<SectionDetail />} />
+            <Route path='/circo/:id' element={<SectionLonas />} />
             <Route path='/contato' element={<Contato />} />
           </Route>
         </Routes>

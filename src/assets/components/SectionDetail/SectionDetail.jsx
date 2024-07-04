@@ -7,14 +7,13 @@ import { Fancybox } from '@fancyapps/ui';
 import SliderOtherServices from './components/sliderOtherServices/sliderOtherServices.jsx';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Gallery from './components/gallery/Gallery.jsx';
-import ContinueNavegando from  '../../components/continueNavegando/ContinueNavegando.jsx'
-
+import ContinueNavegando from '../../components/continueNavegando/ContinueNavegando.jsx'
+import {sectionDataLona} from '../SectionLonas/SectionsDataLona/SectionDataLona.js'
 
 const SectionDetail = () => {
   const { id } = useParams();
-  
-  const section = sectionsData.find(section => section.id === id);
 
+  const section = sectionsData.find(section => section.id === id);
   useEffect(() => {
     Fancybox.bind('[data-fancybox="gallery"]', {
       Thumbs: {
@@ -32,14 +31,14 @@ const SectionDetail = () => {
   }
 
   return (
-    <main 
-      className='flex flex-col w-full justify-center items-center pb-32' 
+    <main
+      className='flex flex-col w-full justify-center items-center pb-32'
       key={section.id}
-    
+
     >
       <div className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'>
         <div className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-68px)] md:top-[calc(65svh-98px)]'>
-            <h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4'>{section.titulo}</h2>
+          <h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4'>{section.titulo}</h2>
         </div>
 
         <img
@@ -50,7 +49,10 @@ const SectionDetail = () => {
         <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
           <p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl mb-8'>{section.descricao}</p>
         </div>
-        <ContinueNavegando/>
+        <div className='w-maxW max-w-hd grande:max-w-grande'>
+          <ContinueNavegando />
+        </div>
+
       </div>
       <div className='w-maxW max-w-hd grande:max-w-grande mt-16'>
         <h3 className=' mb-4'>Galeria</h3>
@@ -62,7 +64,9 @@ const SectionDetail = () => {
           <Separador />
         </div>
 
-        <SliderOtherServices section={section} sectionsData={sectionsData} />
+        
+        <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />
+        <SliderOtherServices section={'servicos'} sectionsData={sectionsData} />
       </div>
     </main>
   );
