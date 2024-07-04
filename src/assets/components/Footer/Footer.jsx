@@ -41,7 +41,7 @@ const Footer = () => {
               classe={'mr-16 md:mr-0'}
               titulo={'Sobre Nós'}
               label={'Conheça nossa história'}
-              to={'/servicos'}
+              to={'/sobre'}
             />
             <Cards
               titulo={'Contato'}

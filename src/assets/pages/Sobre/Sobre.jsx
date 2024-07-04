@@ -1,6 +1,7 @@
 import Separador from '../../components/Separador/Separador'
 import ContinueNavegando from '../../components/continueNavegando/ContinueNavegando'
 import Historia from './components/historia/Historia'
+import Missao from './components/missao/Missao'
 
 const Sobre = () => {
   return (
@@ -22,12 +23,7 @@ const Sobre = () => {
 
 
       <section className="flex w-full bg-blue-default justify-center ">
-        <div className="w-maxW max-w-hd grande:max-w-grande min-h-screen py-16 flex flex-col">
-          <Separador />
-          <h2 className="text-[white] mb-8 md:mb-16 lg:mb-8">Nossa missão, visão e valores</h2>
-          
-
-        </div>
+        <Missao/>
       </section>
 
 
