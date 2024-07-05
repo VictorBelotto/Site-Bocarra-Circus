@@ -3,11 +3,11 @@ import {sectionDataLona} from './SectionsDataLona/SectionDataLona.js'
 import ContinueNavegando from '../continueNavegando/ContinueNavegando.jsx';
 import Separador from '../Separador/Separador.jsx';
 import SliderOtherServices from '../SectionDetail/components/sliderOtherServices/sliderOtherServices.jsx';
+import Galerry from './gallery/Gallery.jsx'
 
 const SectionLonas = () => {
   const {id} = useParams()
   const section = sectionDataLona.find(section => section.id === id);
-  console.log(section)
 
   return (
     <main
@@ -36,6 +36,7 @@ const SectionLonas = () => {
     <div className='w-maxW max-w-hd grande:max-w-grande mt-16'>
       <h3 className=' mb-4'>Galeria</h3>
       <Separador />
+      <Galerry section={section}/>
 
       <div className='flex flex-col gap-4 mt-16'>
         <h3 className='text-red-default'>Veja outros serviços</h3>

@@ -1,4 +1,4 @@
-import circo from '../../../../images/imagens_circos/1 (2).webp'
+import circo from '../../../../images/imagens_circos/1.webp'
 import Titulo from '../../../../components/Titulo/Titulo'
 import Separador from '../../../../components/Separador/Separador'
 import { motion } from 'framer-motion'
