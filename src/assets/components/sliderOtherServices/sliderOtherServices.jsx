@@ -52,7 +52,7 @@ const SliderOtherServices = ({ sectionsData, section }) => {
 
   return (
     <motion.div
-      className='f-carousel f-carousel-btn-white overflow-hidden h-full'
+      className='f-carousel f-carousel-btn-white overflow-hidden h-fit'
       ref={carouselRef}
       variants={container}
       initial="hidden"

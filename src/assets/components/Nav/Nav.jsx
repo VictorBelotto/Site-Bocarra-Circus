@@ -8,21 +8,20 @@ const Nav = () => {
     visible: {
       transition: {
         delayChildren: 0.2,
-        staggerChildren: 0.11
+        staggerChildren: 0.1
       }
     }
   }
 
   const item = {
-    hidden: { y: 30, opacity: 0 },
+    hidden: { x: -60, opacity: 0, scale:0 },
     visible: {
-      y: 0,
+      x: 0,
       opacity: 1,
       scale: 1,
       transition: {
         ease: 'linear',
-        duration: 0.2,
-        opacity: { duration: 0.15 },
+        duration: 0.16,
       }
     }
   }
@@ -55,7 +54,7 @@ const Nav = () => {
         </li>
 
         <li>
-          <motion.div variants={item} className='px-5 py-2 bg-red-default rounded-lg text-[white] hover:bg-red-hover uppercase overflow-hidden'>
+          <motion.div variants={item} className='px-5 py-2  rounded-lg text-[white] bg-red-default hover:bg-red-hover uppercase overflow-hidden'>
             <Link to={'/contato'}>Contato</Link>
           </motion.div>
         </li>

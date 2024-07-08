@@ -58,17 +58,25 @@ const SectionDetail = () => {
         <Separador />
         <Gallery section={section} />
 
-        <div className='flex flex-col gap-4 mt-16'>
-          <h3 className='text-red-default'>Veja os modelos de Circo</h3>
-          <Separador />
-        </div>
-        <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />
+        {id === 'circo' && (
+          <>
+            <div className='flex flex-col gap-4 mt-16'>
+              <h3 className='text-red-default'>Veja os modelos de Circo</h3>
+              <Separador />
+            </div>
+            <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />
+          </>
+        )}
 
-        <div className='flex flex-col gap-4 mt-16'>
-          <h3 className='text-red-default'>Veja outros serviços</h3>
-          <Separador />
+      </div>
+      <div className='w-full bg-blue-default flex justify-center'>
+        <div className='w-maxW max-w-hd grande:max-w-grande'>
+          <div className='flex flex-col gap-4'>
+            <h3 className='text-red-default'>Veja outros serviços</h3>
+            <Separador />
+          </div>
+          <SliderOtherServices section={'servicos'} sectionsData={sectionsData} />
         </div>
-        <SliderOtherServices section={'servicos'} sectionsData={sectionsData} />
       </div>
     </main>
   );
