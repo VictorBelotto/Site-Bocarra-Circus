@@ -19,7 +19,7 @@ const Historia = () => {
 
   const dots = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1,  transition: { delay: 0.65} },
+    visible: { opacity: 1,  transition: { delay: 0.95} },
   }
 
   const descricao = {
@@ -28,7 +28,7 @@ const Historia = () => {
   }
 
   return (
-    <div className="w-maxW max-w-hd grande:max-w-grande mx-auto my-8">
+    <div className="w-maxW max-w-hd grande:max-w-grande mx-auto">
       <div className="relative flex flex-col">
 
         {dataHistoria.map((dado, index) => (
@@ -43,13 +43,13 @@ const Historia = () => {
             <div className="flex w-full md:flex-row items-center ">
               {/*line red */}
               <motion.div
-                className="absolute left-0 top-0 w-1 bg-red-default h-full"
+                className="absolute left-0 top-0 w-[6px] bg-red-default h-full"
                 variants={item}
               ></motion.div>
 
               {/*Bolinha */}
-              <motion.div className="z-10 flex  relative left-[-10px] md:left-[-14px]" variants={dots}>
-                <div className="w-6 h-6 md:w-8 md:h-8 bg-blue-default rounded-full flex items-center justify-center ">
+              <motion.div className="z-10 flex  relative left-[-10px] md:left-[-11px]" variants={dots}>
+                <div className="w-6 h-6 md:w-7 md:h-7 bg-blue-default rounded-full flex items-center justify-center border-4 border-red-default ">
                 </div>
               </motion.div>
 
