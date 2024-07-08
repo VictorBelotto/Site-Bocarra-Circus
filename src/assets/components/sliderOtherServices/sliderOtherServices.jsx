@@ -18,7 +18,7 @@ const SliderOtherServices = ({ sectionsData, section }) => {
       scale: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.4
+        staggerChildren: 0.25
       }
     }
   }
@@ -27,7 +27,7 @@ const SliderOtherServices = ({ sectionsData, section }) => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.4 },
+      transition: { duration: 0.25 },
       scale: 1,
     }
   }
@@ -71,10 +71,10 @@ const SliderOtherServices = ({ sectionsData, section }) => {
               <img
                 src={data.imagens[0]}
                 alt={data.id}
-                className='w-auto  aspect-[4/3] object-cover hover:scale-105 hover:brightness-50  transition duration-300'
+                className='w-auto  aspect-[4/3] object-cover hover:scale-105 brightness-50 hover:brightness-100 transition duration-300'
               />
 
-              <h4 className='text-[white] absolute w-full text-center hidden group-hover:block pointer-events-none transform transition duration-300'>{data.titulo}</h4>
+              <h4 className='text-[white] absolute w-full text-center group-hover:hidden pointer-events-none transform transition duration-300 text'>{data.titulo}</h4>
             </Link>
           </motion.div>
         );

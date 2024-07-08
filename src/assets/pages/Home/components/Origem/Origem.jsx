@@ -7,18 +7,18 @@ const Origem = () => {
     hidden: { opacity: 1 },
     visible: {
       transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.4,
+        delayChildren: 0.35,
+        staggerChildren: 0.3,
       },
     },
   };
   const item = {
     hidden: { x: '-200%', opacity: 1 },
-    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.35 } },
+    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.3 } },
   };
   const item2 = {
     hidden: { x: '200%', opacity: 1 },
-    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.35 } },
+    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.3 } },
   };
 
   return (

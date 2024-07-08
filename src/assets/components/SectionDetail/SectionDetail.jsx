@@ -4,11 +4,10 @@ import { sectionsData } from './sectionsData/sectionsData.js';
 import Separador from '../Separador/Separador.jsx';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 import { Fancybox } from '@fancyapps/ui';
-import SliderOtherServices from './components/sliderOtherServices/sliderOtherServices.jsx';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import Gallery from './components/gallery/Gallery.jsx';
+import SliderOtherServices from '../sliderOtherServices/sliderOtherServices.jsx';
+import Gallery from '../gallery/Gallery.jsx';
 import ContinueNavegando from '../../components/continueNavegando/ContinueNavegando.jsx'
-import {sectionDataLona} from '../SectionLonas/SectionsDataLona/SectionDataLona.js'
+import { sectionDataLona } from '../SectionLonas/SectionsDataLona/SectionDataLona.js'
 
 const SectionDetail = () => {
   const { id } = useParams();
@@ -49,23 +48,26 @@ const SectionDetail = () => {
         <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
           <p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl mb-8'>{section.descricao}</p>
         </div>
-        <div className='w-maxW max-w-hd grande:max-w-grande'>
+        <div className='w-maxW max-w-hd grande:max-w-grande mt-auto'>
           <ContinueNavegando />
         </div>
-
       </div>
+
       <div className='w-maxW max-w-hd grande:max-w-grande mt-16'>
         <h3 className=' mb-4'>Galeria</h3>
         <Separador />
         <Gallery section={section} />
 
         <div className='flex flex-col gap-4 mt-16'>
+          <h3 className='text-red-default'>Veja os modelos de Circo</h3>
+          <Separador />
+        </div>
+        <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />
+
+        <div className='flex flex-col gap-4 mt-16'>
           <h3 className='text-red-default'>Veja outros serviços</h3>
           <Separador />
         </div>
-
-        
-        <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />
         <SliderOtherServices section={'servicos'} sectionsData={sectionsData} />
       </div>
     </main>

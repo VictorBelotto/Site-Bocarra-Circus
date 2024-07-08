@@ -9,15 +9,15 @@ const Servicos = () => {
     hidden: { opacity: 1 },
     visible: {
       transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.4,
+        delayChildren: 0.3,
+        staggerChildren: 0.3,
       },
     },
   };
 
   const item = {
     hidden: { y: 80, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.35 } },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.3 } },
 
   };
   return (

@@ -6,8 +6,8 @@ const Galerry = ({ section }) => {
     visible: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.3
+        delayChildren: 0.2,
+        staggerChildren: 0.15
       }
     }
   }
@@ -16,13 +16,14 @@ const Galerry = ({ section }) => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.3 },
+      transition: { duration: 0.19 },
      
     }
   }
+
   return (
     <motion.div
-      className='flex flex-wrap gap-2 md:gap-3'
+      className='flex flex-wrap gap-2 md:gap-3 '
       variants={container}
       initial="hidden"
       whileInView="visible"

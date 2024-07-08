@@ -2,12 +2,27 @@ import { useParams } from 'react-router-dom';
 import {sectionDataLona} from './SectionsDataLona/SectionDataLona.js'
 import ContinueNavegando from '../continueNavegando/ContinueNavegando.jsx';
 import Separador from '../Separador/Separador.jsx';
-import SliderOtherServices from '../SectionDetail/components/sliderOtherServices/sliderOtherServices.jsx';
-import Galerry from './gallery/Gallery.jsx'
+import SliderOtherServices from '../sliderOtherServices/sliderOtherServices.jsx'; 
+import Galerry from '../gallery/Gallery.jsx'
+import { useEffect } from 'react';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
+import { Fancybox } from '@fancyapps/ui';
 
 const SectionLonas = () => {
   const {id} = useParams()
   const section = sectionDataLona.find(section => section.id === id);
+
+  useEffect(() => {
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      Thumbs: {
+        type: "modern",
+      },
+    });
+
+    return () => {
+      Fancybox.destroy();
+    };
+  }, [id]);
 
   return (
     <main
@@ -28,7 +43,7 @@ const SectionLonas = () => {
       <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
         <p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl mb-8'>{section.descricao}</p>
       </div>
-      <div className='w-maxW max-w-hd grande:max-w-grande'>
+      <div className='w-maxW max-w-hd grande:max-w-grande mt-auto'>
         <ContinueNavegando />
       </div>
 
@@ -36,14 +51,14 @@ const SectionLonas = () => {
     <div className='w-maxW max-w-hd grande:max-w-grande mt-16'>
       <h3 className=' mb-4'>Galeria</h3>
       <Separador />
+     
       <Galerry section={section}/>
 
       <div className='flex flex-col gap-4 mt-16'>
-        <h3 className='text-red-default'>Veja outros serviços</h3>
+        <h3 className='text-red-default'>Veja outros modelos de Circo</h3>
         <Separador />
       </div>
 
-      
       <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />
     </div>
   </main>

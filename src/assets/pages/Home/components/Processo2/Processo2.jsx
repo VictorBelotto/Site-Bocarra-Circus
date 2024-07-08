@@ -8,18 +8,18 @@ const Processo2 = () => {
     hidden: { opacity: 1 },
     visible: {
       transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.4,
+        delayChildren: 0.35,
+        staggerChildren: 0.35,
       },
     },
   };
   const item = {
     hidden: { x: '-200%', opacity: 1 },
-    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.5 } },
+    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.3 } },
   };
   const item2 = {
     hidden: { x: '200%', opacity: 1 },
-    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.5 } },
+    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.3 } },
   };
 
   return (
@@ -28,7 +28,7 @@ const Processo2 = () => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <Separador />
       <Titulo titulo={'Queizy Process'} subtitulo={'Sliced'} variant={'blue'} />
