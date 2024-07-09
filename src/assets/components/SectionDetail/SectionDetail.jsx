@@ -37,7 +37,7 @@ const SectionDetail = () => {
     >
       <div className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'>
         <div className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-68px)] md:top-[calc(65svh-98px)]'>
-          <h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4'>{section.titulo}</h2>
+          <h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4 '>{section.titulo}</h2>
         </div>
 
         <img
@@ -46,7 +46,7 @@ const SectionDetail = () => {
           className='w-full h-[55svh] md:h-[65svh] object-cover cursor-pointer'
         />
         <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
-          <p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl mb-8'>{section.descricao}</p>
+          <p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl ml-4'>{section.descricao}</p>
         </div>
         <div className='w-maxW max-w-hd grande:max-w-grande mt-auto'>
           <ContinueNavegando />
@@ -69,7 +69,7 @@ const SectionDetail = () => {
         )}
 
       </div>
-      <div className='w-full bg-blue-default flex justify-center'>
+      <div className='w-full bg-blue-default flex justify-center py-16 mt-16'>
         <div className='w-maxW max-w-hd grande:max-w-grande'>
           <div className='flex flex-col gap-4'>
             <h3 className='text-red-default'>Veja outros serviços</h3>
