@@ -6,7 +6,7 @@ const Missao = () => {
           <Separador />
           <h2 className="text-[white] mb-12">Nossa missão, visão e valores</h2>
           
-          <div className="flex w-full justify-between ">
+          <div className="flex flex-col md:flex-row w-full justify-between gap-12">
           {dataMissao.map((dado, index) => (
             <div className="flex flex-col items-center max-w-80 gap-3" key={index}>
               <div className="w-32 h-32 bg-gray-700"></div>  
