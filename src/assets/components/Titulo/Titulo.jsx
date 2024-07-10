@@ -21,7 +21,7 @@ const Titulo = ({ titulo, subtitulo, variant }) => {
 
   return (
     <div
-      className='flex flex-col w-full mb-12'
+      className='flex flex-col w-full mb-12 overflow-hidden'
     >
       <motion.h2
         className={classNames('text-base font-bold uppercase', subClass)}
