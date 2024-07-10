@@ -54,9 +54,9 @@ const Historia = () => {
               </motion.div>
 
               {/* Conteúdo */}
-              <div className="flex flex-col md:flex-row gap-2 w-full md:pl-4 py-4 items-center">
-                <motion.div className="flex flex-col gap-4 w-full" variants={descricao}>
-                  <h3 className="text-black-text">{dado.data}</h3>
+              <div className={`flex flex-col  gap-2 justify-between w-full md:pl-4 py-4 items-center md:${dado.direction}`}>
+                <motion.div className="flex flex-col gap-4 " variants={descricao}>
+                  <h3 className="text-black-text max-w-[550px]">{dado.data}</h3>
                   <p className="text-gray-text max-w-[550px]">
                     {dado.descricao}
                   </p>

@@ -89,6 +89,10 @@ h5{
     --f-carousel-spacing: 8px;
     --f-carousel-slide-width: calc((100% - 16px) / 2);
   }
+  .f-carousel-btn-white{
+    --f-button-height: 34px !important;
+    --f-button-width: 34px !important;
+  }
 }
 
 .grid {

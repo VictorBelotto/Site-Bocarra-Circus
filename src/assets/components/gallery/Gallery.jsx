@@ -40,7 +40,7 @@ const Galerry = ({ section }) => {
         >
 
           <img
-            className='h-[130px] md:h-[200px] w-full cursor-pointer object-cover hover:scale-105 hover:brightness-50  transition duration-300'
+            className='h-[130px] md:h-[200px] w-full cursor-pointer object-cover lg:hover:scale-105 lg:hover:brightness-50  transition duration-300'
             src={src}
             alt={`Imagem ${index + 1}`}
           />
