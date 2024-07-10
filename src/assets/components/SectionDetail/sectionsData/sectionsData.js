@@ -4,7 +4,7 @@ export const sectionsData = [
   {
     id: 'circo',
     titulo: 'Lonas para Circo',
-    descricao: 'Nossas lonas para circo são projetadas com alta precisão usando programas 3D, garantindo estruturas robustas e duráveis. Oferecemos uma ampla variedade de designs personalizados para atender às suas necessidades específicas, combinando resistência ao tempo e facilidade de montagem com um design atrativo que chama a atenção do público.',
+    descricao: 'Nossas lonas para circo são projetadas com alta precisão usando programas 3D, garantindo estruturas robustas e duráveis. Oferecemos uma ampla variedade de designs personalizados para atender às suas necessidades específicas.',
     imagens: imagesCirco
   },
   {

@@ -38,7 +38,7 @@ const Contato = () => {
         <div className="w-maxW max-w-hd grande:max-w-grande">
           <Separador />
           <motion.h2 className='text-[white] mb-8 md:mb-16 lg:mb-8 ' variants={itemY}>Fale conosco</motion.h2>
-          <motion.p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl ml-4' variants={itemY}>
+          <motion.p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl' variants={itemY}>
             Estamos aqui para ajudar! Quer saber mais sobre nossos produtos e serviços? Preencha o formulário abaixo ou mande uma mensagem via Whatsapp. Nossa equipe responderá o mais rápido possível.
           </motion.p>
 

@@ -15,11 +15,11 @@ const Missao = () => {
 
   const item = {
     hidden: { y: '200%', opacity: 0 },
-    visible: { y: ['100%', 0], opacity: 1, transition: { duration: 0.85 } },
+    visible: { y: ['100%', 0], opacity: 1, transition: { duration: 0.39 } },
   };
   const item2 = {
     hidden: { x: '-200%', opacity: 0 },
-    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.8 } },
+    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.39 } },
   };
 
   return (
@@ -28,12 +28,12 @@ const Missao = () => {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.38 }}
     >
       <Separador />
       <motion.h2 className="text-[white] mb-12" variants={item2}>Nossa missão, visão e valores</motion.h2>
 
-      <div className="flex flex-col md:flex-row w-full justify-between gap-12" >
+      <div className="flex w-full flex-col md:flex-row md:justify-between items-center gap-12" >
         {dataMissao.map((dado, index) => (
           <motion.div className="flex flex-col items-center max-w-80 gap-3" key={index} variants={item}>
             <div className="w-32 h-32 bg-gray-700"></div>

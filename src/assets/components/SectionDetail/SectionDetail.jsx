@@ -8,9 +8,24 @@ import SliderOtherServices from '../sliderOtherServices/sliderOtherServices.jsx'
 import Gallery from '../gallery/Gallery.jsx';
 import ContinueNavegando from '../../components/continueNavegando/ContinueNavegando.jsx'
 import { sectionDataLona } from '../SectionLonas/SectionsDataLona/SectionDataLona.js'
+import { motion } from 'framer-motion';
 
 const SectionDetail = () => {
   const { id } = useParams();
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      transition: {
+        delayChildren: 0.35,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const itemY = {
+    hidden: { y: '200%', opacity: 0 },
+    visible: { y: ['100%', 0], opacity: 1, transition: { duration: 0.5 } },
+  };
 
   const section = sectionsData.find(section => section.id === id);
   useEffect(() => {
@@ -30,15 +45,23 @@ const SectionDetail = () => {
   }
 
   return (
-    <main
+    <motion.main
       className='flex flex-col w-full justify-center items-center pb-32'
       key={section.id}
-
     >
-      <div className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'>
-        <div className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-68px)] md:top-[calc(65svh-98px)]'>
-          <h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4 '>{section.titulo}</h2>
-        </div>
+      <motion.div
+        className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div 
+        className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-68px)] md:top-[calc(65svh-98px)] overflow-hidden'
+        variants={itemY}
+        >
+          <motion.h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4' variants={itemY}>{section.titulo}</motion.h2>
+        </motion.div>
 
         <img
           src={section.imagens[0]}
@@ -46,12 +69,12 @@ const SectionDetail = () => {
           className='w-full h-[55svh] md:h-[65svh] object-cover cursor-pointer'
         />
         <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
-          <p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl ml-4'>{section.descricao}</p>
+          <motion.p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl' variants={itemY}>{section.descricao}</motion.p>
         </div>
         <div className='w-maxW max-w-hd grande:max-w-grande mt-auto'>
           <ContinueNavegando />
         </div>
-      </div>
+      </motion.div>
 
       <div className='w-maxW max-w-hd grande:max-w-grande mt-16'>
         <h3 className=' mb-4'>Galeria</h3>
@@ -78,7 +101,7 @@ const SectionDetail = () => {
           <SliderOtherServices section={'servicos'} sectionsData={sectionsData} />
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 

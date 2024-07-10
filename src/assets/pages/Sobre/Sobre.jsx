@@ -32,7 +32,7 @@ const Sobre = () => {
         >
           <Separador />
           <motion.h2 className="text-[white] mb-8 md:mb-16 lg:mb-8" variants={item}>Conheça nossa história</motion.h2>
-          <motion.p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl ml-4' variants={item}>
+          <motion.p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl' variants={item}>
             Na Bocarra Circus, oferecemos soluções personalizadas em coberturas têxteis, combinando tradição e inovação para atender às necessidades únicas de cada cliente.
           </motion.p>
           <ContinueNavegando />
