@@ -14,7 +14,7 @@ const Nav = () => {
   }
 
   const item = {
-    hidden: { x: -60, opacity: 0, scale:0 },
+    hidden: { x: -60, opacity: 0, scale: 0 },
     visible: {
       x: 0,
       opacity: 1,
@@ -22,6 +22,33 @@ const Nav = () => {
       transition: {
         ease: 'linear',
         duration: 0.16,
+      }
+    }
+  }
+
+  const icon = {
+    hidden: { x: -60, opacity: 0, scale: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: 'linear',
+        duration: 0.16,
+        delay: 0.6,
+      }
+    }
+  }
+
+  const bg = {
+    hidden: {
+      width: 0
+    },
+    visible: {
+      width: 'auto',
+      transition: {
+        delay: 0.8, // Ajuste a duração do atraso conforme necessário
+        duration: 0.2,
       }
     }
   }
@@ -53,8 +80,15 @@ const Nav = () => {
           </motion.div>
         </li>
 
-        <li>
-          <motion.div variants={item} className='px-5 py-2  rounded-lg text-[white] bg-red-default hover:bg-red-hover uppercase overflow-hidden'>
+        <li className='relative'>
+          <motion.div
+            variants={bg}
+            className='absolute inset-0 bg-red-default rounded-lg'
+          />
+          <motion.div
+            variants={icon} 
+            className='relative z-10 px-5 py-2 text-[white] uppercase overflow-hidden'
+          >
             <Link to={'/contato'}>Contato</Link>
           </motion.div>
         </li>

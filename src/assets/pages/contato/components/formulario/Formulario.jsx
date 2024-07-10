@@ -4,8 +4,32 @@ import emailjs from '@emailjs/browser'
 import { FaWhatsapp } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 import Separador from '../../../../components/Separador/Separador';
+import { motion } from 'framer-motion';
 
 const Formulario = () => {
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.35,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { x: '-200%', opacity: 0 },
+    visible: { x: ['-100%', 0], opacity: 1, transition: { duration: 0.38 } },
+  };
+  const item2 = {
+    hidden: { x: '200%', opacity: 0 },
+    visible: { x: ['100%', 0], opacity: 1, transition: { duration: 0.38 } },
+  };
+  const itemY = {
+    hidden: { y: 60, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.38 } },
+  };
+
   const [nome, setNome] = useState('');
   const [telefone, setTelefone] = useState('');
   const [email, setEmail] = useState('');
@@ -52,32 +76,44 @@ const Formulario = () => {
   const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
 
   return (
-    <div className='flex w-full bg-blue-default py-16 justify-center'>
-      <div className='w-maxW max-w-hd grande:max-w-grande'>
-      <Separador/>
+    <section className='flex w-full bg-blue-default py-16 justify-center'>
+      <motion.div
+        className='w-maxW max-w-hd grande:max-w-grande'
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Separador />
 
-      <h2 className='text-[white] mb-12'>Entre em contato</h2>
+        <motion.h2 className='text-[white] mb-12' variants={item}>Entre em contato</motion.h2>
 
         <form onSubmit={handleSubmit} className='flex flex-col gap-16 items-center'>
 
-          <div className='flex w-full max-w-[900px] justify-between items-center'>
+          <motion.div className='flex w-full max-w-[900px] justify-between items-center' variants={itemY}>
             <h5 className='text-white-contraste w-80'>
               Envie uma mensagem pelo formulário ou entre em contato por um de nossos canais de atendimento.
             </h5>
 
             <div className='hidden flex-col gap-4 w-80 md:flex'>
               <p className="flex items-center gap-2 mb-1 text-white-contraste">
-                <SiGmail className='text-[white]'/> contato@bocarracircus.com
+                <SiGmail className='text-[white]' /> contato@bocarracircus.com
               </p>
               <a href={apiWhatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white-contraste">
                 <FaWhatsapp className='text-[white]' />(19) 99889-4430
               </a>
             </div>
-          </div>
+          </motion.div>
 
 
-          <section className='flex flex-col md:flex-row gap-16 justify-between w-full max-w-[900px]'>
-            <div className='flex flex-col gap-16'>
+          <motion.section
+            className='flex flex-col md:flex-row gap-16 justify-between w-full max-w-[900px]'
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+          >
+            <motion.div className='flex flex-col gap-16' variants={item} >
               <input
                 className='w-[95%] md:w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
                 placeholder="Nome"
@@ -102,9 +138,9 @@ const Formulario = () => {
                 onChange={handleEmailChange}
                 required
               />
-            </div>
+            </motion.div>
 
-            <div >
+            <motion.div variants={item2} >
               <textarea
                 className='w-[95%] md:w-80 pb-2 h-full bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none resize-none'
                 placeholder="Mensagem"
@@ -115,8 +151,8 @@ const Formulario = () => {
                 onChange={handleMensagemChange}
                 required
               />
-            </div>
-          </section>
+            </motion.div>
+          </motion.section>
 
           <div className='flex w-[95%] md:w-full max-w-[900px]'>
             <button
@@ -127,8 +163,8 @@ const Formulario = () => {
             </button>
           </div>
         </form>
-      </div>
-    </div>
+      </motion.div>
+    </section>
   )
 
 }
