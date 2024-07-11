@@ -69,8 +69,6 @@ const Formulario = () => {
     }, (err) => {
       console.log("Erro: ", err)
     })
-
-
   };
 
   const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
@@ -88,9 +86,9 @@ const Formulario = () => {
 
         <motion.h2 className='text-[white] mb-12' variants={item}>Entre em contato</motion.h2>
 
-        <form onSubmit={handleSubmit} className='flex flex-col gap-16 items-center'>
+        <form onSubmit={handleSubmit} className='flex flex-col gap-16 '>
 
-          <motion.div className='flex w-full max-w-[900px] justify-between items-center' variants={itemY}>
+          <motion.div className='flex w-maxW max-w-[900px]  gap-16 justify-between items-center' variants={itemY}>
             <h5 className='text-white-contraste w-80'>
               Envie uma mensagem pelo formulário ou entre em contato por um de nossos canais de atendimento.
             </h5>
@@ -105,7 +103,6 @@ const Formulario = () => {
             </div>
           </motion.div>
 
-
           <motion.section
             className='flex flex-col md:flex-row gap-16 justify-between w-full max-w-[900px]'
             variants={container}
@@ -114,47 +111,58 @@ const Formulario = () => {
             viewport={{ once: true, amount: 0.4 }}
           >
             <motion.div className='flex flex-col gap-16' variants={item} >
-              <input
-                className='w-[95%] md:w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
-                placeholder="Nome"
-                type="text"
-                value={nome}
-                onChange={handleNomeChange}
-                required
-              />
+              <label htmlFor="nome" className="w-maxW md:w-80 text-red-default text-xl">
+                Nome completo
+                <input
+                  className='w-full mt-3 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
+                  placeholder="Digite seu nome"
+                  type="text"
+                  id="nome"
+                  value={nome}
+                  onChange={handleNomeChange}
+                  required
+                />
+              </label>
 
-              <InputTelefone
-                classe={'w-[95%] md:w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'}
-                onChange={handleTelefoneChange}
-              />
+              <label htmlFor="telefone" className="w-maxW md:w-80 text-red-default text-xl">
+                Telefone
+                <InputTelefone
+                  classe={'w-full mt-3 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-non'}
+                  id="telefone"
+                  onChange={handleTelefoneChange}
+                />
+              </label>
 
-              <input
-                className='w-[95%] md:w-80 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
-                placeholder="Email"
-                type="email"
-                id="email"
-                name="email"
-                value={email}
-                onChange={handleEmailChange}
-                required
-              />
+              <label htmlFor="email" className="w-maxW md:w-80 text-red-default text-xl">
+                Email
+                <input
+                  className='w-full mt-3 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
+                  placeholder="Digite seu email"
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={handleEmailChange}
+                  required
+                />
+              </label>
             </motion.div>
 
-            <motion.div variants={item2} >
-              <textarea
-                className='w-[95%] md:w-80 pb-2 h-full bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none resize-none'
-                placeholder="Mensagem"
-                id="message"
-                name="message"
-                rows="6"
-                value={mensagem}
-                onChange={handleMensagemChange}
-                required
-              />
+            <motion.div className='flex-grow w-maxW md:max-w-80 flex flex-col min-h-80' variants={item2}>
+              <label htmlFor="message" className="w-full text-red-default text-xl flex-grow flex flex-col">
+                Mensagem
+                <textarea
+                  className='w-full mt-3 flex-grow bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none resize-none'
+                  placeholder="Digite uma mensagem"
+                  id="message"
+                  value={mensagem}
+                  onChange={handleMensagemChange}
+                  required
+                />
+              </label>
             </motion.div>
           </motion.section>
 
-          <div className='flex w-[95%] md:w-full max-w-[900px]'>
+          <div className='flex w-maxW md:w-full max-w-[900px]'>
             <button
               type="submit"
               className='w-fit text-[white] bg-red-default hover:bg-red-hover px-5 py-2 uppercase ml-auto rounded-lg font-medium'
@@ -166,7 +174,6 @@ const Formulario = () => {
       </motion.div>
     </section>
   )
-
 }
 
 export default Formulario

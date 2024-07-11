@@ -28,7 +28,7 @@ const InputTelefone = ({onChange, classe}) => {
     <>
       <input
         className={classe}
-        placeholder="Telefone com ddd"
+        placeholder="Digite seu telefone com ddd"
         type="tel"
         id='telefone'
         value={telefone}
