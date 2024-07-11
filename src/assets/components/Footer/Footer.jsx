@@ -2,8 +2,11 @@ import Logo from '../../images/bocarra_visual/Est1B.svg'
 import RedesSociais from './components/RedesSociais/RedesSociais'
 import Cards from './components/Cards/Cards'
 import { Link } from 'react-router-dom'
+import { FaWhatsapp } from 'react-icons/fa6';
+import { SiGmail } from 'react-icons/si';
 
 const Footer = () => {
+  const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
   return (
     <footer className='flex flex-col w-full justify-center items-center bg-red-default text-[white]'>
       <section className='flex justify-between p-5 md:p-8 w-maxW max-w-hd grande:max-w-grande bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
@@ -17,11 +20,14 @@ const Footer = () => {
                 Entre em contato conosco e vamos explorar suas ideias juntos!
               </p>
               <hr className='w-12' />
-              <p className='text-white-contraste'>
-                contato@bocarracircus.com
-                <br />
-                (19) 99889-4430
-              </p>
+              <div className='hidden flex-col gap-4 w-96 md:flex'>
+                <p className="flex items-center gap-2 mb-1 text-white-contraste">
+                  <SiGmail className='text-[white]' /> contato@bocarracircus.com
+                </p>
+                <a href={apiWhatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white-contraste">
+                  <FaWhatsapp className='text-[white]' />(19) 99889-4430
+                </a>
+              </div>
             </div>
             <RedesSociais />
           </div>
