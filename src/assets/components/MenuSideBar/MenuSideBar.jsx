@@ -39,7 +39,7 @@ const MenuSideBar = () => {
           className=" bg-blue-default w-full p-4 z-30 rounded-none h-svh"
            
         >
-          <List className="p-0 flex flex-col h-full">
+          <List className="p-0 flex flex-col h-full gap-4 mt-8">
             <Links onClick={handleClick} to={''} label={'Home'} local={local}/>
             <Links onClick={handleClick} to={'servicos'} label={'Serviços'} local={local}/>
             <Links onClick={handleClick} to={'sobre'} label={'Sobre Nós'} local={local}/>

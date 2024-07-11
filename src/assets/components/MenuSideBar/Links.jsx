@@ -13,7 +13,7 @@ const Links = ({label, to, onClick, local}) => {
   return (
     <Link to={`/${to}`} onClick={onClick} >
       <ListItem  
-      className={`text-[white] text-xl hover:bg-red-default hover:text-[white] active:bg-red-600 active:text-[white] ${local.pathname === `/${to}`? 'bg-red-default': ''}`}  >
+      className={`text-[white] text-2xl hover:bg-red-default hover:text-[white] active:bg-red-600 active:text-[white] ${local.pathname === `/${to}`? 'bg-red-default': ''}`}  >
         <ListItemPrefix>
           <ChevronRightIcon strokeWidth={3} className="h-3 w-5 text-[white]" />
         </ListItemPrefix>
