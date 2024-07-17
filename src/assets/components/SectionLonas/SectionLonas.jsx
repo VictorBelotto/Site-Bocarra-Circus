@@ -91,7 +91,7 @@ const SectionLonas = () => {
       <div className='w-full bg-blue-default flex justify-center py-16 mt-16'>
         <div className='w-maxW max-w-hd grande:max-w-grande'>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-red-default'>Veja outros modelos de Circo</h3>
+            <h3 className='text-[white]'>Veja outros modelos de Circo</h3>
             <Separador />
           </div>
           <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />

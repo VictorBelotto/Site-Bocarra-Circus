@@ -1,9 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { dataHistoria } from "./dataHistoria";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const Historia = () => {
-  const [inView, setInView] = useState('bg-[white]')
   const ref = useRef(null)
   const isInView = useInView(ref)
 
@@ -52,19 +51,17 @@ const Historia = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.8 }}
             >
-              {/*line red */}
               <motion.div
                 className="absolute left-0 top-0 w-[6px] bg-red-default h-full"
                 variants={item}
               ></motion.div>
 
-              {/*Bolinha */}
               <motion.div
                 className="z-10 flex  relative left-[-10px] md:left-[-11px]"
                 variants={dots}
               >
                 <div
-                  className={`w-6 h-6 md:w-7 md:h-7 ${inView ? 'bg-red-default' : 'bg-[white]'} rounded-full flex items-center justify-center border-4 border-red-default `}
+                  className={`w-6 h-6 md:w-7 md:h-7 bg-[white] rounded-full flex items-center justify-center border-4 border-red-default `}
                 >
                 </div>
               </motion.div>

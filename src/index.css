@@ -148,3 +148,19 @@ h5{
     transform: translateX(24px); /* ajuste conforme necessário */
   }
 }
+
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 8px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d03438;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: black;
+}
