@@ -36,7 +36,7 @@ const Missao = () => {
       <div className="flex w-full flex-col md:flex-row md:justify-between items-center gap-12" >
         {dataMissao.map((dado, index) => (
           <motion.div className="flex flex-col items-center max-w-80 gap-3" key={index} variants={item}>
-            <div className="w-32 h-32 bg-gray-700"></div>
+            <img className="w-32 h-32 text-[white] fill-white-fundo" src={dado.img}/>
             <h3 className="text-[white]">{dado.titulo}</h3>
             <p className="text-center text-white-contraste">{dado.descricao}</p>
           </motion.div>
