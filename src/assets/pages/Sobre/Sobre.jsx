@@ -1,8 +1,8 @@
 import Separador from '../../components/Separador/Separador'
-import ContinueNavegando from '../../components/continueNavegando/ContinueNavegando'
 import Historia from './components/historia/Historia'
 import Missao from './components/missao/Missao'
 import { motion } from 'framer-motion'
+import img from '../../images/bocarra_visual/CircoChrysostenes.webp'
 
 const Sobre = () => {
   const container = {
@@ -18,6 +18,10 @@ const Sobre = () => {
   const item = {
     hidden: { y: '200%', opacity: 0 },
     visible: { y: ['100%', 0], opacity: 1, transition: { duration: 0.5 } },
+  };
+  const item2 = {
+    hidden: { y: 60, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.3 } },
   };
 
   return (
@@ -35,10 +39,24 @@ const Sobre = () => {
           <motion.p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl' variants={item}>
             Na Bocarra Circus, oferecemos soluções personalizadas em coberturas têxteis, combinando tradição e inovação para atender às necessidades únicas de cada cliente.
           </motion.p>
-          <ContinueNavegando />
 
         </motion.div>
       </section>
+      <motion.div
+        className='w-maxW max-w-hd grande:max-w-grande flex z-10 relative top-[-200px] mb-[-136px]'
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.img variants={item2} src={img} alt="banner" className='w-[calc(100%/2)] md:w-[calc(100%/4)] h-[400px] object-cover' />
+        <motion.img variants={item2} src={img} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover hidden md:block' />
+        <motion.img variants={item2} src={img} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover hidden md:block' />
+        <motion.img variants={item2} src={img} alt="banner" className='w-[calc(100%/2)] md:w-[calc(100%/4)] h-[400px] object-cover' />
+      </motion.div>
+      <div className='w-maxW max-w-hd grande:max-w-grande mb-[-32px]'>
+        <Separador />
+      </div>
       <div className='flex w-full justify-center my-16'>
         <Historia />
       </div>

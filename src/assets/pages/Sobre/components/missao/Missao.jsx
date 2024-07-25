@@ -24,7 +24,7 @@ const Missao = () => {
 
   return (
     <motion.section
-      className="w-maxW max-w-hd grande:max-w-grande min-h-screen py-16 flex flex-col overflow-hidden"
+      className="w-maxW max-w-hd grande:max-w-grande  py-16 flex flex-col overflow-hidden"
       variants={container}
       initial="hidden"
       whileInView="visible"

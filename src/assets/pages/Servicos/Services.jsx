@@ -22,6 +22,10 @@ const Services = () => {
     hidden: { y: '200%', opacity: 0 },
     visible: { y: ['100%', 0], opacity: 1, transition: { duration: 0.5 } },
   };
+  const item2 = {
+    hidden: { y: 60, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.3 } },
+  };
 
   return (
     <main className='flex flex-col w-full items-center mb-32'>
@@ -41,12 +45,18 @@ const Services = () => {
 
         </div>
       </motion.div>
-      <div className='w-maxW max-w-hd grande:max-w-grande flex z-10 relative top-[-200px] mb-[-136px]'>
-        <img src={img1} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover' />
-        <img src={img3} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover' />
-        <img src={img4} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover' />
-        <img src={img2} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover' />
-      </div>
+      <motion.div
+        className='w-maxW max-w-hd grande:max-w-grande flex z-10 relative top-[-200px] mb-[-136px]'
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.img variants={item2} src={img1} alt="banner" className='w-[calc(100%/2)] md:w-[calc(100%/4)] h-[400px] object-cover' />
+        <motion.img variants={item2} src={img3} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover hidden md:block' />
+        <motion.img variants={item2} src={img4} alt="banner" className='w-[calc(100%/4)] h-[400px] object-cover hidden md:block' />
+        <motion.img variants={item2} src={img2} alt="banner" className='w-[calc(100%/2)] md:w-[calc(100%/4)] h-[400px] object-cover' />
+      </motion.div>
       <div className='w-maxW max-w-hd grande:max-w-grande mb-[-32px]'>
         <Separador />
       </div>
