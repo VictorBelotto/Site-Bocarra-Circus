@@ -7,12 +7,13 @@ const Transition = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Remove this line if you don't want to scroll to the top on route change
+    window.scrollTo(0, 0); 
   }, [location]);
+  console.log()
 
   const variants = {
-    initial: { opacity: 1, y: '-100vh' },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    initial: { opacity: 0 },
+    animate: { opacity: 1,  transition: { duration: 0.6 } },
   };
 
   return (

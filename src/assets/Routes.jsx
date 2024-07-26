@@ -15,7 +15,7 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Transition>
+     
         <Routes>
           <Route path='/' element={<PageBase />}>
             <Route index element={<Home />} />
@@ -27,6 +27,7 @@ const AppRoutes = () => {
             <Route path='/contato' element={<Contato />} />
           </Route>
         </Routes>
+        <Transition>
       </Transition>
     </BrowserRouter>
   );

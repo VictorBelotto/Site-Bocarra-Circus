@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`w-full z-20 bg-transparent fixed`}>
+    <div className={`w-full z-20 bg-transparent absolute top-0`}>
       <motion.header
         className={`flex w-full justify-center `}
         initial="visible"
