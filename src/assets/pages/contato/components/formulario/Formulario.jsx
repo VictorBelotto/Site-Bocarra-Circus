@@ -76,7 +76,7 @@ const Formulario = () => {
   return (
     <section className='flex w-full bg-blue-default py-16 justify-center'>
       <motion.div
-        className='w-maxW max-w-hd grande:max-w-grande'
+        className='w-maxW max-w-hd grande:max-w-grande overflow-hidden'
         variants={container}
         initial="hidden"
         whileInView="visible"
