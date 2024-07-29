@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import { sectionDataLona } from './SectionsDataLona/SectionDataLona.js'
-import ContinueNavegando from '../continueNavegando/ContinueNavegando.jsx';
 import Separador from '../Separador/Separador.jsx';
 import SliderOtherServices from '../sliderOtherServices/sliderOtherServices.jsx';
 import Galerry from '../gallery/Gallery.jsx'
@@ -53,7 +52,7 @@ const SectionLonas = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.div
-          className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-68px)] md:top-[calc(65svh-98px)] overflow-hidden'
+          className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(45svh-58px)] md:top-[calc(55svh-68px)] overflow-hidden'
           variants={itemY}
         >
           <motion.h2
@@ -66,7 +65,7 @@ const SectionLonas = () => {
         <img
           src={section.imagens[0]}
           alt={section.titulo}
-          className='w-full h-[55svh] md:h-[65svh] object-cover cursor-pointer'
+          className='w-full h-[45svh] md:h-[55svh] object-cover cursor-pointer'
         />
         <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
           <motion.p
@@ -76,9 +75,7 @@ const SectionLonas = () => {
             {section.descricao}
           </motion.p>
         </div>
-        <div className='w-maxW max-w-hd grande:max-w-grande mt-auto'>
-          <ContinueNavegando />
-        </div>
+        
 
       </motion.div>
       <div className='w-maxW max-w-hd grande:max-w-grande mt-16'>

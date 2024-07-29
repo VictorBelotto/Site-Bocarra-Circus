@@ -4,25 +4,25 @@ export const sectionDataLona = [
   {
     id: "redonda",
     titulo: "Redonda",
-    descricao: "As tendas do tipo domo possuem uma estrutura arredondada e ampla, proporcionando um espaço interior vasto e excelente visibilidade. Ideais para apresentações e eventos de grande escala, essas lonas oferecem um ambiente espaçoso e visualmente impactante.",
+    descricao: "A lona redonda é projetada para proporcionar um espaço amplo e sem obstruções, ideal para espetáculos que exigem visibilidade total. Seu formato circular permite uma disposição harmoniosa dos assentos, oferecendo ao público uma visão completa do palco. Este modelo é versátil e pode ser adaptado para diferentes tipos de eventos, mantendo a atmosfera mágica e envolvente do circo.",
     imagens: images_cupula_redonda
   },
   {
     id: "tradicional",
     titulo: "Tradicional",
-    descricao: "Estas lonas têm um design característico em arco, combinando elegância estrutural com funcionalidade. O design em arco melhora a estabilidade e oferece uma aparência esteticamente agradável, sendo adequado para diversas necessidades de entretenimento e performances.",
+    descricao: "A lona tradicional, ou padrão, é o modelo clássico que evoca a essência do circo tradicional. Com seu design atemporal e linhas simples, esta lona mantém a autenticidade e o charme do circo de antigamente. É ideal para espetáculos que buscam uma estética clássica e nostálgica, oferecendo uma experiência familiar e reconfortante ao público. A lona tradicional é a escolha perfeita para quem deseja preservar a verdadeira essência do circo.",
     imagens: images_tradicional
   },
   {
     id: "4bicos",
-    titulo: "Castelo",
-    descricao: "As lonas de circo Castel possuem uma aparência única, semelhante a um castelo, com 4 bicos, acrescentando um toque dramático a qualquer evento. Perfeitas para criar uma atmosfera cativante e encantadora, essas lonas são ideais para performances temáticas de circo e eventos.",
+    titulo: "Quatro Bicos",
+    descricao: "A lona 4 bicos, também conhecida como Castelo, oferece um design icônico com quatro picos elevados que evocam a imagem de um castelo de contos de fadas. Este modelo cria uma atmosfera encantadora e mágica, ideal para eventos que desejam impressionar o público com uma estética única e envolvente. A disposição dos picos proporciona uma excelente distribuição do espaço interno, tornando-o adequado para grandes espetáculos e eventos especiais.",
     imagens: images_4bicos
   },
   {
     id: "mastareus",
     titulo: "Mastareus",
-    descricao: "As lonas Crown são projetadas com múltiplos picos, assemelhando-se a uma coroa, proporcionando um visual grandioso e régio. Estas lonas oferecem tanto apelo visual quanto funcionalidade prática, sendo adequadas para eventos de alto perfil e performances que requerem uma presença visual marcante.",
+    descricao: "A lona mastareus, conhecida como Coroa, destaca-se por seu design imponente e majestoso, com um pico central elevado que confere um visual grandioso à estrutura. Este modelo cria uma sensação de altura e espaço, sendo perfeito para espetáculos que buscam impressionar o público com acrobacias aéreas e números de grande porte. A lona mastareus proporciona uma experiência visual impactante, transformando qualquer evento em um espetáculo memorável.",
     imagens: images_mastareus
   }
 ];

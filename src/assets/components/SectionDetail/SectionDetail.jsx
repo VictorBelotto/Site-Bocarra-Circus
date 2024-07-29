@@ -6,7 +6,6 @@ import '@fancyapps/ui/dist/fancybox/fancybox.css';
 import { Fancybox } from '@fancyapps/ui';
 import SliderOtherServices from '../sliderOtherServices/sliderOtherServices.jsx';
 import Gallery from '../gallery/Gallery.jsx';
-import ContinueNavegando from '../../components/continueNavegando/ContinueNavegando.jsx'
 import { sectionDataLona } from '../SectionLonas/SectionsDataLona/SectionDataLona.js'
 import { motion } from 'framer-motion';
 
@@ -56,9 +55,9 @@ const SectionDetail = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <motion.div 
-        className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(55svh-68px)] md:top-[calc(65svh-98px)] overflow-hidden'
-        variants={itemY}
+        <motion.div
+          className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(45svh-58px)] md:top-[calc(55svh-68px)] overflow-hidden'
+          variants={itemY}
         >
           <motion.h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4' variants={itemY}>{section.titulo}</motion.h2>
         </motion.div>
@@ -66,13 +65,10 @@ const SectionDetail = () => {
         <img
           src={section.imagens[0]}
           alt={section.titulo}
-          className='w-full h-[55svh] md:h-[65svh] object-cover cursor-pointer'
+          className='w-full h-[45svh] md:h-[55svh] object-cover cursor-pointer'
         />
         <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
           <motion.p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl' variants={itemY}>{section.descricao}</motion.p>
-        </div>
-        <div className='w-maxW max-w-hd grande:max-w-grande mt-auto'>
-          <ContinueNavegando />
         </div>
       </motion.div>
 

@@ -26,7 +26,7 @@ const MenuSideBar = () => {
         <Bars3Icon className="h-10 w-10 stroke-2 text-[white]" />
       </button>
 
-      <div className={`fixed inset-y-0 right-0 z-30 transition-transform transform ${isDrawerOpen ? "translate-x-0" : "translate-x-full"} bg-blue-contraste w-64 p-4 h-[100svh] `}>
+      <div className={`fixed inset-y-0 right-0 z-30 transition-transform transform ${isDrawerOpen ? "translate-x-0 block" : "translate-x-full hidden"} bg-blue-contraste w-64 p-4 h-[100svh] `}>
         <div className="flex flex-col h-full">
           <div className="flex justify-end">
             <button onClick={closeDrawer}>
