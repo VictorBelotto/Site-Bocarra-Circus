@@ -18,20 +18,23 @@ const Header = () => {
   }, [location.pathname]);
 
   return (
-    <div className={`w-full z-20 bg-transparent absolute top-0`}>
-      <motion.header
-        className={`flex w-full justify-center `}
-        initial="visible"
-        animate="visible"
-        variants={variants}
-        key={location.pathname}  
-      >
-        <div className='flex w-maxW max-w-hd grande:max-w-grande py-2 justify-between items-center'>
-          <Logo escrita={escritaBranca} />
-          {window.innerWidth < 968 ? <MenuSideBar /> : <Nav />}
-        </div>
-      </motion.header>
+    <div className='relative w-full'>
+      <div className={`w-full z-20 bg-transparent absolute top-0`}>
+        <motion.header
+          className={`flex w-full justify-center `}
+          initial="visible"
+          animate="visible"
+          variants={variants}
+          key={location.pathname}
+        >
+          <div className='flex w-maxW max-w-hd grande:max-w-grande py-2 justify-between items-center'>
+            <Logo escrita={escritaBranca} />
+            {window.innerWidth < 968 ? <MenuSideBar /> : <Nav />}
+          </div>
+        </motion.header>
+      </div>
     </div>
+
   );
 };
 

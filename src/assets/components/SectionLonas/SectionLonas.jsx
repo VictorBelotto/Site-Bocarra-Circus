@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 import { Fancybox } from '@fancyapps/ui';
 import { motion } from 'framer-motion';
+import { sectionsData } from '../SectionDetail/sectionsData/sectionsData.js';
 
 const SectionLonas = () => {
   const { id } = useParams()
@@ -45,7 +46,7 @@ const SectionLonas = () => {
       key={section.id}
     >
       <motion.div
-        className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'
+        className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center relative'
         variants={container}
         initial="hidden"
         whileInView="visible"
@@ -75,7 +76,7 @@ const SectionLonas = () => {
             {section.descricao}
           </motion.p>
         </div>
-        
+
 
       </motion.div>
       <div className='w-maxW max-w-hd grande:max-w-grande mt-16'>
@@ -94,6 +95,13 @@ const SectionLonas = () => {
           <SliderOtherServices section={'circo'} sectionsData={sectionDataLona} />
         </div>
       </div>
+      <div className='w-maxW max-w-hd grande:max-w-grande py-16'>
+          <div className='flex flex-col gap-4'>
+            <h3 className='text-red-default'>Veja outros serviços</h3>
+            <Separador />
+          </div>
+          <SliderOtherServices section={'servicos'} sectionsData={sectionsData} />
+        </div>
     </main>
   )
 }

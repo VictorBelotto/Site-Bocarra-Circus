@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 
 const SectionDetail = () => {
   const { id } = useParams();
+
   const container = {
     hidden: { opacity: 1 },
     visible: {
@@ -27,6 +28,7 @@ const SectionDetail = () => {
   };
 
   const section = sectionsData.find(section => section.id === id);
+
   useEffect(() => {
     Fancybox.bind('[data-fancybox="gallery"]', {
       Thumbs: {
@@ -49,14 +51,14 @@ const SectionDetail = () => {
       key={section.id}
     >
       <motion.div
-        className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center'
+        className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center relative'
         variants={container}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.div
-          className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(45svh-58px)] md:top-[calc(55svh-68px)] overflow-hidden'
+          className='w-maxW max-w-hd grande:max-w-grande absolute top-[calc(45vh-58px)] md:top-[calc(55vh-68px)] overflow-hidden'
           variants={itemY}
         >
           <motion.h2 className='text-[white] w-fit text-wrap bgBlur px-2 md:px-4' variants={itemY}>{section.titulo}</motion.h2>
@@ -65,7 +67,7 @@ const SectionDetail = () => {
         <img
           src={section.imagens[0]}
           alt={section.titulo}
-          className='w-full h-[45svh] md:h-[55svh] object-cover cursor-pointer'
+          className='w-full h-[45vh] md:h-[55vh] object-cover cursor-pointer'
         />
         <div className='w-maxW max-w-hd grande:max-w-grande mt-3 md:mt-6'>
           <motion.p className='max-w-[1000px] text-white-contraste text-lg sm:text-2xl' variants={itemY}>{section.descricao}</motion.p>

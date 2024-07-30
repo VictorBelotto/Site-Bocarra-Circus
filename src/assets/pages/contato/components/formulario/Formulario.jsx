@@ -88,12 +88,12 @@ const Formulario = () => {
 
         <form onSubmit={handleSubmit} className='flex flex-col gap-16 w-full'>
 
-          <motion.div className='flex w-full  gap-16 justify-between items-center' variants={itemY}>
-            <h5 className='text-white-contraste w-96'>
+          <motion.div className='flex w-full gap-16 flex-col' variants={itemY}>
+            <h5 className='text-white-contraste w-maxW'>
               Envie uma mensagem pelo formulário ou entre em contato por um de nossos canais de atendimento.
             </h5>
 
-            <div className='hidden flex-col gap-4 w-96 md:flex'>
+            <div className='flex-col gap-4 w-maxW flex'>
               <p className="flex items-center gap-2 mb-1 text-white-contraste">
                 <SiGmail className='text-[white]' /> contato@bocarracircus.com
               </p>
@@ -104,14 +104,16 @@ const Formulario = () => {
           </motion.div>
 
           <motion.section
-            className='flex flex-col md:flex-row gap-16 justify-between w-full'
+            className='flex flex-col md:flex-row gap-32 w-full'
             variants={container}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.4 }}
           >
-            <motion.div className='flex flex-col gap-16' variants={item} >
-              <label htmlFor="nome" className="w-maxW md:w-96 text-red-default text-xl">
+          
+            <motion.div className='flex w-maxW max-w-[400px] flex-col gap-16' variants={item} >
+           
+              <label htmlFor="nome" className="w-full max-w-[400px] text-red-default text-xl">
                 Nome completo
                 <input
                   className='w-full mt-3 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
@@ -124,7 +126,7 @@ const Formulario = () => {
                 />
               </label>
 
-              <label htmlFor="telefone" className="w-maxW md:w-96 text-red-default text-xl">
+              <label htmlFor="telefone" className="w-full max-w-[400px] text-red-default text-xl">
                 Telefone
                 <InputTelefone
                   classe={'w-full mt-3 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'}
@@ -133,7 +135,7 @@ const Formulario = () => {
                 />
               </label>
 
-              <label htmlFor="email" className="w-maxW md:w-96 text-red-default text-xl">
+              <label htmlFor="email" className="w-full max-w-[400px] text-red-default text-xl">
                 Email
                 <input
                   className='w-full mt-3 pb-2 bg-transparent border-b text-[white] placeholder:text-white-contraste focus:outline-none'
@@ -147,7 +149,7 @@ const Formulario = () => {
               </label>
             </motion.div>
 
-            <motion.div className='flex-grow w-maxW md:max-w-96 flex flex-col min-h-80' variants={item2}>
+            <motion.div className='flex-grow w-maxW max-w-[400px] flex flex-col min-h-80' variants={item2}>
               <label htmlFor="message" className="w-full text-red-default text-xl flex-grow flex flex-col">
                 Mensagem
                 <textarea
@@ -162,10 +164,10 @@ const Formulario = () => {
             </motion.div>
           </motion.section>
 
-          <div className='flex w-maxW md:w-full'>
+          <div className='flex w-maxW'>
             <button
               type="submit"
-              className='w-fit text-[white] bg-red-default hover:bg-red-hover px-5 py-2 uppercase ml-auto rounded-lg font-medium'
+              className='w-fit text-[white] bg-red-default hover:bg-red-hover px-5 py-2 uppercase  rounded-lg font-medium'
             >
               Enviar mensagem
             </button>

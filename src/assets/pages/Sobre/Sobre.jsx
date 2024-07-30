@@ -37,7 +37,7 @@ const Sobre = () => {
           <Separador />
           <motion.h2 className="text-[white] mb-8 md:mb-16 lg:mb-8" variants={item}>Conheça nossa história</motion.h2>
           <motion.p className='max-w-[1000px] text-white-contraste text-xl sm:text-2xl' variants={item}>
-            Na Bocarra Circus, oferecemos soluções personalizadas em coberturas têxteis, combinando tradição e inovação para atender às necessidades únicas de cada cliente.
+            Descubra a trajetória do Bocarra Circus, uma história marcada por tradição, inovação e resiliência. Desde 1961, quando Chrysostenes herdou o circo de seu pai, nossa missão tem sido levar a magia do circo a todos os cantos do país. Com uma dedicação inabalável à arte circense, enfrentamos desafios e abraçamos oportunidades ao longo das décadas.
           </motion.p>
 
         </motion.div>

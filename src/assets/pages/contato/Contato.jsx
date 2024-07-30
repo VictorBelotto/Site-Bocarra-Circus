@@ -1,5 +1,4 @@
 import Separador from '../../../assets/components/Separador/Separador.jsx'
-import ContinueNavegando from '../../components/continueNavegando/ContinueNavegando.jsx'
 import Endereco from './components/endereco/Endereco'
 import Formulario from './components/formulario/Formulario.jsx'
 import { motion } from 'framer-motion'
@@ -43,9 +42,7 @@ const Contato = () => {
           </motion.p>
 
         </div>
-        <div className='w-maxW max-w-hd grande:max-w-grande mt-auto'>
-          <ContinueNavegando />
-        </div>
+       
       </motion.div>
 
       <motion.div

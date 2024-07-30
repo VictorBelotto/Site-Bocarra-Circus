@@ -40,7 +40,7 @@ const MenuSideBar = () => {
             <Links onClick={handleClick} to="contato" label="Contato" local={location} />
           </div>
           <div className="mt-auto flex justify-center">
-            <Link to="/" className="flex w-full justify-end">
+            <Link to="/" onClick={handleClick} className="flex w-full justify-end">
               <img src={Logo} alt="Logo Bocarra Circus" className="w-28" />
             </Link>
           </div>

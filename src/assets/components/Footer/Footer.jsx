@@ -40,7 +40,7 @@ const Footer = () => {
             />
             <Cards
               titulo={'Galeria'}
-              label={'Veja nossos projetos'}
+              label={'Veja nossos projetos circenses'}
               to={'/servicos/circo'}
             />
             <Cards
