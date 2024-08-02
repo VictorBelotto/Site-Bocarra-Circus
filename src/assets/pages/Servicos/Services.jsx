@@ -6,6 +6,7 @@ import img1 from "../../images/servicos_banner/1.webp"
 import img2 from "../../images/servicos_banner/2.webp"
 import img3 from "../../images/servicos_banner/3.webp"
 import img4 from "../../images/servicos_banner/7.webp"
+import { Helmet } from 'react-helmet';
 
 const Services = () => {
   const container = {
@@ -29,6 +30,11 @@ const Services = () => {
 
   return (
     <main className='flex flex-col w-full items-center mb-32'>
+       <Helmet>
+        <title>Serviços</title>
+        <meta name="description" content="Alguma descrição serviços" />
+        <meta property="og:title" content="MyApp" />
+      </Helmet>
       <motion.div
         className='flex w-full bg-blue-default justify-center '
         variants={container}

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet'
 import Separador from '../../../assets/components/Separador/Separador.jsx'
 import Endereco from './components/endereco/Endereco'
 import Formulario from './components/formulario/Formulario.jsx'
@@ -20,13 +21,18 @@ const Contato = () => {
   };
 
   const skeleton = {
-    hidden: { width: '100%' , opacity: 1 },
+    hidden: { width: '100%', opacity: 1 },
     visible: { width: '0%', opacity: 1, transition: { duration: 0.5, delay: 0.55 } },
   }
 
 
   return (
     <section className='flex flex-col pb-32  items-center'>
+      <Helmet>
+        <title>Entre em contato</title>
+        <meta name="description" content="Alguma descrição contato" />
+        <meta property="og:title" content="MyApp" />
+      </Helmet>
       <motion.div
         className='w-full pt-32 bg-blue-default flex flex-col items-center min-h-screen'
         variants={container}
@@ -42,7 +48,7 @@ const Contato = () => {
           </motion.p>
 
         </div>
-       
+
       </motion.div>
 
       <motion.div
@@ -50,9 +56,9 @@ const Contato = () => {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{once: true, amount: 0.3}}
+        viewport={{ once: true, amount: 0.3 }}
       >
-       
+
         <motion.div className='w-maxW  max-w-hd grande:max-w-grande h-[450px] bg-white-contraste' >
           <motion.div className='w-full h-[450px] bg-gray-text' variants={skeleton}></motion.div>
         </motion.div>

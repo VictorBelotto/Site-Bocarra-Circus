@@ -3,6 +3,7 @@ import Historia from './components/historia/Historia'
 import Missao from './components/missao/Missao'
 import { motion } from 'framer-motion'
 import img from '../../images/bocarra_visual/CircoChrysostenes.webp'
+import { Helmet } from 'react-helmet';
 
 const Sobre = () => {
   const container = {
@@ -26,6 +27,11 @@ const Sobre = () => {
 
   return (
     <main className='flex flex-col w-full items-center mb-32' >
+      <Helmet>
+        <title>Sobre Nós</title>
+        <meta name="description" content="Alguma descrição." />
+        <meta property="og:title" content="MyApp" />
+      </Helmet>
       <section className="flex w-full bg-blue-default justify-center ">
         <motion.div
           className="w-maxW max-w-hd grande:max-w-grande min-h-screen pt-36 flex flex-col"

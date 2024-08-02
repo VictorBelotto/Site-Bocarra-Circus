@@ -1,14 +1,9 @@
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { dataHistoria } from "./dataHistoria";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const Historia = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref)
-
-  useEffect(() => {
-    console.log("Element is in view: ", isInView)
-  }, [isInView])
 
   const container = {
     hidden: { opacity: 0 },
