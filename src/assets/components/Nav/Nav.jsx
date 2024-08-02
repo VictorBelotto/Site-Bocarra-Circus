@@ -74,11 +74,11 @@ const Nav = () => {
           </motion.div>
         </li>
 
-        <li className='hover:text-red-default overflow-hidden'>
+    {/*     <li className='hover:text-red-default overflow-hidden'>
           <motion.div variants={item}>
             <Link to={'/sobre'}>Sobre Nós</Link>
           </motion.div>
-        </li>
+        </li> */}
 
         <li className='relative'>
           <motion.div

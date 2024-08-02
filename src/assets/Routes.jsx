@@ -20,7 +20,7 @@ const AppRoutes = () => {
           <Route path='/' element={<PageBase />}>
             <Route index element={<Home />} />
             <Route path='/portifolio' element={<Portifolio />} />
-            <Route path='/sobre' element={<Sobre />} />
+            {/* <Route path='/sobre' element={<Sobre />} /> */}
             <Route path='/servicos' element={<Services />} />
             <Route path='/servicos/:id' element={<SectionDetail />} />
             <Route path='/circo/:id' element={<SectionLonas />} />

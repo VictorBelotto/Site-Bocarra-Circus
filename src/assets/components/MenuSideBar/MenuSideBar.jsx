@@ -36,7 +36,7 @@ const MenuSideBar = () => {
           <div className="p-0 flex flex-col h-fit  gap-4 mt-4">
             <Links onClick={handleClick} to="" label="Home" local={location} />
             <Links onClick={handleClick} to="servicos" label="Serviços" local={location} />
-            <Links onClick={handleClick} to="sobre" label="Sobre Nós" local={location} />
+         {/*    <Links onClick={handleClick} to="sobre" label="Sobre Nós" local={location} /> */}
             <Links onClick={handleClick} to="contato" label="Contato" local={location} />
           </div>
           <div className="mt-auto flex justify-center">

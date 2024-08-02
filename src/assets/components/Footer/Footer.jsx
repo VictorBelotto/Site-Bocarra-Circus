@@ -43,12 +43,14 @@ const Footer = () => {
               label={'Veja nossos projetos circenses'}
               to={'/servicos/circo'}
             />
-            <Cards
+
+      {/*       <Cards
               classe={'mr-16 md:mr-0'}
               titulo={'Sobre Nós'}
               label={'Conheça nossa história'}
               to={'/sobre'}
             />
+ */}
             <Cards
               titulo={'Contato'}
               label={'Entre em contato conosco'}

@@ -23,9 +23,12 @@ const Home = () => {
         <Servicos />
       </div>
       <Processo />
-      <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
-        <Processo2 />
-      </div>
+
+      {/*      
+        <div className='flex flex-col w-full items-center justify-center bg-blue-default'>
+          <Processo2 />
+        </div>
+      */}
       <div className='flex flex-col w-full items-center justify-center bg-[#f0f0f0]'>
         <SliderClientes />
       </div>
