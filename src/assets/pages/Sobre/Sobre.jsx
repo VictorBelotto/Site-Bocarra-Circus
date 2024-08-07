@@ -29,8 +29,8 @@ const Sobre = () => {
     <main className='flex flex-col w-full items-center mb-32' >
       <Helmet>
         <title>Sobre Nós</title>
-        <meta name="description" content="Alguma descrição." />
-        <meta property="og:title" content="MyApp" />
+        <meta name="description" content="Alguma descrição sobre." />
+        <meta property="og:title" content="Sobre" />
       </Helmet>
       <section className="flex w-full bg-blue-default justify-center ">
         <motion.div

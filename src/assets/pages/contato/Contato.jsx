@@ -31,7 +31,13 @@ const Contato = () => {
       <Helmet>
         <title>Entre em contato</title>
         <meta name="description" content="Alguma descrição contato" />
-        <meta property="og:title" content="MyApp" />
+        <meta property="og:title" content="Contato" />
+        <meta name="keywords" content="Circo, Lonas, Bocarra Circus, Tradição, Inovação, bocarra circus site, homepage bocarra, bocarra, circus brasil, fabricante de lonas" />
+        <meta name="author" content="Bocarra Circus" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.bocarracircus.com/contato" />
+        <meta property="og:description" content="Entre em contato" />
       </Helmet>
       <motion.div
         className='w-full pt-32 bg-blue-default flex flex-col items-center min-h-screen'

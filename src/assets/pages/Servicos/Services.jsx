@@ -33,7 +33,13 @@ const Services = () => {
        <Helmet>
         <title>Serviços</title>
         <meta name="description" content="Alguma descrição serviços" />
-        <meta property="og:title" content="MyApp" />
+        <meta property="og:title" content="servicos" />
+        <meta name="keywords" content="Circo, Lonas, Bocarra Circus, Tradição, Inovação, bocarra circus site, homepage bocarra, bocarra, circus brasil, fabricante de lonas" />
+        <meta name="author" content="Bocarra Circus" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.bocarracircus.com/servicos" />
+        <meta property="og:description" content="Veja nossas soluções" />
       </Helmet>
       <motion.div
         className='flex w-full bg-blue-default justify-center '
