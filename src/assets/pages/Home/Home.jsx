@@ -5,13 +5,13 @@ import Origem from './components/Origem/Origem';
 import Processo from './components/Processo/Processo';
 import Processo2 from './components/Processo2/Processo2';
 import Slogan from './components/slogan/Slogan';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 const Home = () => {
   return (
     <main className='flex flex-col w-full items-center'>
-         <Helmet>
+      <Helmet>
         <title>Home - Bocarra Circus</title>
         <meta name="description" content="Alguma descrição Home" />
         <meta name="keywords" content="Circo, Lonas, Bocarra Circus, Tradição, Inovação, bocarra circus site, homepage bocarra, bocarra, circus brasil, fabricante de lonas" />
@@ -23,6 +23,7 @@ const Home = () => {
         <meta property="og:description" content="Com mais de 30 anos de experiência, a Bocarra Circus oferece lonas circenses de alta qualidade, unindo tradição e inovação para encantar e inspirar o público." />
         <meta property="og:image" content="../../images/bocarra_visual/rino.svg" />
       </Helmet>
+
       <CarrosselPrincipal />
       <Slogan />
       <Origem />

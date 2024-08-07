@@ -6,7 +6,8 @@ import img1 from "../../images/servicos_banner/1.webp"
 import img2 from "../../images/servicos_banner/2.webp"
 import img3 from "../../images/servicos_banner/3.webp"
 import img4 from "../../images/servicos_banner/7.webp"
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
 
 const Services = () => {
   const container = {

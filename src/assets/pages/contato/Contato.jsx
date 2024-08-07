@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async';
 import Separador from '../../../assets/components/Separador/Separador.jsx'
 import Endereco from './components/endereco/Endereco'
 import Formulario from './components/formulario/Formulario.jsx'
