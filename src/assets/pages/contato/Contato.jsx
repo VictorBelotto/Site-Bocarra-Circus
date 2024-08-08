@@ -30,14 +30,15 @@ const Contato = () => {
     <section className='flex flex-col pb-32  items-center'>
       <Helmet>
         <title>Entre em contato</title>
-        <meta name="description" content="Alguma descrição contato" />
-        <meta property="og:title" content="Contato" />
+        <meta name="description" content=" Tem um projeto em mente? Ou está curioso sobre nossos serviços? Entre em contato conosco e vamos explorar suas ideias juntos! (19) 99692-4744" />
+
+        <meta property="og:title" content="Contato - Bocarra Circus" />
         <meta name="keywords" content="Circo, Lonas, Bocarra Circus, Tradição, Inovação, bocarra circus site, homepage bocarra, bocarra, circus brasil, fabricante de lonas" />
         <meta name="author" content="Bocarra Circus" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bocarracircus.com/contato" />
-        <meta property="og:description" content="Entre em contato" />
+        <meta property="og:description" content="Entre em contato - Bocarra Circus" />
       </Helmet>
       <motion.div
         className='w-full pt-32 bg-blue-default flex flex-col items-center min-h-screen'

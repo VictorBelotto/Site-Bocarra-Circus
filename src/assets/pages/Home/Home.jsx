@@ -13,7 +13,9 @@ const Home = () => {
     <main className='flex flex-col w-full items-center'>
       <Helmet>
         <title>Home - Bocarra Circus</title>
-        <meta name="description" content="Alguma descrição Home" />
+        <meta name="description" content="Com mais de 30 anos de experiência, a Bocarra Circus oferece lonas circenses de alta qualidade, unindo tradição e inovação para encantar e inspirar o público." />
+
+        <meta property="og:description" content="Com mais de 30 anos de experiência, a Bocarra Circus oferece lonas circenses de alta qualidade, unindo tradição e inovação para encantar e inspirar o público." />
         <meta name="keywords" content="Circo, Lonas, Bocarra Circus, Tradição, Inovação, bocarra circus site, homepage bocarra, bocarra, circus brasil, fabricante de lonas" />
         <meta name="author" content="Bocarra Circus" />
         <meta name="robots" content="index, follow" />

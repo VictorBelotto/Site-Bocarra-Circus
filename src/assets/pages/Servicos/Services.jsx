@@ -32,8 +32,8 @@ const Services = () => {
   return (
     <main className='flex flex-col w-full items-center mb-32'>
        <Helmet>
-        <title>Serviços</title>
-        <meta name="description" content="Alguma descrição serviços" />
+        <title>Veja nossos serviços</title>
+        <meta name="description" content="Na Bocarra Circus, oferecemos soluções personalizadas em coberturas têxteis, combinando tradição e inovação para atender às necessidades únicas de cada cliente." />
         <meta property="og:title" content="servicos" />
         <meta name="keywords" content="Circo, Lonas, Bocarra Circus, Tradição, Inovação, bocarra circus site, homepage bocarra, bocarra, circus brasil, fabricante de lonas" />
         <meta name="author" content="Bocarra Circus" />
