@@ -31,6 +31,11 @@ const Sobre = () => {
         <title>Sobre Nós</title>
         <meta name="description" content="Alguma descrição sobre." />
         <meta property="og:title" content="Sobre" />
+        <meta name="author" content="Bocarra Circus" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.bocarracircus.com/sobre" />
+        <meta property="og:description" content="Veja nossas soluções" />
       </Helmet>
       <section className="flex w-full bg-blue-default justify-center ">
         <motion.div
