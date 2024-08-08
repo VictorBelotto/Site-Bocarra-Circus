@@ -35,7 +35,7 @@ const Services = () => {
         <title>Veja nossos serviços</title>
         <meta name="description" content="Na Bocarra Circus, oferecemos soluções personalizadas em coberturas têxteis, combinando tradição e inovação para atender às necessidades únicas de cada cliente." />
         <meta property="og:title" content="servicos" />
-        <meta name="keywords" content="Circo, Lonas, Bocarra Circus, Tradição, Inovação, bocarra circus site, homepage bocarra, bocarra, circus brasil, fabricante de lonas" />
+        <meta name="keywords" content="Circo, Lonas, Bocarra Circus, fabricante de lonas, serviços, servicos, " />
         <meta name="author" content="Bocarra Circus" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
