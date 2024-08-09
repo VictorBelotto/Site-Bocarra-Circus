@@ -1,7 +1,7 @@
-import circo from '../../../../images/imagens_circos/1.webp'
 import Titulo from '../../../../components/Titulo/Titulo'
 import Separador from '../../../../components/Separador/Separador'
 import { motion } from 'framer-motion'
+import video3d from '../../../../videos/video_3d.mp4'
 
 const Processo2 = () => {
   const container = {
@@ -31,26 +31,32 @@ const Processo2 = () => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <Separador />
-      <Titulo titulo={'Queizy Process'} subtitulo={'Sliced'} variant={'blue'} />
+      <Titulo titulo={'Processo Criativo'} subtitulo={'Processo único e personalizado'} variant={'blue'} />
       <div className=' flex flex-col lg:flex-row w-full rounded-lg justify-between gap-8 overflow-hidden'>
         <div className='flex flex-col gap-4 overflow-hidden'>
-          <motion.img
+          <motion.video
+            autoPlay
+            loop
+            muted
+            playsInline
             variants={item}
-            src={circo}
             alt='Imagem Circo'
             className='w-full lg:w-[700px] max-h-[400px] object-cover'
-          />
+          >
+            <source src={video3d} type='video/mp4' />
+            Seu navegador não suporta o elemento de vídeo.
+          </motion.video>
           <motion.p
             variants={item}
             className='text-red-default text-base italic justify-self-end text-end'
           >
-            mudar aqui para video
+            Lona quatro bicos
           </motion.p>
         </div>
         <motion.div className='flex flex-col  gap-4 lg:mt-0' variants={item2}>
-          <h3 className='text-[white]' >Nossa Etapa Tal</h3>
+          <h3 className='text-[white]' >De Ideias a Obras-Primas</h3>
           <p className='w-full text-white-contraste  mb-6 lg:mb-0 lg:max-w-[460px] indent-4'>
-            Com raízes profundas na tradição circense, a Bocarra Circus carrega consigo uma história que atravessa gerações. Originária de uma linhagem respeitável, nossa jornada começou há décadas, moldando nossa identidade com tradição, paixão e autenticidade. Ao longo dos anos, enfrentamos desafios e celebramos conquistas, fortalecendo nosso compromisso com a excelência e a inovação. Guiados pela nossa herança circense, continuamos aprimorando nossas habilidades, sempre em busca de novas formas de encantar e inspirar nosso público.
+            Na Bocarra Circus, cada lona é uma obra única, fruto de um processo criativo que valoriza a exclusividade e a personalização. Nosso programa 3D permite a visualização detalhada do projeto antes mesmo de ele ganhar vida, garantindo que cada lona atenda exatamente às expectativas de nossos clientes. Através dessa tecnologia, combinamos nossa vasta experiência com inovação, transformando ideias em realidade com precisão milimétrica.
           </p>
         </motion.div>
       </div>

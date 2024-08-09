@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
-import img1 from '../../../../images/imagens_carrossel/2.webp';
-import img2 from '../../../../images/imagens_carrossel/3.webp';
-import img3 from '../../../../images/imagens_carrossel/4.webp';
-import img4 from '../../../../images/imagens_carrossel/5.webp';
+import img1 from '../../../../images/imagens_carrossel/1.webp';
+import img2 from '../../../../images/imagens_carrossel/2.webp';
+import img3 from '../../../../images/imagens_carrossel/3.webp';
+import img4 from '../../../../images/imagens_carrossel/4.webp';
 import { Carousel } from "@fancyapps/ui/dist/carousel/carousel.esm.js";
 import { Autoplay } from "@fancyapps/ui/dist/carousel/carousel.autoplay.esm.js";
 import "@fancyapps/ui/dist/carousel/carousel.css";
