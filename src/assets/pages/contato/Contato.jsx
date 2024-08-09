@@ -39,6 +39,7 @@ const Contato = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bocarracircus.com/contato" />
         <meta property="og:description" content="Entre em contato - Bocarra Circus" />
+        <link rel="canonical" href="https://www.bocarracircus.com/contato" />
       </Helmet>
       <motion.div
         className='w-full pt-32 bg-blue-default flex flex-col items-center min-h-screen'

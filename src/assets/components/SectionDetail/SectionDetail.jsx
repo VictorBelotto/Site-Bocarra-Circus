@@ -8,6 +8,7 @@ import SliderOtherServices from '../sliderOtherServices/sliderOtherServices.jsx'
 import Gallery from '../gallery/Gallery.jsx';
 import { sectionDataLona } from '../SectionLonas/SectionsDataLona/SectionDataLona.js'
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const SectionDetail = () => {
   const { id } = useParams();
@@ -50,6 +51,15 @@ const SectionDetail = () => {
       className='flex flex-col w-full justify-center items-center pb-32'
       key={section.id}
     >
+      <Helmet>
+        <title>{section.titulo}</title>
+        <meta name="description" content={section.descricao} />
+        <meta name="keywords" content="Circo, Lonas, Bocarra Circus, fabricante de lonas, serviços, servicos, " />
+        <meta name="author" content="Bocarra Circus" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href={`https://www.bocarracircus.com/servicos/${section.id}`} />
+      </Helmet>
       <motion.div
         className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center relative'
         variants={container}

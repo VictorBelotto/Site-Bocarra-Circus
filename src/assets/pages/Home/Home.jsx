@@ -23,6 +23,7 @@ const Home = () => {
         <meta property="og:title" content="Bocarra Circus - Tradição e Inovação em Lonas Circenses" />
         <meta property="og:description" content="Com mais de 30 anos de experiência, a Bocarra Circus oferece lonas circenses de alta qualidade, unindo tradição e inovação para encantar e inspirar o público." />
         <meta property="og:image" content="../../images/bocarra_visual/rino.svg" />
+        <link rel="canonical" href="https://www.bocarracircus.com/servicos" />
       </Helmet>
 
       <CarrosselPrincipal />

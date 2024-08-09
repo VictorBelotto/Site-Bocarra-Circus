@@ -31,7 +31,7 @@ const Services = () => {
 
   return (
     <main className='flex flex-col w-full items-center mb-32'>
-       <Helmet>
+      <Helmet>
         <title>Veja nossos serviços</title>
         <meta name="description" content="Na Bocarra Circus, oferecemos soluções personalizadas em coberturas têxteis, combinando tradição e inovação para atender às necessidades únicas de cada cliente." />
         <meta property="og:title" content="servicos" />
@@ -41,6 +41,7 @@ const Services = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bocarracircus.com/servicos" />
         <meta property="og:description" content="Veja nossas soluções" />
+        <link rel="canonical" href="https://www.bocarracircus.com/servicos" />
       </Helmet>
       <motion.div
         className='flex w-full bg-blue-default justify-center '
