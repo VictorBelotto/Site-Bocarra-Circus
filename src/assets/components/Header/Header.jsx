@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import escritaBranca from '../../images/bocarra_visual/escritaBranca.svg';
@@ -14,9 +13,6 @@ const Header = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
 
-  useEffect(() => {
-  }, [location.pathname]);
-
   return (
     <div className='relative w-full'>
       <div className={`w-full z-20 bg-transparent absolute top-0`}>
@@ -27,7 +23,7 @@ const Header = () => {
           variants={variants}
           key={location.pathname}
         >
-          <div className='flex w-maxW max-w-hd grande:max-w-grande py-2 justify-between items-center'>
+          <div className='flex w-maxW max-w-hd grande:max-w-grande py-2 justify-between items-center relative'>
             <Logo escrita={escritaBranca} />
             {window.innerWidth < 968 ? <MenuSideBar /> : <Nav />}
           </div>
