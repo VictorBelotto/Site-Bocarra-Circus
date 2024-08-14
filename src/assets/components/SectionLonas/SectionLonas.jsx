@@ -53,7 +53,7 @@ const SectionLonas = () => {
         <meta name="author" content="Bocarra Circus" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href={`https://www.bocarracircus.com/servicos/${section.id}`} />
+        <link rel="canonical" href={`https://www.bocarracircus.com/circo/${section.id}`} />
       </Helmet>
       <motion.div
         className='bg-blue-default flex flex-col w-full min-h-[100vh] items-center relative'
