@@ -71,7 +71,7 @@ const Formulario = () => {
     })
   };
 
-  const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+  const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519989884254&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
 
   return (
     <section className='flex w-full bg-blue-default py-16 justify-center'>
@@ -98,7 +98,7 @@ const Formulario = () => {
                 <SiGmail className='text-[white]' /> contato@bocarracircus.com
               </p>
               <a href={apiWhatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white-contraste">
-                <FaWhatsapp className='text-[white]' />(19) 99889-4430
+                <FaWhatsapp className='text-[white]' />(19) 98988-4254
               </a>
             </div>
           </motion.div>

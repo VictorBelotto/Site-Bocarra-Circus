@@ -6,7 +6,7 @@ import { FaWhatsapp } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 
 const Footer = () => {
-  const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+  const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519989884254&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
   return (
     <footer className='flex flex-col w-full justify-center items-center bg-red-default text-[white]'>
       <section className='flex justify-between p-5 md:p-8 w-maxW max-w-hd grande:max-w-grande bg-blue-default rounded-lg relative top-[-64px] mb-[-64px]'>
@@ -25,7 +25,7 @@ const Footer = () => {
                   <SiGmail className='text-[white]' /> contato@bocarracircus.com
                 </p>
                 <a href={apiWhatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white-contraste">
-                  <FaWhatsapp className='text-[white]' />(19) 99889-4430
+                  <FaWhatsapp className='text-[white]' />(19) 98988-4254
                 </a>
               </div>
             </div>
@@ -44,19 +44,19 @@ const Footer = () => {
               to={'/servicos/circo'}
             />
 
-      {/*       <Cards
+             {/*       <Cards
               classe={'mr-16 md:mr-0'}
               titulo={'Sobre Nós'}
               label={'Conheça nossa história'}
               to={'/sobre'}
             />
- */}
+             */}
             <Cards
               titulo={'Contato'}
               label={'Entre em contato conosco'}
               to={'/contato'}
             />
-            <Link className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0     sm:static' to={'/'}>
+            <Link className='w-32 ml-auto mt-48 md:mt-0 self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0     sm:static' to={'/'}>
               <img
                 className='w-32 ml-auto self-end relative top-[-96px] mb-[-96px] sm:mt-8 lg:mt-0 sm:top-0 sm:mb-0 sm:static'
                 loading="lazy"

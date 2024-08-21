@@ -32,7 +32,7 @@ const Endereco = () => {
 
   const mapa = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.4100297795808!2d-47.09731084202674!3d-22.963477290187747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c9758ac085ab%3A0x80810d6a5b39cb27!2sAv.%20Jos%C3%A9%20Carlos%20do%20Amaral%20Galv%C3%A3o%2C%20582%20-%20Jardim%20Itatinga%2C%20Campinas%20-%20SP%2C%2013051-160!5e0!3m2!1spt-BR!2sbr!4v1704825380292!5m2!1spt-BR!2sbr"
 
-  const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519996924744&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+  const apiWhatsapp = "https://api.whatsapp.com/send?phone=5519989884254&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
 
   return (
     <motion.section
@@ -59,7 +59,7 @@ const Endereco = () => {
             <SiGmail /> contato@bocarracircus.com
           </p>
           <a href={apiWhatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-            <FaWhatsapp />(19) 99889-4430
+            <FaWhatsapp />(19) 98988-4254
           </a>
           <h4 className="mt-auto mb-2">Horários de Atendimento</h4>
 

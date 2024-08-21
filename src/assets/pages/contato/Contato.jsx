@@ -66,7 +66,6 @@ const Contato = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-
         <motion.div className='w-maxW  max-w-hd grande:max-w-grande h-[450px] bg-white-contraste' >
           <motion.div className='w-full h-[450px] bg-gray-text' variants={skeleton}></motion.div>
         </motion.div>
