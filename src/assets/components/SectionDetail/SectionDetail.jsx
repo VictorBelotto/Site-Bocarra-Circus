@@ -9,6 +9,7 @@ import Gallery from '../gallery/Gallery.jsx';
 import { sectionDataLona } from '../SectionLonas/SectionsDataLona/SectionDataLona.js'
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
+import { keywords } from './sectionsData/metadata.js'; 
 
 const SectionDetail = () => {
   const { id } = useParams();
@@ -45,7 +46,6 @@ const SectionDetail = () => {
   if (!section) {
     return <h1 className='py-32 text-center'>Section not found</h1>;
   }
-
   return (
     <motion.main
       className='flex flex-col w-full justify-center items-center pb-32'
@@ -54,7 +54,7 @@ const SectionDetail = () => {
       <Helmet>
         <title>{section.titulo}</title>
         <meta name="description" content={section.descricao} />
-        <meta name="keywords" content="Circo, Lonas, Bocarra Circus, fabricante de lonas, serviços, servicos, " />
+        <meta name="keywords" content={keywords[section.id]} />
         <meta name="author" content="Bocarra Circus" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />

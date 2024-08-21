@@ -49,7 +49,7 @@ const SectionLonas = () => {
       <Helmet>
         <title>{`Lona modelo ${section.titulo}`}</title>
         <meta name="description" content={section.descricao} />
-        <meta name="keywords" content="Circo, Lonas, Bocarra Circus, fabricante de lonas, serviços, servicos, " />
+        <meta name="keywords" content="Lonas para Circo, Fabricação de lonas, Bocarra Circus, Lonas resistentes, Lonas personalizadas, Fabricação de lonas de circo, Fábrica de lonas, Lonas de alta qualidade, Lonas para tendas de circo, Lonaria, Lonas de circo no Brasil, Lonas duráveis, Lonas de alta performance, Lonas para eventos circenses, Lonas sob medida, fabricação nacional de circo, Fábrica de lona de circo" />
         <meta name="author" content="Bocarra Circus" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
